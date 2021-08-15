@@ -1,0 +1,963 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
+"Project-Id-Version: gd-bbpress-tools\n"
+"POT-Creation-Date: 05/09/2020 05:10:12 PM\n"
+"Language-Team: Milan Petrovic <support@dev4press.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: GD i18n 2.2\n"
+
+#: code/mods/bbcodes.php:53
+#: forms/tabs/bbcode.php:117
+msgid "Bold"
+msgstr ""
+
+#: code/mods/bbcodes.php:57
+#: forms/tabs/bbcode.php:121
+msgid "Italic"
+msgstr ""
+
+#: code/mods/bbcodes.php:61
+#: forms/tabs/bbcode.php:125
+msgid "Underline"
+msgstr ""
+
+#: code/mods/bbcodes.php:66
+#: forms/tabs/bbcode.php:129
+msgid "Strikethrough"
+msgstr ""
+
+#: code/mods/bbcodes.php:70
+msgid "Align Center"
+msgstr ""
+
+#: code/mods/bbcodes.php:75
+msgid "Align Right"
+msgstr ""
+
+#: code/mods/bbcodes.php:80
+msgid "Align Left"
+msgstr ""
+
+#: code/mods/bbcodes.php:85
+msgid "Align Justify"
+msgstr ""
+
+#: code/mods/bbcodes.php:90
+#: forms/tabs/bbcode.php:153
+msgid "Subscript"
+msgstr ""
+
+#: code/mods/bbcodes.php:94
+#: forms/tabs/bbcode.php:157
+msgid "Superscript"
+msgstr ""
+
+#: code/mods/bbcodes.php:98
+#: forms/tabs/bbcode.php:173
+msgid "Preformatted"
+msgstr ""
+
+#: code/mods/bbcodes.php:102
+#: forms/tabs/bbcode.php:161
+msgid "Reverse"
+msgstr ""
+
+#: code/mods/bbcodes.php:107
+#: code/mods/bbcodes.php:111
+#: forms/tabs/bbcode.php:193
+#: forms/tabs/bbcode.php:197
+msgid "List: Ordered"
+msgstr ""
+
+#: code/mods/bbcodes.php:115
+#: forms/tabs/bbcode.php:201
+msgid "List: Unordered"
+msgstr ""
+
+#: code/mods/bbcodes.php:119
+#: forms/tabs/bbcode.php:205
+msgid "List: Item"
+msgstr ""
+
+#: code/mods/bbcodes.php:123
+#: forms/tabs/bbcode.php:177
+msgid "Blockquote"
+msgstr ""
+
+#: code/mods/bbcodes.php:127
+#: forms/tabs/bbcode.php:185
+msgid "Area"
+msgstr ""
+
+#: code/mods/bbcodes.php:131
+#: forms/tabs/bbcode.php:181
+msgid "Border"
+msgstr ""
+
+#: code/mods/bbcodes.php:135
+#: forms/tabs/bbcode.php:189
+msgid "Block"
+msgstr ""
+
+#: code/mods/bbcodes.php:139
+#: forms/tabs/bbcode.php:149
+msgid "Horizontal Line"
+msgstr ""
+
+#: code/mods/bbcodes.php:143
+#: forms/tabs/bbcode.php:165
+msgid "Font Size"
+msgstr ""
+
+#: code/mods/bbcodes.php:147
+#: forms/tabs/bbcode.php:169
+msgid "Font Color"
+msgstr ""
+
+#: code/mods/bbcodes.php:151
+#: code/mods/quote.php:37
+#: code/mods/quote.php:39
+#: forms/tabs/bbcode.php:209
+msgid "Quote"
+msgstr ""
+
+#: code/mods/bbcodes.php:155
+#: forms/tabs/bbcode.php:219
+msgid "URL"
+msgstr ""
+
+#: code/mods/bbcodes.php:159
+msgid "Google Search"
+msgstr ""
+
+#: code/mods/bbcodes.php:163
+#: forms/tabs/bbcode.php:223
+msgid "Image"
+msgstr ""
+
+#: code/mods/bbcodes.php:167
+#: forms/tabs/bbcode.php:227
+msgid "YouTube Video"
+msgstr ""
+
+#: code/mods/bbcodes.php:171
+#: forms/tabs/bbcode.php:232
+msgid "Vimeo Video"
+msgstr ""
+
+#: code/mods/bbcodes.php:175
+#: forms/tabs/bbcode.php:241
+msgid "Note"
+msgstr ""
+
+#: code/mods/bbcodes.php:301
+msgid "BBCode you used is not allowed."
+msgstr ""
+
+#: code/mods/bbcodes.php:319
+msgid "You can use BBCodes to format your content."
+msgstr ""
+
+#: code/mods/bbcodes.php:321
+msgid "Your account can't use Advanced BBCodes, they will be stripped before saving."
+msgstr ""
+
+#: code/mods/bbcodes.php:502
+msgid "wrote"
+msgstr ""
+
+#: code/mods/signature.php:106
+msgid "You can use only plain text. HTML and BBCodes will be stripped."
+msgstr ""
+
+#: code/mods/signature.php:109
+msgid "You can use HTML."
+msgstr ""
+
+#: code/mods/signature.php:113
+msgid "You can use BBCodes."
+msgstr ""
+
+#: code/mods/signature.php:117
+msgid "HTML will be stripped."
+msgstr ""
+
+#: code/mods/signature.php:121
+msgid "BBCodes will be stripped."
+msgstr ""
+
+#: code/mods/toolbar.php:36
+#: code/mods/toolbar.php:62
+#: code/mods/toolbar.php:133
+msgid "Forums"
+msgstr ""
+
+#: code/mods/toolbar.php:81
+#: forms/panels.php:8
+#: forms/panels.php:8
+msgid "Views"
+msgstr ""
+
+#: code/mods/toolbar.php:103
+msgid "New"
+msgstr ""
+
+#: code/mods/toolbar.php:109
+msgid "Forum"
+msgstr ""
+
+#: code/mods/toolbar.php:115
+msgid "Topic"
+msgstr ""
+
+#: code/mods/toolbar.php:121
+msgid "Reply"
+msgstr ""
+
+#: code/mods/toolbar.php:127
+msgid "Edit"
+msgstr ""
+
+#: code/mods/toolbar.php:139
+msgid "Topics"
+msgstr ""
+
+#: code/mods/toolbar.php:145
+msgid "Replies"
+msgstr ""
+
+#: code/mods/toolbar.php:152
+#: code/admin.php:145
+#: forms/panels.php:5
+#: forms/panels.php:5
+msgid "Settings"
+msgstr ""
+
+#: code/mods/toolbar.php:158
+msgid "bbPress Settings"
+msgstr ""
+
+#: code/mods/toolbar.php:168
+msgid "GD bbPress Tools"
+msgstr ""
+
+#: code/mods/toolbar.php:175
+msgid "GD bbPress Attachments"
+msgstr ""
+
+#: code/mods/toolbar.php:183
+#: code/admin.php:132
+msgid "Tools"
+msgstr ""
+
+#: code/mods/toolbar.php:189
+msgid "Recount"
+msgstr ""
+
+#: code/mods/toolbar.php:202
+msgid "Information"
+msgstr ""
+
+#: code/mods/toolbar.php:217
+msgid "bbPress Homepage"
+msgstr ""
+
+#: code/mods/toolbar.php:225
+msgid "Dev4Press Homepage"
+msgstr ""
+
+#: code/mods/views.php:27
+#: forms/tabs/views.php:10
+msgid "Topics with most replies"
+msgstr ""
+
+#: code/mods/views.php:35
+msgid "Latest topics"
+msgstr ""
+
+#: code/mods/views.php:43
+msgid "Topics Freshness"
+msgstr ""
+
+#: code/admin.php:154
+msgid "Upgrade to GD bbPress Toolbox Pro"
+msgstr ""
+
+#: code/admin.php:165
+msgid "Website"
+msgstr ""
+
+#: code/admin.php:166
+msgid "On Twitter"
+msgstr ""
+
+#: code/admin.php:167
+msgid "On Facebook"
+msgstr ""
+
+#: code/admin.php:171
+msgid "Get Help"
+msgstr ""
+
+#: code/admin.php:172
+msgid "General Plugin Information"
+msgstr ""
+
+#: code/admin.php:173
+msgid "Home Page on Dev4Press.com"
+msgstr ""
+
+#: code/admin.php:174
+msgid "Home Page on WordPress.org"
+msgstr ""
+
+#: code/admin.php:175
+msgid "Getting Plugin Support"
+msgstr ""
+
+#: code/admin.php:176
+msgid "Support Forum on Dev4Press.com"
+msgstr ""
+
+#: code/admin.php:177
+msgid "Support Forum on WordPress.org"
+msgstr ""
+
+#: code/admin.php:182
+msgid "On Dev4Press website you can find many useful plugins, themes and tutorials, all for WordPress. Please, take a few minutes to browse some of these resources, you might find some of them very useful."
+msgstr ""
+
+#: code/admin.php:183
+msgid "Plugins"
+msgstr ""
+
+#: code/admin.php:183
+msgid "We have more than 10 plugins available, some of them are commercial and some are available for free."
+msgstr ""
+
+#: code/admin.php:184
+msgid "Knowledge Base"
+msgstr ""
+
+#: code/admin.php:184
+msgid "Premium and free tutorials for our plugins themes, and many general and practical WordPress tutorials."
+msgstr ""
+
+#: code/admin.php:185
+msgid "Support Forums"
+msgstr ""
+
+#: code/admin.php:185
+msgid "Premium support forum for all with valid licenses to get help. Also, report bugs and leave suggestions."
+msgstr ""
+
+#: code/front.php:37
+msgctxt "Username quote suffix"
+msgid "wrote"
+msgstr ""
+
+#: forms/more/toolbox.php:2
+msgid "consider upgrading to"
+msgstr ""
+
+#: forms/more/toolbox.php:4
+msgid "Enhancing WordPress forums powered by bbPress"
+msgstr ""
+
+#: forms/more/toolbox.php:5
+msgid "Expand bbPress powered forums with attachments upload, BBCodes, signatures, widgets, quotes, topics report, thanks, activity tracking, enhanced widgets, extra views..."
+msgstr ""
+
+#: forms/more/toolbox.php:7
+msgid "Important links"
+msgstr ""
+
+#: forms/more/toolbox.php:8
+msgid "Official Plugin Website"
+msgstr ""
+
+#: forms/more/toolbox.php:9
+msgid "Toolbox Pro vs Free plugins"
+msgstr ""
+
+#: forms/more/toolbox.php:10
+msgid "Dev4Press Plugins Club Membership"
+msgstr ""
+
+#: forms/more/toolbox.php:14
+msgid "Special upgrade discount"
+msgstr ""
+
+#: forms/more/toolbox.php:20
+msgid "Some of the features you will get with GD bbPress Toolbox Pro"
+msgstr ""
+
+#: forms/more/toolbox.php:22
+msgid "Enhanced attachments"
+msgstr ""
+
+#: forms/more/toolbox.php:23
+msgid "Report Topics and Replies"
+msgstr ""
+
+#: forms/more/toolbox.php:24
+msgid "Canned Replies"
+msgstr ""
+
+#: forms/more/toolbox.php:25
+msgid "Say Thanks to forum members"
+msgstr ""
+
+#: forms/more/toolbox.php:26
+msgid "Various privacy tools"
+msgstr ""
+
+#: forms/more/toolbox.php:27
+msgid "Various SEO tools"
+msgstr ""
+
+#: forms/more/toolbox.php:28
+msgid "New and unread topics tracking"
+msgstr ""
+
+#: forms/more/toolbox.php:29
+msgid "45 BBCodes and BBCodes Toolbar"
+msgstr ""
+
+#: forms/more/toolbox.php:30
+msgid "19 Topics views"
+msgstr ""
+
+#: forms/more/toolbox.php:31
+msgid "8 Widgets"
+msgstr ""
+
+#: forms/more/toolbox.php:32
+msgid "and much more..."
+msgstr ""
+
+#: forms/more/toolbox.php:15
+msgid "Buy GD bbPress Toolbox Pro license or Dev4Press Plugins Club Membership license and get %s discount using this coupon"
+msgstr ""
+
+#: forms/tabs/about.php:10
+msgid "Release Date: "
+msgstr ""
+
+#: forms/tabs/about.php:12
+msgid "Status: "
+msgstr ""
+
+#: forms/tabs/about.php:14
+msgid "Build: "
+msgstr ""
+
+#: forms/tabs/about.php:21
+msgid "System Requirements"
+msgstr ""
+
+#: forms/tabs/about.php:24
+msgid "PHP: "
+msgstr ""
+
+#: forms/tabs/about.php:26
+msgid "WordPress: "
+msgstr ""
+
+#: forms/tabs/about.php:28
+msgid "bbPress: "
+msgstr ""
+
+#: forms/tabs/about.php:35
+msgid "Important Plugin Links"
+msgstr ""
+
+#: forms/tabs/about.php:36
+msgid "Home Page"
+msgstr ""
+
+#: forms/tabs/about.php:37
+#: forms/tabs/about.php:41
+msgid "on"
+msgstr ""
+
+#: forms/tabs/about.php:38
+msgid "Plugin Support"
+msgstr ""
+
+#: forms/tabs/about.php:39
+msgid "Plugin Support Forum on Dev4Press"
+msgstr ""
+
+#: forms/tabs/about.php:40
+msgid "Dev4Press Important Links"
+msgstr ""
+
+#: forms/tabs/about.php:42
+msgid "Page"
+msgstr ""
+
+#: forms/tabs/bbcode.php:14
+#: forms/tabs/tools.php:2
+#: forms/tabs/tweaks.php:2
+#: forms/tabs/views.php:2
+msgid "Settings saved."
+msgstr ""
+
+#: forms/tabs/bbcode.php:22
+msgid "BBCodes Support"
+msgstr ""
+
+#: forms/tabs/bbcode.php:23
+msgid "Implements shortcodes for standard BBCodes based on the phpBB 3.0 forums implementation with many additional codes."
+msgstr ""
+
+#: forms/tabs/bbcode.php:27
+#: forms/tabs/bbcode.php:42
+#: forms/tabs/bbcode.php:57
+#: forms/tabs/tools.php:34
+#: forms/tabs/tools.php:97
+#: forms/tabs/tools.php:136
+#: forms/tabs/tools.php:262
+#: forms/tabs/tweaks.php:15
+#: forms/tabs/tweaks.php:30
+#: forms/tabs/tweaks.php:45
+#: forms/tabs/tweaks.php:60
+#: forms/tabs/views.php:15
+#: forms/tabs/views.php:30
+#: forms/tabs/views.php:45
+msgid "Active"
+msgstr ""
+
+#: forms/tabs/bbcode.php:37
+msgid "BBCodes New Topic/Reply Notice"
+msgstr ""
+
+#: forms/tabs/bbcode.php:38
+msgid "If the BBCodes support is active, you can display notice in the new topic/reply form."
+msgstr ""
+
+#: forms/tabs/bbcode.php:52
+msgid "Limit to bbPress only"
+msgstr ""
+
+#: forms/tabs/bbcode.php:53
+msgid "Processing of the bbcodes can be limited only to bbPress implemented forums, topics and replies."
+msgstr ""
+
+#: forms/tabs/bbcode.php:64
+msgid "If you are using BuddyPress Nuovo templates, BBCode for Italic can cause the problem with some elements of the BuddyPress using underscore templates to render. To avoid that, you need to enable this option, or disable Italic BBCode."
+msgstr ""
+
+#: forms/tabs/bbcode.php:68
+msgid "Advanced BBCodes"
+msgstr ""
+
+#: forms/tabs/bbcode.php:73
+#: forms/tabs/bbcode.php:76
+#: forms/tabs/tools.php:149
+#: forms/tabs/tools.php:191
+msgid "Allowed to"
+msgstr ""
+
+#: forms/tabs/bbcode.php:79
+#: forms/tabs/tools.php:71
+#: forms/tabs/tools.php:109
+#: forms/tabs/tools.php:155
+#: forms/tabs/tools.php:197
+#: forms/tabs/tools.php:274
+msgid "Super Admin"
+msgstr ""
+
+#: forms/tabs/bbcode.php:91
+#: forms/tabs/tools.php:82
+#: forms/tabs/tools.php:121
+#: forms/tabs/tools.php:167
+#: forms/tabs/tools.php:209
+#: forms/tabs/tools.php:286
+msgid "Capability"
+msgstr ""
+
+#: forms/tabs/bbcode.php:97
+msgid "Restrict action"
+msgstr ""
+
+#: forms/tabs/bbcode.php:100
+msgid "Replace with notice"
+msgstr ""
+
+#: forms/tabs/bbcode.php:101
+msgid "Remove from content"
+msgstr ""
+
+#: forms/tabs/bbcode.php:110
+msgid "Active BBCodes"
+msgstr ""
+
+#: forms/tabs/bbcode.php:111
+msgid "By default all BBCodes are active. If you want, you can disable registration of any of the BBCodes. To do that, just uncheck the BBCodes you want to deactivate from the list under."
+msgstr ""
+
+#: forms/tabs/bbcode.php:113
+msgid "List of Standard BBCodes"
+msgstr ""
+
+#: forms/tabs/bbcode.php:133
+msgid "Align: Center"
+msgstr ""
+
+#: forms/tabs/bbcode.php:137
+msgid "Align: Right"
+msgstr ""
+
+#: forms/tabs/bbcode.php:141
+msgid "Align: Left"
+msgstr ""
+
+#: forms/tabs/bbcode.php:145
+msgid "Align: Justify"
+msgstr ""
+
+#: forms/tabs/bbcode.php:215
+msgid "List of Advanced BBCodes"
+msgstr ""
+
+#: forms/tabs/bbcode.php:237
+msgid "Google Search URL"
+msgstr ""
+
+#: forms/tabs/bbcode.php:249
+#: forms/tabs/tools.php:312
+#: forms/tabs/tweaks.php:91
+#: forms/tabs/views.php:55
+msgid "Save Changes"
+msgstr ""
+
+#: forms/tabs/bbcode.php:69
+msgid "Some BBCodes can be available only to selected user roles. This include: %s."
+msgstr ""
+
+#: forms/tabs/d4p.php:2
+msgid "Premium Plugins for bbPress"
+msgstr ""
+
+#: forms/tabs/d4p.php:13
+msgid "More Free Plugins for bbPress"
+msgstr ""
+
+#: forms/tabs/d4p.php:21
+#: forms/tabs/d4p.php:25
+msgid "Plugin Home Website"
+msgstr ""
+
+#: forms/tabs/d4p.php:22
+#: forms/tabs/d4p.php:26
+msgid "Plugin Demo"
+msgstr ""
+
+#: forms/tabs/d4p.php:30
+msgid "Other Premium Plugins"
+msgstr ""
+
+#: forms/tabs/d4p.php:42
+msgid "More Free Plugins"
+msgstr ""
+
+#: forms/tabs/tools.php:10
+msgid "Allowed HTML tags and attributes"
+msgstr ""
+
+#: forms/tabs/tools.php:11
+msgid "By default, only keymasters can post unrestricted HTML, other users are limited to a very small subset of tags. With this option, you can change the scope of tags and tag attributes bbPress will allow for topics and replies."
+msgstr ""
+
+#: forms/tabs/tools.php:15
+msgid "Allowed HTML"
+msgstr ""
+
+#: forms/tabs/tools.php:18
+msgid "bbPress Default Set"
+msgstr ""
+
+#: forms/tabs/tools.php:19
+msgid "Expanded Set (Recommended)"
+msgstr ""
+
+#: forms/tabs/tools.php:20
+msgid "Full WordPress Posts Set"
+msgstr ""
+
+#: forms/tabs/tools.php:29
+msgid "Quote Topics and Replies"
+msgstr ""
+
+#: forms/tabs/tools.php:30
+msgid "Add button to quote content for a topic and reply with the author and link. Can use BBCode quote type."
+msgstr ""
+
+#: forms/tabs/tools.php:40
+msgid "Button Location"
+msgstr ""
+
+#: forms/tabs/tools.php:43
+msgid "Reply or Topic header"
+msgstr ""
+
+#: forms/tabs/tools.php:44
+msgid "Reply or Topic content"
+msgstr ""
+
+#: forms/tabs/tools.php:45
+msgid "Both header and content"
+msgstr ""
+
+#: forms/tabs/tools.php:50
+msgid "Quote Method"
+msgstr ""
+
+#: forms/tabs/tools.php:53
+#: forms/tabs/tools.php:184
+msgid "BBCode"
+msgstr ""
+
+#: forms/tabs/tools.php:54
+#: forms/tabs/tools.php:185
+msgid "HTML"
+msgstr ""
+
+#: forms/tabs/tools.php:59
+msgid "Tags filtering"
+msgstr ""
+
+#: forms/tabs/tools.php:62
+msgid "Enable DIV tag"
+msgstr ""
+
+#: forms/tabs/tools.php:63
+msgid "Needed for quotes to work properly."
+msgstr ""
+
+#: forms/tabs/tools.php:67
+msgid "Available to"
+msgstr ""
+
+#: forms/tabs/tools.php:92
+msgid "Toolbar Menu"
+msgstr ""
+
+#: forms/tabs/tools.php:93
+msgid "Add menu to the WordPress toolbar with quick access to both admin and front end side forum related pages."
+msgstr ""
+
+#: forms/tabs/tools.php:103
+msgid "Show menu to"
+msgstr ""
+
+#: forms/tabs/tools.php:106
+msgid "Allow upload to"
+msgstr ""
+
+#: forms/tabs/tools.php:131
+msgid "User Signature"
+msgstr ""
+
+#: forms/tabs/tools.php:132
+msgid "Allow users to create signatures that will be included with their replies or topics. Control length and use of HTML or BBCodes."
+msgstr ""
+
+#: forms/tabs/tools.php:142
+msgid "Maximum length"
+msgstr ""
+
+#: forms/tabs/tools.php:145
+msgid "characters"
+msgstr ""
+
+#: forms/tabs/tools.php:152
+#: forms/tabs/tools.php:194
+#: forms/tabs/tools.php:271
+msgid "User Roles"
+msgstr ""
+
+#: forms/tabs/tools.php:175
+msgid "User Signature: HTML / BBCodes Enhanced"
+msgstr ""
+
+#: forms/tabs/tools.php:176
+msgid "Allow users to create rich signature with HTML or BBCodes."
+msgstr ""
+
+#: forms/tabs/tools.php:180
+msgid "Enhanced"
+msgstr ""
+
+#: forms/tabs/tools.php:183
+msgid "Disabled"
+msgstr ""
+
+#: forms/tabs/tools.php:186
+msgid "BBCode And HTML"
+msgstr ""
+
+#: forms/tabs/tools.php:219
+msgid "User Signature: BuddyPress Profile Field Group"
+msgstr ""
+
+#: forms/tabs/tools.php:220
+msgid "Select group where the signature editor will be displayed."
+msgstr ""
+
+#: forms/tabs/tools.php:224
+msgid "Field Group"
+msgstr ""
+
+#: forms/tabs/tools.php:257
+msgid "Limit bbPress access on admin side"
+msgstr ""
+
+#: forms/tabs/tools.php:258
+msgid "Select who can see and access admin side bbPress forums, topics and reply controls. Be careful with this feature."
+msgstr ""
+
+#: forms/tabs/tools.php:268
+msgid "Roles with access"
+msgstr ""
+
+#: forms/tabs/tools.php:296
+msgid "JavaScript and CSS Settings"
+msgstr ""
+
+#: forms/tabs/tools.php:297
+msgid "If you use shortcodes to embed forums, and you rely on plugin to add JS and CSS, you also need to enable this option to skip checking for bbPress specific pages."
+msgstr ""
+
+#: forms/tabs/tools.php:298
+msgid "Plugin will attempt to load files automatically when needed. If that fails, try using this option."
+msgstr ""
+
+#: forms/tabs/tools.php:302
+msgid "Always Include"
+msgstr ""
+
+#: forms/tabs/tools.php:236
+msgid "Base"
+msgstr ""
+
+#: forms/tabs/tweaks.php:10
+msgid "Disable bbPress breadcrumbs"
+msgstr ""
+
+#: forms/tabs/tweaks.php:11
+msgid "If activated, this option will disable bbPress from displaying own breadcrumbs."
+msgstr ""
+
+#: forms/tabs/tweaks.php:25
+msgid "Topic tags field in reply form for author only"
+msgstr ""
+
+#: forms/tabs/tweaks.php:26
+msgid "If activated, only topic author can change topic tags from reply form."
+msgstr ""
+
+#: forms/tabs/tweaks.php:40
+msgid "Show lead topic"
+msgstr ""
+
+#: forms/tabs/tweaks.php:41
+msgid "If activated, bbPress will show main thread topic on top separated from replies."
+msgstr ""
+
+#: forms/tabs/tweaks.php:55
+msgid "Remove private title prefix"
+msgstr ""
+
+#: forms/tabs/tweaks.php:56
+msgid "WordPress adds 'Private' prefix to private forums or topic titles. With this option, you can remove this prefix."
+msgstr ""
+
+#: forms/tabs/tweaks.php:70
+msgid "Search Form"
+msgstr ""
+
+#: forms/tabs/tweaks.php:71
+msgid "Add standard bbPress search form on top of the page for all single forums and/or single topics."
+msgstr ""
+
+#: forms/tabs/tweaks.php:75
+msgid "Single Forums"
+msgstr ""
+
+#: forms/tabs/tweaks.php:81
+msgid "Single Topics"
+msgstr ""
+
+#: forms/tabs/views.php:11
+msgid "This view will show list of topics with most replies."
+msgstr ""
+
+#: forms/tabs/views.php:25
+msgid "Latest Topics"
+msgstr ""
+
+#: forms/tabs/views.php:26
+msgid "This view will show list of topics starting with latest ones."
+msgstr ""
+
+#: forms/tabs/views.php:40
+msgid "Topics by freshness"
+msgstr ""
+
+#: forms/tabs/views.php:41
+msgid "This view will show list of topics ordered by freshness (latest activity)."
+msgstr ""
+
+#: forms/tools/signature_bbpress.php:0
+#: forms/tools/signature_bbpress.php:2
+#: forms/tools/signature_profile.php:0
+msgid "Your Forum Signature"
+msgstr ""
+
+#: forms/tools/signature_bbpress.php:0
+#: forms/tools/signature_bbpress.php:2
+#: forms/tools/signature_profile.php:0
+msgid "User Forum Signature"
+msgstr ""
+
+#: forms/tools/signature_bbpress.php:5
+#: forms/tools/signature_profile.php:3
+msgid "Signature"
+msgstr ""
+
+#: forms/tools/signature_bbpress.php:9
+#: forms/tools/signature_buddypress.php:4
+msgid "Signature length is limited to %s characters."
+msgstr ""
+
+#: forms/tools/signature_buddypress.php:1
+msgid "Forum Signature"
+msgstr ""
+
+#: forms/panels.php:6
+#: forms/panels.php:6
+msgid "Tweaks"
+msgstr ""
+
+#: forms/panels.php:7
+#: forms/panels.php:7
+msgid "BBCodes"
+msgstr ""
+
+#: forms/panels.php:9
+#: forms/panels.php:9
+msgid "Dev4Press"
+msgstr ""
+
+#: forms/panels.php:10
+#: forms/panels.php:10
+msgid "About"
+msgstr ""
+

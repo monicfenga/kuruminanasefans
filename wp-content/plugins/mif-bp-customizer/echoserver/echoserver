@@ -1,0 +1,48 @@
+#!/bin/sh
+
+# PROVIDE: echoserver
+# REQUIRE: NETWORKING SERVERS DAEMON
+# BEFORE:  LOGIN
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name="echoserver"
+forever="/usr/local/bin/node /usr/local/bin/forever"
+workdir="/root/bin/echoserver"
+script="server.js"
+
+rcvar=`set_rcvar`
+
+start_cmd="start"
+stop_cmd="stop"
+restart_cmd="restart"
+
+load_rc_config $name
+eval "${rcvar}=\${${rcvar}:-'NO'}"
+
+start()
+{
+  USER=root
+  PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin
+  PWD=/root
+  HOME=/root
+  NODE_ENV=production
+  ${forever} start -a -l /var/log/forever.log --sourceDir ${workdir} ${script}
+#  ${forever} start -a -l /var/log/forever.log -o /var/log/echoserver-success.log -e /var/log/echoserver-error.log --sourceDir ${workdir} ${script}
+#  su - webadmin -c "${forever} start -a -l /var/log/forever.log -o /dev/null -e /var/log/node-error.log --sourceDir ${workdir} ${script}"
+}
+
+stop()
+{
+  ${forever} stop ${workdir}/${script}
+}
+
+restart()
+{
+  ${forever} restart ${workdir}/${script}
+}
+
+run_rc_command "$1"
+
+

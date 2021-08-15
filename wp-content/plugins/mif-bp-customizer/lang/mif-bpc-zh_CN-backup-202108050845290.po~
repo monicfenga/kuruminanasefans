@@ -1,0 +1,1261 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MIF BP Customizer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-05 08:38+0000\n"
+"PO-Revision-Date: 2021-08-05 08:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: 简体中文\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8\n"
+"X-Domain: mif-bpc"
+
+#: classes/members-page.php:33
+msgid "Add users"
+msgstr ""
+
+#: classes/members-page.php:34 inc/activity-exclude.php:237
+#: inc/custom-background.php:226 inc/profile-privacy.php:485
+#: inc/settings-page-admin.php:164
+msgid "Save the changes"
+msgstr "保存设置"
+
+#: classes/members-page.php:35
+msgid "Specify usernames you want to add to the list."
+msgstr ""
+
+#: classes/members-page.php:178
+msgid "Delete from the list"
+msgstr ""
+
+#: classes/members-page.php:194
+msgid "Add to list"
+msgstr ""
+
+#: classes/members-page.php:353
+msgid "Specify usernames."
+msgstr ""
+
+#: classes/members-page.php:354
+msgid "Users were added successfully:"
+msgstr ""
+
+#: classes/members-page.php:355
+msgid "Users were not found:"
+msgstr ""
+
+#: classes/members-page.php:356
+msgid "Users are already in the list:"
+msgstr ""
+
+#: classes/members-page.php:357
+msgid "Can’t add yourself:"
+msgstr ""
+
+#: classes/members-page.php:358
+msgid "User can’t be added to the list:"
+msgstr ""
+
+#: classes/members-page.php:360
+msgid "Can’t be added:"
+msgstr ""
+
+#: classes/members-page.php:361
+msgid "Error occurred while adding the users:"
+msgstr ""
+
+#: inc/activity-button-customize.php:105
+msgid "Delete post"
+msgstr ""
+
+#: inc/activity-exclude.php:83 inc/activity-exclude.php:120
+msgid "Don’t show posts of this type"
+msgstr ""
+
+#: inc/activity-exclude.php:84 inc/activity-exclude.php:121
+#: inc/banned-users.php:117
+msgid "Configuration"
+msgstr ""
+
+#: inc/activity-exclude.php:182
+msgid "Feed"
+msgstr ""
+
+#: inc/activity-exclude.php:207
+msgid "Activity feed options"
+msgstr ""
+
+#: inc/activity-exclude.php:218
+msgid ""
+"Specify elements of the activity feed, that should be displayed on your main "
+"page. Blocking of these elements is also available in the activity feed of "
+"the main page."
+msgstr ""
+
+#: inc/activity-exclude.php:255
+msgid "The list of activity items is saved."
+msgstr ""
+
+#: inc/activity-exclude.php:272
+msgid "Message in the activity feed"
+msgstr ""
+
+#: inc/activity-exclude.php:273
+msgid "Repost in the activity feed"
+msgstr ""
+
+#: inc/activity-exclude.php:274
+msgid "Comment in the activity feed"
+msgstr ""
+
+#: inc/activity-exclude.php:275 inc/docs/docs-core.php:128
+#: inc/docs/docs-core.php:131
+msgid "New document"
+msgstr ""
+
+#: inc/activity-exclude.php:277
+msgid "Message in the forum"
+msgstr ""
+
+#: inc/activity-exclude.php:278
+msgid "Forum topic"
+msgstr ""
+
+#: inc/activity-exclude.php:280
+msgid "Post on site"
+msgstr ""
+
+#: inc/activity-exclude.php:281
+msgid "Comment on the site"
+msgstr ""
+
+#: inc/activity-exclude.php:282
+msgid "Message on the course page"
+msgstr ""
+
+#: inc/activity-exclude.php:284
+msgid "New user"
+msgstr ""
+
+#: inc/activity-exclude.php:285
+msgid "Someone made friends with each other"
+msgstr ""
+
+#: inc/activity-exclude.php:286
+msgid "New avatar"
+msgstr ""
+
+#: inc/activity-exclude.php:287
+msgid "Group creation"
+msgstr ""
+
+#: inc/activity-exclude.php:288
+msgid "Joining the group"
+msgstr ""
+
+#: inc/activity-exclude.php:299
+msgid "Messages and documents"
+msgstr ""
+
+#: inc/activity-exclude.php:300
+msgid "Forums"
+msgstr ""
+
+#: inc/activity-exclude.php:301 inc/activity-stream.php:102
+msgid "Sites"
+msgstr ""
+
+#: inc/activity-exclude.php:302
+msgid "User actions"
+msgstr ""
+
+#: inc/activity-exclude.php:303
+msgid "Other"
+msgstr ""
+
+#: inc/activity-stream.php:59
+msgid "Whole feed"
+msgstr ""
+
+#: inc/activity-stream.php:120
+msgid "Courses"
+msgstr ""
+
+#: inc/banned-users-admin.php:24 inc/banned-users-admin.php:32
+msgid "User blockings"
+msgstr ""
+
+#: inc/banned-users-admin.php:33
+msgid ""
+"This page displays information about user blockings in BuddyPress network."
+msgstr ""
+
+#: inc/banned-users.php:77
+msgid "Blockings"
+msgstr ""
+
+#: inc/banned-users.php:80 inc/settings-page-admin.php:61
+msgid "User blocking"
+msgstr ""
+
+#: inc/banned-users.php:81
+msgid ""
+"The list of users, for whom contacts with you are restricted. These users "
+"can’t offer friendship, leave comments and press \"Like\" for your posts. "
+"Their information is not shown in the activity feed of your page. You can "
+"change the blocking status here or on the pages of users themselves."
+msgstr ""
+
+#: inc/banned-users.php:173
+msgid "Take off the restrictions"
+msgstr ""
+
+#: inc/banned-users.php:173
+msgid "Restrict contacts"
+msgstr ""
+
+#: inc/custom-background.php:31 inc/custom-background.php:100
+msgid "Background"
+msgstr ""
+
+#: inc/custom-background.php:41 inc/custom-background.php:122
+#: inc/settings-page-admin.php:113
+msgid "Background image"
+msgstr ""
+
+#: inc/custom-background.php:219
+msgid ""
+"The background image is used for the page design. You can select on your "
+"computer and upload JPG, GIF or PNG image."
+msgstr ""
+
+#: inc/custom-background.php:227
+msgid "Delete file"
+msgstr ""
+
+#: inc/custom-background.php:241
+msgid "Image is removed"
+msgstr ""
+
+#: inc/custom-background.php:257
+msgid "File upload error"
+msgstr ""
+
+#: inc/custom-background.php:262
+#, php-format
+msgid "The file is too large. You can upload file not larger than %s."
+msgstr ""
+
+#: inc/custom-background.php:267
+msgid "You forgot to attach a file."
+msgstr ""
+
+#: inc/custom-background.php:272
+msgid "Invalid file type. You can use only JPG, GIF or PNG images."
+msgstr ""
+
+#: inc/dialogues.php:119 inc/settings-page-admin.php:95
+msgid "Dialogues"
+msgstr ""
+
+#: inc/docs.php:82 inc/settings-page-admin.php:107
+#: templates/docs-page-doc.php:5 inc/docs/docs-core.php:125
+#: inc/docs/docs-group.php:48 inc/docs/docs-group.php:49
+#: inc/docs/docs-group.php:150 inc/docs/docs-screen.php:1175
+msgid "Documents"
+msgstr ""
+
+#: inc/docs.php:92 inc/docs/docs-core.php:154 inc/docs/docs-group.php:114
+#: inc/docs/docs-screen.php:770 inc/docs/docs-screen.php:1192
+msgid "Folders"
+msgstr ""
+
+#: inc/docs.php:102 inc/docs/docs-group.php:115
+msgid "Create folder"
+msgstr ""
+
+#: inc/docs.php:113
+msgid "Statistics"
+msgstr ""
+
+#: inc/edit-group-slug.php:30 inc/edit-group-slug.php:48
+msgid "Address"
+msgstr ""
+
+#: inc/edit-group-slug.php:49
+msgid "Configuration of the group name in the address bar"
+msgstr ""
+
+#: inc/edit-group-slug.php:50
+msgid ""
+"The group name in the address bar is set automatically based on the group "
+"name, specified when it was created. You can leave the existing name or set "
+"another one."
+msgstr ""
+
+#: inc/edit-group-slug.php:57
+msgid ""
+"** Придумайте адрес, который будет коротким и запоминающимся. Вы можете "
+"использовать строчные латинские буквы, цифры, подчёркивание и тире."
+msgstr ""
+
+#: inc/edit-group-slug.php:82
+msgid "The group address has been successfully changed."
+msgstr ""
+
+#: inc/edit-group-slug.php:83
+msgid "The group address has not changed."
+msgstr ""
+
+#: inc/edit-group-slug.php:84
+msgid "Specified address is already in use. Please, come up with another one."
+msgstr ""
+
+#: inc/edit-group-slug.php:85
+msgid "Such address is not allowed. Please, come up with another one."
+msgstr ""
+
+#: inc/edit-group-slug.php:86
+msgid ""
+"The address contains invalid characters. Use only lowercase Latin letters, "
+"numbers, underscore and dash."
+msgstr ""
+
+#: inc/edit-group-slug.php:107 inc/edit-group-slug.php:122
+msgid "Error occurred while changing the address."
+msgstr ""
+
+#: inc/followers.php:73
+msgid "Add to friends"
+msgstr ""
+
+#: inc/followers.php:78 inc/followers.php:396
+msgid "Accept the friendship"
+msgstr ""
+
+#: inc/followers.php:85 inc/followers.php:400
+msgid "Cancel the friendship"
+msgstr ""
+
+#: inc/followers.php:90 inc/followers.php:404
+msgid "Unsubscribe"
+msgstr ""
+
+#: inc/followers.php:198
+msgid "Not now"
+msgstr ""
+
+#: inc/followers.php:408
+msgid "Subscribe"
+msgstr ""
+
+#: inc/followers.php:495 inc/settings-page-admin.php:83
+msgid "Subscribers"
+msgstr ""
+
+#: inc/followers.php:522
+msgid "Reading"
+msgstr ""
+
+#: inc/functions.php:186
+msgid "of January"
+msgstr ""
+
+#: inc/functions.php:187
+msgid "of February"
+msgstr ""
+
+#: inc/functions.php:188
+msgid "of March"
+msgstr ""
+
+#: inc/functions.php:189
+msgid "of April"
+msgstr ""
+
+#: inc/functions.php:190
+msgid "of May"
+msgstr ""
+
+#: inc/functions.php:191
+msgid "of June"
+msgstr ""
+
+#: inc/functions.php:192
+msgid "of July"
+msgstr ""
+
+#: inc/functions.php:193
+msgid "of August"
+msgstr ""
+
+#: inc/functions.php:194
+msgid "of September"
+msgstr ""
+
+#: inc/functions.php:195
+msgid "of October"
+msgstr ""
+
+#: inc/functions.php:196
+msgid "of November"
+msgstr ""
+
+#: inc/functions.php:197
+msgid "of December"
+msgstr ""
+
+#: inc/functions.php:214
+msgid "yesterday"
+msgstr ""
+
+#: inc/functions.php:252
+msgid "B"
+msgstr ""
+
+#: inc/functions.php:253
+msgid "kB"
+msgstr ""
+
+#: inc/functions.php:254
+msgid "MB"
+msgstr ""
+
+#: inc/functions.php:255
+msgid "Gb"
+msgstr ""
+
+#: inc/functions.php:256
+msgid "TB"
+msgstr ""
+
+#: inc/functions.php:257
+msgid "PB"
+msgstr ""
+
+#: inc/groups-widget.php:27
+msgid "Simple, smart and fast widget of social networks groups"
+msgstr ""
+
+#: inc/groups-widget.php:30
+msgid "Groups"
+msgstr ""
+
+#: inc/groups-widget.php:200 inc/members-widget.php:220
+msgid "Title:"
+msgstr ""
+
+#: inc/groups-widget.php:202 inc/members-widget.php:222
+msgid "Number of avatars:"
+msgstr ""
+
+#: inc/groups-widget.php:204 inc/members-widget.php:226
+msgid "Selection options:"
+msgstr ""
+
+#: inc/groups-widget.php:206 inc/members-widget.php:228
+msgid "Active"
+msgstr ""
+
+#: inc/groups-widget.php:207 inc/members-widget.php:229
+msgid "Popular"
+msgstr ""
+
+#: inc/groups-widget.php:208 inc/members-widget.php:230
+msgid "Random"
+msgstr ""
+
+#: inc/groups-widget.php:209 inc/members-widget.php:231
+msgid "Cache lifetime:"
+msgstr ""
+
+#: inc/groups-widget.php:210 inc/members-widget.php:232
+msgid "sec"
+msgstr ""
+
+#: inc/members-widget.php:27
+msgid "Simple, smart and fast site members widget"
+msgstr ""
+
+#: inc/members-widget.php:30
+msgid "Site members"
+msgstr ""
+
+#: inc/notifications.php:288 inc/settings-page-admin.php:89
+msgid "Notifications"
+msgstr ""
+
+#: inc/notifications.php:461 templates/notifications-loop.php:15
+msgid "Mark as read"
+msgstr ""
+
+#: inc/notifications.php:465
+msgid "Mark as unread"
+msgstr ""
+
+#: inc/notifications.php:481 templates/notifications-loop.php:14
+#: inc/dialogues/dialogues-ajax.php:315 inc/dialogues/dialogues-screen.php:88
+#: inc/dialogues/dialogues-screen.php:165
+#: inc/dialogues/dialogues-screen.php:454 inc/docs/docs-screen.php:201
+#: inc/docs/docs-screen.php:576 inc/docs/docs-screen.php:665
+#: inc/docs/docs-screen.php:979
+msgid "Delete"
+msgstr ""
+
+#: inc/notifications.php:524
+msgid "Read more"
+msgstr ""
+
+#: inc/notifications.php:551
+msgid "New notifications"
+msgstr ""
+
+#: inc/profile-privacy.php:355
+msgid "Only authorized users can access the page"
+msgstr ""
+
+#: inc/profile-privacy.php:355
+msgid "Access to the page is restricted."
+msgstr ""
+
+#: inc/profile-privacy.php:427
+msgid "Privacy"
+msgstr "隐私"
+
+#: inc/profile-privacy.php:452
+msgid "Profile access options"
+msgstr "个人页面可见度"
+
+#: inc/profile-privacy.php:460
+msgid "Specify who can view your profile page."
+msgstr "谁可以看见你的主页？"
+
+#: inc/profile-privacy.php:510
+msgid "All users"
+msgstr "所有人"
+
+#: inc/profile-privacy.php:510
+msgid ""
+"The page will be available either to authorized or not authorized users. "
+"Your posts and documents will be publically available on the Internet"
+msgstr "完全公开个人页面"
+
+#: inc/profile-privacy.php:511
+msgid "Authorized users"
+msgstr "登录用户"
+
+#: inc/profile-privacy.php:511
+msgid ""
+"Only users, who work on site, having specified their login and password can "
+"access the page"
+msgstr "只有本站用户可以看到你的资料"
+
+#: inc/profile-privacy.php:512
+msgid "My subscribers"
+msgstr "我关注的人"
+
+#: inc/profile-privacy.php:512
+msgid ""
+"Users, who subscribed to me, who I read and my friends can access the page"
+msgstr "只有关注你的人才能看到你的个人资料"
+
+#: inc/profile-privacy.php:513
+msgid "Those, who I follow"
+msgstr "关注我的人"
+
+#: inc/profile-privacy.php:513
+msgid "Users, who I follow and my friends can access the page"
+msgstr "你关注的人可以查看你的个人资料"
+
+#: inc/profile-privacy.php:514
+msgid "My friends"
+msgstr "我的朋友"
+
+#: inc/profile-privacy.php:514
+msgid "Only my friends can access the page"
+msgstr "只有自己的好友才能看到你的个人资料"
+
+#: inc/profile-privacy.php:515
+msgid "Only me"
+msgstr "只有我"
+
+#: inc/profile-privacy.php:515
+msgid "No one can access the page. Only I can view my posts and documents"
+msgstr "只有你自己才能看到个人资料"
+
+#: inc/repost-button.php:233
+msgid "shared a post"
+msgstr ""
+
+#: inc/settings-page-admin.php:21 inc/settings-page-admin.php:28
+msgid "BP Customizer plugin configuration"
+msgstr ""
+
+#: inc/settings-page-admin.php:21
+msgid "BP Customizer"
+msgstr ""
+
+#: inc/settings-page-admin.php:29
+msgid ""
+"MIF BP Customizer plugin adds new features to BuddyPress. Here you can "
+"specify what exactly should be applied in your social network."
+msgstr ""
+
+#: inc/settings-page-admin.php:45 inc/docs/docs-core.php:108
+msgid "Activity feed"
+msgstr ""
+
+#: inc/settings-page-admin.php:49
+msgid "Special activity feed"
+msgstr ""
+
+#: inc/settings-page-admin.php:51
+msgid ""
+"Changes the appearance and behavior of the activity feed on users’ pages (on "
+"personal page - \"Whole feed\", on other users’ pages – only their activity)."
+" Allows to use content blocking tools."
+msgstr ""
+
+#: inc/settings-page-admin.php:55
+msgid "Post types of activity feed"
+msgstr ""
+
+#: inc/settings-page-admin.php:57
+msgid ""
+"Allows to specify activity types, which should be displayed in user’s feed "
+"(\"Special activity feed\" option is required)."
+msgstr ""
+
+#: inc/settings-page-admin.php:63
+msgid ""
+"Allows to maintain a list of users, whose information is blocked in your "
+"activity feed (\"Special activity feed\" option is required)."
+msgstr ""
+
+#: inc/settings-page-admin.php:67
+msgid "Site behavior"
+msgstr ""
+
+#: inc/settings-page-admin.php:71
+msgid "Profile as a homepage"
+msgstr ""
+
+#: inc/settings-page-admin.php:73
+msgid "Set user profile as his home page."
+msgstr ""
+
+#: inc/settings-page-admin.php:77
+msgid "Profile privacy"
+msgstr "个人页面可见度"
+
+#: inc/settings-page-admin.php:79
+msgid "Allow users to restrict access to their profiles."
+msgstr ""
+
+#: inc/settings-page-admin.php:85
+msgid ""
+"Enable subscription option for user updates (subscription = one-way "
+"friendship)."
+msgstr ""
+
+#: inc/settings-page-admin.php:91
+msgid "Enable advanced notification mode."
+msgstr ""
+
+#: inc/settings-page-admin.php:97
+msgid ""
+"Enable simple and convenient dialogues instead of the standard system of "
+"private messages."
+msgstr ""
+
+#: inc/settings-page-admin.php:101
+msgid "Pop-up messages"
+msgstr ""
+
+#: inc/settings-page-admin.php:103
+msgid ""
+"Enable mechanism of pop-up messages. Echo-server configuration is required."
+msgstr ""
+
+#: inc/settings-page-admin.php:109
+msgid "Documents and files upload"
+msgstr ""
+
+#: inc/settings-page-admin.php:115
+msgid "Allow to use custom image as a background for user profile or group."
+msgstr ""
+
+#: inc/settings-page-admin.php:119
+msgid "Group address"
+msgstr ""
+
+#: inc/settings-page-admin.php:121
+msgid "Allow to change the group address in its settings and at creation."
+msgstr ""
+
+#: inc/settings-page-admin.php:125
+msgid "\"Like\" button"
+msgstr ""
+
+#: inc/settings-page-admin.php:127
+msgid "Allow to use the \"Like\" button."
+msgstr ""
+
+#: inc/settings-page-admin.php:131
+msgid "\"Repost\" button"
+msgstr ""
+
+#: inc/settings-page-admin.php:133
+msgid "Allow to use the \"Repost\" button."
+msgstr ""
+
+#: inc/settings-page-admin.php:137
+msgid "\"Favorite\", \"Delete\" buttons"
+msgstr ""
+
+#: inc/settings-page-admin.php:139
+msgid "Use special buttons \"Favorite\", \"Remove\"."
+msgstr ""
+
+#: inc/settings-page-admin.php:147
+msgid "Visual elements"
+msgstr ""
+
+#: inc/settings-page-admin.php:151
+msgid "Site members widget"
+msgstr ""
+
+#: inc/settings-page-admin.php:153
+msgid ""
+"Allow to use site member widget. Displays member’s avatars in the widget "
+"area."
+msgstr ""
+
+#: inc/settings-page-admin.php:157
+msgid "Group widget"
+msgstr ""
+
+#: inc/settings-page-admin.php:159
+msgid "Allow to use group widget. Displays group avatars in the widget area."
+msgstr ""
+
+#: inc/settings-page-admin.php:193
+msgid "Authorization error"
+msgstr ""
+
+#: inc/settings-page-admin.php:207
+msgid "Changes saved"
+msgstr "设置已保存"
+
+#: templates/dialogues-page.php:9
+msgid "Fix"
+msgstr ""
+
+#: templates/dialogues-page.php:15 inc/dialogues/dialogues-screen.php:372
+msgid "New message"
+msgstr ""
+
+#: templates/dialogues-page.php:16
+msgid "Update"
+msgstr ""
+
+#: templates/dialogues-page.php:17
+msgid "Group dialogues"
+msgstr ""
+
+#: templates/dialogues-page.php:26
+msgid "Search"
+msgstr ""
+
+#: templates/notifications-loop.php:12
+msgid "All notifications"
+msgstr ""
+
+#: inc/dialogues/dialogues-ajax.php:226
+msgid "Error. The users you specified don’t exist"
+msgstr ""
+
+#: inc/dialogues/dialogues-ajax.php:312
+msgid "You want to <strong>delete all messages</strong> in this dialogue."
+msgstr ""
+
+#: inc/dialogues/dialogues-ajax.php:314
+msgid "Be careful, this operation <strong>can not be undone</strong>."
+msgstr ""
+
+#: inc/dialogues/dialogues-ajax.php:316
+msgid "Don’t delete"
+msgstr ""
+
+#: inc/dialogues/dialogues-core.php:71
+#, php-format
+msgid "And others (%s in total)"
+msgstr ""
+
+#: inc/dialogues/dialogues-core.php:429
+msgid "The companions were not found"
+msgstr ""
+
+#: inc/dialogues/dialogues-core.php:430
+msgid "User left the dialogue"
+msgstr ""
+
+#: inc/dialogues/dialogues-core.php:431
+msgid "All users have left the dialogue"
+msgstr ""
+
+#: inc/dialogues/dialogues-core.php:763
+msgid "All dialogues are already grouped"
+msgstr ""
+
+#: inc/dialogues/dialogues-core.php:780
+msgid "Grouping completed successfully"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:284
+msgid "Type a message…"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:320
+msgid "To:"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:322
+msgid "Message:"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:324
+msgid "Notify by email"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:325
+msgid "Send"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:352
+msgid "is typing"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:371 inc/docs/docs-screen.php:252
+#: inc/docs/docs-screen.php:1009
+msgid "Cancel"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:450
+#: inc/dialogues/dialogues-screen.php:451
+msgid "Add"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:474
+#: inc/dialogues/dialogues-screen.php:587
+msgid "Select a dialogue or"
+msgstr ""
+
+#: inc/dialogues/dialogues-screen.php:475
+#: inc/dialogues/dialogues-screen.php:588
+msgid "start new"
+msgstr ""
+
+#: inc/docs/docs-activity.php:46
+msgid "Drag photos and files here"
+msgstr ""
+
+#: inc/docs/docs-activity.php:49 inc/docs/docs-dialogues.php:61
+#: inc/docs/docs-screen.php:86
+msgid "The file is too large"
+msgstr ""
+
+#: inc/docs/docs-ajax.php:264
+msgid "Error"
+msgstr ""
+
+#: inc/docs/docs-core.php:107 inc/docs/docs-core.php:157
+#: inc/docs/docs-core.php:160 inc/docs/docs-screen.php:173
+msgid "New folder"
+msgstr ""
+
+#: inc/docs/docs-core.php:109
+msgid "Private messages"
+msgstr "私信"
+
+#: inc/docs/docs-core.php:126
+msgid "Document"
+msgstr ""
+
+#: inc/docs/docs-core.php:127 inc/docs/docs-core.php:156
+msgid "Add new"
+msgstr ""
+
+#: inc/docs/docs-core.php:129 inc/docs/docs-core.php:158
+msgid "Edit"
+msgstr ""
+
+#: inc/docs/docs-core.php:130
+msgid "Edit document"
+msgstr ""
+
+#: inc/docs/docs-core.php:132 inc/docs/docs-core.php:161
+msgid "Viewing"
+msgstr ""
+
+#: inc/docs/docs-core.php:133
+msgid "Document viewing"
+msgstr ""
+
+#: inc/docs/docs-core.php:134
+msgid "Find a document"
+msgstr ""
+
+#: inc/docs/docs-core.php:135
+msgid "Documents were not found"
+msgstr ""
+
+#: inc/docs/docs-core.php:136 inc/docs/docs-core.php:165
+msgid "Not found in the Recycle Bin"
+msgstr ""
+
+#: inc/docs/docs-core.php:137 inc/docs/docs-core.php:155
+#: inc/docs/docs-core.php:166 inc/docs/docs-screen.php:1295
+msgid "Folder"
+msgstr ""
+
+#: inc/docs/docs-core.php:159
+msgid "Edit folder"
+msgstr ""
+
+#: inc/docs/docs-core.php:162
+msgid "Folder viewing"
+msgstr ""
+
+#: inc/docs/docs-core.php:163
+msgid "Find a folder"
+msgstr ""
+
+#: inc/docs/docs-core.php:164
+msgid "Folders were not found"
+msgstr ""
+
+#: inc/docs/docs-core.php:409
+msgid "Files, that are published in the activity feed"
+msgstr ""
+
+#: inc/docs/docs-core.php:453
+msgid "Files, that are attached to the private messages"
+msgstr ""
+
+#: inc/docs/docs-dialogues.php:58 inc/docs/docs-screen.php:83
+msgid "Drag files here"
+msgstr ""
+
+#: inc/docs/docs-group.php:151
+msgid ""
+"Configuration of document system in a group. You can override creation and "
+"removal options for each specific folder."
+msgstr ""
+
+#: inc/docs/docs-group.php:154
+msgid "Allow documents in a group"
+msgstr ""
+
+#: inc/docs/docs-group.php:156
+msgid "Creates \"Document\" section in the group"
+msgstr ""
+
+#: inc/docs/docs-group.php:157
+msgid "You can create folders, upload files, post links to Internet resources"
+msgstr ""
+
+#: inc/docs/docs-group.php:161
+msgid "Every member of the group can create folders and upload documents"
+msgstr ""
+
+#: inc/docs/docs-group.php:163
+msgid ""
+"By default, only group administrators can create folders and upload documents"
+msgstr ""
+
+#: inc/docs/docs-group.php:164
+msgid ""
+"If this option is selected, all group members will be able to create folders "
+"and publish documents"
+msgstr ""
+
+#: inc/docs/docs-group.php:168
+msgid "Group members can delete other users’ folders and documents"
+msgstr ""
+
+#: inc/docs/docs-group.php:170
+msgid ""
+"By default, only group administrators can delete any folders and documents"
+msgstr ""
+
+#: inc/docs/docs-group.php:171
+msgid ""
+"Regular users can delete only those documents and folders that were created "
+"by them"
+msgstr ""
+
+#: inc/docs/docs-group.php:172
+msgid ""
+"If this option is selected, users will be able to remove other users’ "
+"folders and documents (not only their own)"
+msgstr ""
+
+#: inc/docs/docs-group.php:173
+msgid "Also everyone will be allowed to create folders and publish documents"
+msgstr ""
+
+#: inc/docs/docs-screen.php:52
+msgid "As in group settings"
+msgstr ""
+
+#: inc/docs/docs-screen.php:53
+msgid ""
+"Only the folder owner and administrator can publish and delete documents"
+msgstr ""
+
+#: inc/docs/docs-screen.php:54
+msgid "Everyone can upload documents, but delete only their own"
+msgstr ""
+
+#: inc/docs/docs-screen.php:55
+msgid "Everyone can upload and delete any documents"
+msgstr ""
+
+#: inc/docs/docs-screen.php:88
+msgid "or"
+msgstr ""
+
+#: inc/docs/docs-screen.php:88
+msgid "specify Internet link"
+msgstr ""
+
+#: inc/docs/docs-screen.php:91
+msgid "URL"
+msgstr ""
+
+#: inc/docs/docs-screen.php:92 inc/docs/docs-screen.php:226
+#: inc/docs/docs-screen.php:1002
+msgid "Description"
+msgstr ""
+
+#: inc/docs/docs-screen.php:93 inc/docs/docs-screen.php:399
+#: inc/docs/docs-screen.php:449
+msgid "Publish"
+msgstr ""
+
+#: inc/docs/docs-screen.php:146
+msgid "Folders were not located"
+msgstr ""
+
+#: inc/docs/docs-screen.php:195
+msgid "Folder settings"
+msgstr ""
+
+#: inc/docs/docs-screen.php:197
+msgid "Delete folder"
+msgstr ""
+
+#: inc/docs/docs-screen.php:200
+msgid ""
+"The folder and all of its documents will be moved to the Recycle Bin and "
+"will be deleted permanently in a few days. While the materials are stored in "
+"the Recycle Bin, you can restore them."
+msgstr ""
+
+#: inc/docs/docs-screen.php:224 inc/docs/docs-screen.php:1000
+msgid "Name"
+msgstr ""
+
+#: inc/docs/docs-screen.php:228 inc/docs/docs-screen.php:1004
+msgid "Access mode"
+msgstr ""
+
+#: inc/docs/docs-screen.php:229 inc/docs/docs-screen.php:1005
+#: inc/docs/docs-screen.php:1350
+msgid "Is published"
+msgstr ""
+
+#: inc/docs/docs-screen.php:243
+msgid "Possibilities to upload and delete documents"
+msgstr ""
+
+#: inc/docs/docs-screen.php:250 inc/docs/docs-screen.php:1007
+msgid "Save"
+msgstr "保存"
+
+#: inc/docs/docs-screen.php:342 inc/docs/docs-screen.php:844
+msgid "Access is restricted"
+msgstr ""
+
+#: inc/docs/docs-screen.php:375
+msgid "Documents were not located"
+msgstr ""
+
+#: inc/docs/docs-screen.php:397
+msgid "The document isn’t published and only you can access it"
+msgstr ""
+
+#: inc/docs/docs-screen.php:421
+msgid ""
+"The document is in the Recycle Bin and will be deleted permanently in a few "
+"days. While it hasn’t happened, you can restore it or delete from the "
+"Recycle Bin by yourself."
+msgstr ""
+
+#: inc/docs/docs-screen.php:424 inc/docs/docs-screen.php:474
+#: inc/docs/docs-screen.php:608 inc/docs/docs-screen.php:659
+msgid "Delete permanently"
+msgstr ""
+
+#: inc/docs/docs-screen.php:425 inc/docs/docs-screen.php:475
+#: inc/docs/docs-screen.php:607 inc/docs/docs-screen.php:658
+msgid "Restore"
+msgstr ""
+
+#: inc/docs/docs-screen.php:447
+msgid "The folder isn’t published and only you can access it"
+msgstr ""
+
+#: inc/docs/docs-screen.php:471
+msgid ""
+"The folder is in the Recycle Bin and will be deleted permanently in a few "
+"days. While it hasn’t happened, you can restore it or delete from the "
+"Recycle Bin by yourself."
+msgstr ""
+
+#: inc/docs/docs-screen.php:497
+msgid "Show more"
+msgstr ""
+
+#: inc/docs/docs-screen.php:521
+msgid ""
+"This page displays statistics for all personal documents of user and group "
+"profile"
+msgstr ""
+
+#: inc/docs/docs-screen.php:522
+msgid "Used"
+msgstr ""
+
+#: inc/docs/docs-screen.php:582
+msgid "Download"
+msgstr ""
+
+#: inc/docs/docs-screen.php:586
+msgid "Open"
+msgstr ""
+
+#: inc/docs/docs-screen.php:610
+msgid "Document is in the Recycle Bin"
+msgstr ""
+
+#: inc/docs/docs-screen.php:616
+msgid "Only you can access the document"
+msgstr ""
+
+#: inc/docs/docs-screen.php:661
+msgid "The folder is in the Recycle Bin"
+msgstr ""
+
+#: inc/docs/docs-screen.php:671
+msgid "Only you can access the folder"
+msgstr ""
+
+#: inc/docs/docs-screen.php:791
+msgid "Access level"
+msgstr ""
+
+#: inc/docs/docs-screen.php:921
+msgid "File"
+msgstr ""
+
+#: inc/docs/docs-screen.php:973
+msgid "Document options"
+msgstr ""
+
+#: inc/docs/docs-screen.php:975
+msgid "Delete document"
+msgstr ""
+
+#: inc/docs/docs-screen.php:978
+msgid ""
+"The document will be sent to the Recycle Bin and will be deleted permanently "
+"in a few days. While the document is stored in the Recycle Bin, you can "
+"restore it."
+msgstr ""
+
+#: inc/docs/docs-screen.php:1069
+msgid "Options"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1071 inc/docs/docs-screen.php:1149
+msgid "Publish in the activity feed"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1115
+msgid "link"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1140
+msgid "Show deleted"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1145
+msgid "Settings"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1176
+msgid "Volume"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1193
+msgid "Total volume"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1206
+#, php-format
+msgid "Error %s. Something went wrong"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1327
+msgid "Group"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1350
+msgid "Changed"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1367
+msgid "there"
+msgstr ""
+
+#: inc/docs/docs-screen.php:1382
+msgid "here"
+msgstr ""
+
+#. Name of the plugin
+msgid "MIF BP Customizer"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Плагин расширения возможностей BuddyPress для создания сайта социальной сети."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/alexey-sergeev/mif-bp-customizer"
+msgstr ""
+
+#. Author of the plugin
+msgid "Alexey Sergeev"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/alexey-sergeev"
+msgstr ""

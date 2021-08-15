@@ -1,0 +1,1344 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-01-02 22:37+0300\n"
+"PO-Revision-Date: 2018-01-20 21:18+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 "
+"&& (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+
+#: classes/members-page.php:33
+msgid "Add users"
+msgstr "Добавить пользователя"
+
+#: classes/members-page.php:34 inc/activity-exclude.php:237
+#: inc/custom-background.php:226 inc/profile-privacy.php:484
+#: inc/settings-page-admin.php:197
+msgid "Save the changes"
+msgstr "Сохранить изменения"
+
+#: classes/members-page.php:35
+msgid "Specify usernames you want to add to the list."
+msgstr "Укажите имена пользователей, которых вы хотите добавить в список."
+
+#: classes/members-page.php:178
+msgid "Delete from the list"
+msgstr "Удалить из списка"
+
+#: classes/members-page.php:194
+msgid "Add to list"
+msgstr "Добавить в список"
+
+#: classes/members-page.php:353
+msgid "Specify usernames."
+msgstr "Укажите имена пользователей."
+
+#: classes/members-page.php:354
+msgid "Users were added successfully:"
+msgstr "Пользователи успешно добавлены:"
+
+#: classes/members-page.php:355
+msgid "Users were not found:"
+msgstr "Пользователи не найдены:"
+
+#: classes/members-page.php:356
+msgid "Users are already in the list:"
+msgstr "Пользователи уже присутствуют в списке:"
+
+#: classes/members-page.php:357
+msgid "Can’t add yourself:"
+msgstr "Нельзя добавить самого себя:"
+
+#: classes/members-page.php:358
+msgid "User can’t be added to the list:"
+msgstr "Пользователя нельзя добавить в список:"
+
+#: classes/members-page.php:360
+msgid "Can’t be added:"
+msgstr "Невозможно добавить:"
+
+#: classes/members-page.php:361
+msgid "Error occurred while adding the users:"
+msgstr "Произошла ошибка при добавлении пользователей:"
+
+#: inc/activity-button-customize.php:106
+msgid "Delete post"
+msgstr "Удалить запись"
+
+#: inc/activity-exclude.php:83 inc/activity-exclude.php:120
+msgid "Don’t show posts of this type"
+msgstr "Не показывать записи этого типа"
+
+#: inc/activity-exclude.php:84 inc/activity-exclude.php:121
+#: inc/banned-users.php:117
+msgid "Configuration"
+msgstr "Настройка"
+
+#: inc/activity-exclude.php:182
+msgid "Feed"
+msgstr "Лента"
+
+#: inc/activity-exclude.php:207
+msgid "Activity feed options"
+msgstr "Параметры ленты активности"
+
+#: inc/activity-exclude.php:218
+msgid ""
+"Specify elements of the activity feed, that should be displayed on your main "
+"page. Blocking of these elements is also available in the activity feed of the "
+"main page."
+msgstr ""
+"Укажите элементы ленты активности, которые должны отображаться на вашей главной "
+"странице. Блокировка этих элементов также доступна и в самой ленте главной "
+"страницы."
+
+#: inc/activity-exclude.php:255
+msgid "The list of activity items is saved."
+msgstr "Список элементов активности сохранён."
+
+#: inc/activity-exclude.php:272
+msgid "Message in the activity feed"
+msgstr "Сообщение в ленте активности"
+
+#: inc/activity-exclude.php:273
+msgid "Repost in the activity feed"
+msgstr "Репост записи в ленте активности"
+
+#: inc/activity-exclude.php:274
+msgid "Comment in the activity feed"
+msgstr "Комментарий в ленте активности"
+
+#: inc/activity-exclude.php:275 inc/docs/docs-core.php:123
+#: inc/docs/docs-core.php:126
+msgid "New document"
+msgstr "Новый документ"
+
+#: inc/activity-exclude.php:277
+msgid "Message in the forum"
+msgstr "Сообщение в форуме"
+
+#: inc/activity-exclude.php:278
+msgid "Forum topic"
+msgstr "Тема форума"
+
+#: inc/activity-exclude.php:280
+msgid "Post on site"
+msgstr "Запись на сайте"
+
+#: inc/activity-exclude.php:281
+msgid "Comment on the site"
+msgstr "Комментарий на сайте"
+
+#: inc/activity-exclude.php:282
+msgid "Message on the course page"
+msgstr "Сообщение на странице курса"
+
+#: inc/activity-exclude.php:284
+msgid "New user"
+msgstr "Новый пользователь"
+
+#: inc/activity-exclude.php:285
+msgid "Someone made friends with each other"
+msgstr "Кто-то подружился друг с другом"
+
+#: inc/activity-exclude.php:286
+msgid "New avatar"
+msgstr "Новый аватар"
+
+#: inc/activity-exclude.php:287
+msgid "Group creation"
+msgstr "Создание группы"
+
+#: inc/activity-exclude.php:288
+msgid "Joining the group"
+msgstr "Вступление в группу"
+
+#: inc/activity-exclude.php:299
+msgid "Messages and documents"
+msgstr "Сообщения и документы"
+
+#: inc/activity-exclude.php:300
+msgid "Forums"
+msgstr "Форумы"
+
+#: inc/activity-exclude.php:301 inc/activity-stream.php:102
+msgid "Sites"
+msgstr "Сайты"
+
+#: inc/activity-exclude.php:302
+msgid "User actions"
+msgstr "Действия пользователей"
+
+#: inc/activity-exclude.php:303
+msgid "Other"
+msgstr "Прочее"
+
+#: inc/activity-stream.php:59
+msgid "Whole feed"
+msgstr "Вся лента"
+
+#: inc/activity-stream.php:120
+msgid "Courses"
+msgstr "Курсы"
+
+#: inc/banned-users-admin.php:24 inc/banned-users-admin.php:32
+msgid "User blockings"
+msgstr "Блокировки пользователей"
+
+#: inc/banned-users-admin.php:33
+msgid "This page displays information about user blockings in BuddyPress network."
+msgstr ""
+"На этой странице представлена информация о блокировках пользователей в сети "
+"BuddyPress."
+
+#: inc/banned-users.php:77
+msgid "Blockings"
+msgstr "Блокировки"
+
+#: inc/banned-users.php:80 inc/settings-page-admin.php:75
+msgid "User blocking"
+msgstr "Блокировка пользователей"
+
+#: inc/banned-users.php:81
+msgid ""
+"The list of users, for whom contacts with you are restricted. These users can’t "
+"offer friendship, leave comments and press \"Like\" for your posts. Their "
+"information is not shown in the activity feed of your page. You can change the "
+"blocking status here or on the pages of users themselves."
+msgstr ""
+"Список пользователей, для которых ограничены контакты с вами. Эти пользователи "
+"не могут предлагать дружбу, оставлять комментарии и нажимать «Нравится» для "
+"ваших записей. Их информация не отображается в ленте активности вашей страницы. "
+"Изменить статус блокировки вы можете здесь или на странице самих пользователей."
+
+#: inc/banned-users.php:173
+msgid "Take off the restrictions"
+msgstr "Снять ограничения"
+
+#: inc/banned-users.php:173
+msgid "Restrict contacts"
+msgstr "Ограничить контакты"
+
+#: inc/custom-background.php:31 inc/custom-background.php:100
+msgid "Background"
+msgstr "Фон"
+
+#: inc/custom-background.php:41 inc/custom-background.php:122
+#: inc/settings-page-admin.php:127
+msgid "Background image"
+msgstr "Фоновое изображение"
+
+#: inc/custom-background.php:219
+msgid ""
+"The background image is used for the page design. You can select on your "
+"computer and upload JPG, GIF or PNG image."
+msgstr ""
+"Фоновое изображение используется для оформления страницы. Вы можете выбрать на "
+"своем компьютере и загрузить изображение в формате JPG, GIF или PNG."
+
+#: inc/custom-background.php:227
+msgid "Delete file"
+msgstr "Удалить файл"
+
+#: inc/custom-background.php:241
+msgid "Image is removed"
+msgstr "Изображение удалено"
+
+#: inc/custom-background.php:257
+msgid "File upload error"
+msgstr "Ошибка загрузки файла"
+
+#: inc/custom-background.php:262
+#, php-format
+msgid "The file is too large. You can upload file not larger than %s."
+msgstr "Файл слишком большой. Вы можете загрузить файл размером не более %s."
+
+#: inc/custom-background.php:267
+msgid "You forgot to attach a file."
+msgstr "Вы забыли прикрепить файл."
+
+#: inc/custom-background.php:272
+msgid "Invalid file type. You can use only JPG, GIF or PNG images."
+msgstr ""
+"Неверный формат файла. Вы можете использовать только JPG, GIF или PNG "
+"изображения."
+
+#: inc/custom-background.php:279
+#, php-format
+msgid "File upload error: %s"
+msgstr "Ошибка загрузки файла: %s"
+
+#: inc/custom-background.php:298
+msgid "The image is uploaded successfully"
+msgstr "Изображение успешно загружено"
+
+#: inc/dialogues.php:119 inc/settings-page-admin.php:109
+msgid "Dialogues"
+msgstr "Диалоги"
+
+#: inc/dialogues/dialogues-ajax.php:225
+msgid "Error. The users you specified don’t exist"
+msgstr "Ошибка. Указанные вами пользователи не существуют"
+
+#: inc/dialogues/dialogues-ajax.php:311
+msgid "You want to <strong>delete all messages</strong> in this dialogue."
+msgstr "Вы хотите <strong>удалить все сообщения</strong> этого диалога."
+
+#: inc/dialogues/dialogues-ajax.php:313
+msgid "Be careful, this operation <strong>can not be undone</strong>."
+msgstr "Будьте внимательны, эту операцию <strong>нельзя отменить</strong>."
+
+#: inc/dialogues/dialogues-ajax.php:314 inc/dialogues/dialogues-screen.php:88
+#: inc/dialogues/dialogues-screen.php:165 inc/dialogues/dialogues-screen.php:454
+#: inc/docs/docs-screen.php:182 inc/docs/docs-screen.php:548
+#: inc/docs/docs-screen.php:628 inc/docs/docs-screen.php:932
+#: inc/notifications.php:481 templates/notifications-loop.php:14
+msgid "Delete"
+msgstr "Удалить"
+
+#: inc/dialogues/dialogues-ajax.php:315
+msgid "Don’t delete"
+msgstr "Не удалять"
+
+#: inc/dialogues/dialogues-core.php:71
+#, php-format
+msgid "And others (%s in total)"
+msgstr "и другие (всего %s)"
+
+#: inc/dialogues/dialogues-core.php:429
+msgid "The companions were not found"
+msgstr "Собеседники не найдены"
+
+#: inc/dialogues/dialogues-core.php:430
+msgid "User left the dialogue"
+msgstr "Пользователь покинул диалог"
+
+#: inc/dialogues/dialogues-core.php:431
+msgid "All users have left the dialogue"
+msgstr "Все пользователи покинули диалог"
+
+#: inc/dialogues/dialogues-core.php:763
+msgid "All dialogues are already grouped"
+msgstr "Все диалоги уже сгруппированы"
+
+#: inc/dialogues/dialogues-core.php:780
+msgid "Grouping completed successfully"
+msgstr "Группировка выполнена успешно"
+
+#: inc/dialogues/dialogues-screen.php:284
+msgid "Type a message…"
+msgstr "Напишите сообщение..."
+
+#: inc/dialogues/dialogues-screen.php:320
+msgid "To:"
+msgstr "Кому:"
+
+#: inc/dialogues/dialogues-screen.php:322
+msgid "Message:"
+msgstr "Сообщение:"
+
+#: inc/dialogues/dialogues-screen.php:324
+msgid "Notify by email"
+msgstr "Оповестить по почте"
+
+#: inc/dialogues/dialogues-screen.php:325
+msgid "Send"
+msgstr "Отправить"
+
+#: inc/dialogues/dialogues-screen.php:352
+msgid "is typing"
+msgstr "печатает"
+
+#: inc/dialogues/dialogues-screen.php:371 inc/docs/docs-screen.php:231
+#: inc/docs/docs-screen.php:962
+msgid "Cancel"
+msgstr "Отменить"
+
+#: inc/dialogues/dialogues-screen.php:372 templates/dialogues-page.php:15
+msgid "New message"
+msgstr "Новое сообщение"
+
+#: inc/dialogues/dialogues-screen.php:450 inc/dialogues/dialogues-screen.php:451
+msgid "Add"
+msgstr "Добавить"
+
+#: inc/dialogues/dialogues-screen.php:474 inc/dialogues/dialogues-screen.php:587
+msgid "Select a dialogue or"
+msgstr "Выберите диалог или"
+
+#: inc/dialogues/dialogues-screen.php:475 inc/dialogues/dialogues-screen.php:588
+msgid "start new"
+msgstr "начните новый"
+
+#: inc/docs.php:82 inc/docs/docs-core.php:120 inc/docs/docs-group.php:48
+#: inc/docs/docs-group.php:49 inc/docs/docs-group.php:150
+#: inc/docs/docs-screen.php:1128 inc/settings-page-admin.php:121
+msgid "Documents"
+msgstr "Документы"
+
+#: inc/docs.php:92 inc/docs/docs-core.php:149 inc/docs/docs-group.php:114
+#: inc/docs/docs-screen.php:724 inc/docs/docs-screen.php:1145
+msgid "Folders"
+msgstr "Папки"
+
+#: inc/docs.php:102 inc/docs/docs-group.php:115
+msgid "Create folder"
+msgstr "Создать папку"
+
+#: inc/docs.php:113
+msgid "Statistics"
+msgstr "Статистика"
+
+#: inc/docs/docs-activity.php:46
+msgid "Drag photos and files here"
+msgstr "Перетащите сюда фотографии или файлы"
+
+#: inc/docs/docs-activity.php:49 inc/docs/docs-dialogues.php:61
+#: inc/docs/docs-screen.php:67
+msgid "The file is too large"
+msgstr "Слишком большой файл"
+
+#: inc/docs/docs-ajax.php:70
+msgid "The document is published"
+msgstr "Документ опубликован"
+
+#: inc/docs/docs-ajax.php:96
+msgid "The folder is published"
+msgstr "Папка опубликована"
+
+#: inc/docs/docs-ajax.php:183
+msgid "Document is restored"
+msgstr "Документ восстановлен"
+
+#: inc/docs/docs-ajax.php:186
+#, php-format
+msgid "Document \"%s\" is deleted permanently"
+msgstr "Документ «%s» окончательно удален"
+
+#: inc/docs/docs-ajax.php:190 inc/docs/docs-ajax.php:200
+msgid "Return"
+msgstr "Вернуться"
+
+#: inc/docs/docs-ajax.php:196
+msgid "The folder and all of the documents, deleted with it, are restored"
+msgstr "Папка и все удалённые вместе с ней документы восстановлены"
+
+#: inc/docs/docs-ajax.php:199
+#, php-format
+msgid "Folder \"%s\" is deleted permanently"
+msgstr "Папка «%s» окончательно удалена"
+
+#: inc/docs/docs-ajax.php:200
+msgid "documents"
+msgstr "документы"
+
+#: inc/docs/docs-ajax.php:263
+msgid "Error"
+msgstr "Ошибка"
+
+#: inc/docs/docs-core.php:102 inc/docs/docs-core.php:152
+#: inc/docs/docs-core.php:155 inc/docs/docs-screen.php:154
+msgid "New folder"
+msgstr "Новая папка"
+
+#: inc/docs/docs-core.php:103 inc/settings-page-admin.php:59
+msgid "Activity feed"
+msgstr "Лента активности"
+
+#: inc/docs/docs-core.php:104
+msgid "Private messages"
+msgstr "Личные сообщения"
+
+#: inc/docs/docs-core.php:121
+msgid "Document"
+msgstr "Документ"
+
+#: inc/docs/docs-core.php:122 inc/docs/docs-core.php:151
+msgid "Add new"
+msgstr "Добавить"
+
+#: inc/docs/docs-core.php:124 inc/docs/docs-core.php:153
+msgid "Edit"
+msgstr "Редактировать"
+
+#: inc/docs/docs-core.php:125
+msgid "Edit document"
+msgstr "Редактировать документ"
+
+#: inc/docs/docs-core.php:127 inc/docs/docs-core.php:156
+msgid "Viewing"
+msgstr "Просмотр"
+
+#: inc/docs/docs-core.php:128
+msgid "Document viewing"
+msgstr "Просмотр документа"
+
+#: inc/docs/docs-core.php:129
+msgid "Find a document"
+msgstr "Найти документ"
+
+#: inc/docs/docs-core.php:130
+msgid "Documents were not found"
+msgstr "Документы не найдены"
+
+#: inc/docs/docs-core.php:131 inc/docs/docs-core.php:160
+msgid "Not found in the Recycle Bin"
+msgstr "В корзине не найдено"
+
+#: inc/docs/docs-core.php:132 inc/docs/docs-core.php:150
+#: inc/docs/docs-core.php:161 inc/docs/docs-screen.php:1248
+msgid "Folder"
+msgstr "Папка"
+
+#: inc/docs/docs-core.php:154
+msgid "Edit folder"
+msgstr "Редактировать папку"
+
+#: inc/docs/docs-core.php:157
+msgid "Folder viewing"
+msgstr "Просмотр папки"
+
+#: inc/docs/docs-core.php:158
+msgid "Find a folder"
+msgstr "Найти папку"
+
+#: inc/docs/docs-core.php:159
+msgid "Folders were not found"
+msgstr "Папки не найдены"
+
+#: inc/docs/docs-core.php:404
+msgid "Files, that are published in the activity feed"
+msgstr "Файлы, опубликованные в ленте активности"
+
+#: inc/docs/docs-core.php:448
+msgid "Files, that are attached to the private messages"
+msgstr "Файлы, прикрепленные к личным сообщениям"
+
+#: inc/docs/docs-dialogues.php:58 inc/docs/docs-screen.php:64
+msgid "Drag files here"
+msgstr "Перетащите файлы сюда"
+
+#: inc/docs/docs-group.php:151
+msgid ""
+"Configuration of document system in a group. You can override creation and "
+"removal options for each specific folder."
+msgstr ""
+"Настройка системы документов в группе. Параметры по созданию и удалению можно "
+"переопределить для каждой конкретной папки."
+
+#: inc/docs/docs-group.php:154
+msgid "Allow documents in a group"
+msgstr "Разрешить документы в группе"
+
+#: inc/docs/docs-group.php:156
+msgid "Creates \"Document\" section in the group"
+msgstr "Создаёт в группе раздел \"Документы\""
+
+#: inc/docs/docs-group.php:157
+msgid "You can create folders, upload files, post links to Internet resources"
+msgstr ""
+"Можно создавать папки, загружать файлы, размещать ссылки на ресурсы Интернета"
+
+#: inc/docs/docs-group.php:161
+msgid "Every member of the group can create folders and upload documents"
+msgstr "Каждый участник группы может создавать папки и размещать документы"
+
+#: inc/docs/docs-group.php:163
+msgid ""
+"By default, only group administrators can create folders and upload documents"
+msgstr ""
+"По умолчанию создавать папки и размещать документы могут только администраторы "
+"группы"
+
+#: inc/docs/docs-group.php:164
+msgid ""
+"If this option is selected, all group members will be able to create folders "
+"and publish documents"
+msgstr ""
+"При выборе данной опции создавать папки и размещать документы смогут все "
+"участники группы"
+
+#: inc/docs/docs-group.php:168
+msgid "Group members can delete other users’ folders and documents"
+msgstr "Участники группы могут удалять чужие папки и документы"
+
+#: inc/docs/docs-group.php:170
+msgid "By default, only group administrators can delete any folders and documents"
+msgstr ""
+"По умолчанию удалять любые папки и документы могут только администраторы группы"
+
+#: inc/docs/docs-group.php:171
+msgid ""
+"Regular users can delete only those documents and folders that were created by "
+"them"
+msgstr ""
+"Обычные пользователи могут удалять только те папки и документы, которые создали "
+"сами"
+
+#: inc/docs/docs-group.php:172
+msgid ""
+"If this option is selected, users will be able to remove other users’ folders "
+"and documents (not only their own)"
+msgstr ""
+"При выборе данной опции пользователи смогут удалять и чужие папки и документы"
+
+#: inc/docs/docs-group.php:173
+msgid "Also everyone will be allowed to create folders and publish documents"
+msgstr "Также, всем будет разрешено создавать папки и размещать документы"
+
+#: inc/docs/docs-screen.php:34
+msgid "As in group settings"
+msgstr "Как в настройках группы"
+
+#: inc/docs/docs-screen.php:35
+msgid "Only the folder owner and administrator can publish and delete documents"
+msgstr "Только владелец папки и администратор могут размещать и удалять документы"
+
+#: inc/docs/docs-screen.php:36
+msgid "Everyone can upload documents, but delete only their own"
+msgstr "Каждый может размещать документы, но удалять – только свои"
+
+#: inc/docs/docs-screen.php:37
+msgid "Everyone can upload and delete any documents"
+msgstr "Каждый может размещать и удалять любые документы"
+
+#: inc/docs/docs-screen.php:69
+msgid "or"
+msgstr "или"
+
+#: inc/docs/docs-screen.php:69
+msgid "specify Internet link"
+msgstr "укажите ссылку Интернета"
+
+#: inc/docs/docs-screen.php:72
+msgid "URL"
+msgstr ""
+
+#: inc/docs/docs-screen.php:73 inc/docs/docs-screen.php:207
+#: inc/docs/docs-screen.php:955
+msgid "Description"
+msgstr "Описание"
+
+#: inc/docs/docs-screen.php:74 inc/docs/docs-screen.php:378
+#: inc/docs/docs-screen.php:428
+msgid "Publish"
+msgstr "Опубликовать"
+
+#: inc/docs/docs-screen.php:127
+msgid "Folders were not located"
+msgstr "Папки не обнаружены"
+
+#: inc/docs/docs-screen.php:176
+msgid "Folder settings"
+msgstr "Настройки папки"
+
+#: inc/docs/docs-screen.php:178
+msgid "Delete folder"
+msgstr "Удалить папку"
+
+#: inc/docs/docs-screen.php:181
+msgid ""
+"The folder and all of its documents will be moved to the Recycle Bin and will "
+"be deleted permanently in a few days. While the materials are stored in the "
+"Recycle Bin, you can restore them."
+msgstr ""
+"Папка и все её документы будут перемещены в корзину и через несколько дней "
+"окончательно удалены. Пока материалы хранятся в корзине, вы их сможете "
+"восстановить."
+
+#: inc/docs/docs-screen.php:205 inc/docs/docs-screen.php:953
+msgid "Name"
+msgstr "Название"
+
+#: inc/docs/docs-screen.php:209 inc/docs/docs-screen.php:957
+msgid "Access mode"
+msgstr "Режим доступа"
+
+#: inc/docs/docs-screen.php:210 inc/docs/docs-screen.php:958
+#: inc/docs/docs-screen.php:1303
+msgid "Is published"
+msgstr "Опубликовано"
+
+#: inc/docs/docs-screen.php:222
+msgid "Possibilities to upload and delete documents"
+msgstr "Возможности размещения и удаления документов"
+
+#: inc/docs/docs-screen.php:229 inc/docs/docs-screen.php:960
+msgid "Save"
+msgstr "Сохранить"
+
+#: inc/docs/docs-screen.php:321 inc/docs/docs-screen.php:797
+msgid "Access is restricted"
+msgstr "Доступ ограничен"
+
+#: inc/docs/docs-screen.php:354
+msgid "Documents were not located"
+msgstr "Документы не обнаружены"
+
+#: inc/docs/docs-screen.php:376
+msgid "The document isn’t published and only you can access it"
+msgstr "Документ не опубликован и доступен только вам"
+
+#: inc/docs/docs-screen.php:400
+msgid ""
+"The document is in the Recycle Bin and will be deleted permanently in a few "
+"days. While it hasn’t happened, you can restore it or delete from the Recycle "
+"Bin by yourself."
+msgstr ""
+"Документ находится в корзине и через некоторое время будет окончательно удален. "
+"Пока это не произошло, вы можете его восстановить или самостоятельно удалить из "
+"корзины."
+
+#: inc/docs/docs-screen.php:403 inc/docs/docs-screen.php:453
+#: inc/docs/docs-screen.php:571 inc/docs/docs-screen.php:622
+msgid "Delete permanently"
+msgstr "Удалить совсем"
+
+#: inc/docs/docs-screen.php:404 inc/docs/docs-screen.php:454
+#: inc/docs/docs-screen.php:570 inc/docs/docs-screen.php:621
+msgid "Restore"
+msgstr "Восстановить"
+
+#: inc/docs/docs-screen.php:426
+msgid "The folder isn’t published and only you can access it"
+msgstr "Папка не опубликована и доступна только вам"
+
+#: inc/docs/docs-screen.php:450
+msgid ""
+"The folder is in the Recycle Bin and will be deleted permanently in a few days. "
+"While it hasn’t happened, you can restore it or delete from the Recycle Bin by "
+"yourself."
+msgstr ""
+"Папка находится в корзине и через некоторое время будет окончательно удалена. "
+"Пока это не произошло, вы можете её восстановить или самостоятельно удалить из "
+"корзины."
+
+#: inc/docs/docs-screen.php:476
+msgid "Show more"
+msgstr "Показать ещё"
+
+#: inc/docs/docs-screen.php:500
+msgid ""
+"This page displays statistics for all personal documents of user and group "
+"profile"
+msgstr ""
+"На этой странице отображается статистика по всем личным документам профиля "
+"пользователя и групп"
+
+#: inc/docs/docs-screen.php:501
+msgid "Used"
+msgstr "Занято"
+
+#: inc/docs/docs-screen.php:554
+msgid "Download"
+msgstr "Скачать"
+
+#: inc/docs/docs-screen.php:558
+msgid "Open"
+msgstr "Открыть"
+
+#: inc/docs/docs-screen.php:573
+msgid "Document is in the Recycle Bin"
+msgstr "Документ находится в корзине"
+
+#: inc/docs/docs-screen.php:579
+msgid "Only you can access the document"
+msgstr "Документ доступен только вам"
+
+#: inc/docs/docs-screen.php:624
+msgid "The folder is in the Recycle Bin"
+msgstr "Папка находится в корзине"
+
+#: inc/docs/docs-screen.php:634
+msgid "Only you can access the folder"
+msgstr "Папка доступна только вам"
+
+#: inc/docs/docs-screen.php:744
+msgid "Access level"
+msgstr "Уровень доступа"
+
+#: inc/docs/docs-screen.php:874
+msgid "File"
+msgstr "Файл"
+
+#: inc/docs/docs-screen.php:926
+msgid "Document options"
+msgstr "Параметры документа"
+
+#: inc/docs/docs-screen.php:928
+msgid "Delete document"
+msgstr "Удалить документ"
+
+#: inc/docs/docs-screen.php:931
+msgid ""
+"The document will be sent to the Recycle Bin and will be deleted permanently in "
+"a few days. While the document is stored in the Recycle Bin, you can restore it."
+msgstr ""
+"Документ будет отправлен в корзину и через несколько дней окончательно удален. "
+"Пока документ хранятся в корзине, вы сможете его восстановить."
+
+#: inc/docs/docs-screen.php:1022
+msgid "Options"
+msgstr "Параметры"
+
+#: inc/docs/docs-screen.php:1024 inc/docs/docs-screen.php:1102
+msgid "Publish in the activity feed"
+msgstr "Опубликовать в ленте активности"
+
+#: inc/docs/docs-screen.php:1068
+msgid "link"
+msgstr "ссылка"
+
+#: inc/docs/docs-screen.php:1093
+msgid "Show deleted"
+msgstr "Показать удалённые"
+
+#: inc/docs/docs-screen.php:1098
+msgid "Settings"
+msgstr "Настройки"
+
+#: inc/docs/docs-screen.php:1129
+msgid "Volume"
+msgstr "Объем"
+
+#: inc/docs/docs-screen.php:1146
+msgid "Total volume"
+msgstr "Общий объем"
+
+#: inc/docs/docs-screen.php:1159
+#, php-format
+msgid "Error %s. Something went wrong"
+msgstr "Ошибка %s. Что-то пошло не так"
+
+#: inc/docs/docs-screen.php:1280
+msgid "Group"
+msgstr "Группа"
+
+#: inc/docs/docs-screen.php:1303
+msgid "Changed"
+msgstr "Изменено"
+
+#: inc/docs/docs-screen.php:1320
+msgid "there"
+msgstr "туда"
+
+#: inc/docs/docs-screen.php:1335
+msgid "here"
+msgstr "сюда"
+
+#: inc/edit-group-slug.php:30 inc/edit-group-slug.php:48
+msgid "Address"
+msgstr "Адрес"
+
+#: inc/edit-group-slug.php:49
+msgid "Configuration of the group name in the address bar"
+msgstr "Настройка имени группы в адресной строке"
+
+#: inc/edit-group-slug.php:50
+msgid ""
+"The group name in the address bar is set automatically based on the group name, "
+"specified when it was created. You can leave the existing name or set another "
+"one."
+msgstr ""
+"Имя группы в адресной строке задается автоматически на основе названия группы, "
+"указанного при её создании. Вы можете оставить существующее имя или указать "
+"другое."
+
+#: inc/edit-group-slug.php:57
+msgid ""
+"** Придумайте адрес, который будет коротким и запоминающимся. Вы можете "
+"использовать строчные латинские буквы, цифры, подчёркивание и тире."
+msgstr ""
+"** Придумайте адрес, который будет коротким и запоминающимся. Вы можете "
+"использовать строчные латинские буквы, цифры, подчёркивание и тире."
+
+#: inc/edit-group-slug.php:82
+msgid "The group address has been successfully changed."
+msgstr "Адрес группы успешно изменён."
+
+#: inc/edit-group-slug.php:83
+msgid "The group address has not changed."
+msgstr "Адрес группы не изменился."
+
+#: inc/edit-group-slug.php:84
+msgid "Specified address is already in use. Please, come up with another one."
+msgstr "Указанный адрес уже используется. Пожалуйста, придумайте другой."
+
+#: inc/edit-group-slug.php:85
+msgid "Such address is not allowed. Please, come up with another one."
+msgstr "Такой адрес не допускается. Пожалуйста, придумайте другой."
+
+#: inc/edit-group-slug.php:86
+msgid ""
+"The address contains invalid characters. Use only lowercase Latin letters, "
+"numbers, underscore and dash."
+msgstr ""
+"Адрес содержит недопустимые символы. Используйте только строчные латинские "
+"буквы, цифры, подчёркивание и тире."
+
+#: inc/edit-group-slug.php:107 inc/edit-group-slug.php:122
+msgid "Error occurred while changing the address."
+msgstr "При изменении адреса произошла ошибка."
+
+#: inc/followers.php:73
+msgid "Add to friends"
+msgstr "Добавить в друзья"
+
+#: inc/followers.php:78 inc/followers.php:396
+msgid "Accept the friendship"
+msgstr "Принять дружбу"
+
+#: inc/followers.php:85 inc/followers.php:400
+msgid "Cancel the friendship"
+msgstr "Отменить дружбу"
+
+#: inc/followers.php:90 inc/followers.php:404
+msgid "Unsubscribe"
+msgstr "Отписаться"
+
+#: inc/followers.php:198
+msgid "Not now"
+msgstr "Не сейчас"
+
+#: inc/followers.php:408
+msgid "Subscribe"
+msgstr "Подписаться"
+
+#: inc/followers.php:495 inc/settings-page-admin.php:97
+msgid "Subscribers"
+msgstr "Подписчики"
+
+#: inc/followers.php:522
+msgid "Reading"
+msgstr "Читаю"
+
+#: inc/functions.php:186
+msgid "of January"
+msgstr "января"
+
+#: inc/functions.php:187
+msgid "of February"
+msgstr "февраля"
+
+#: inc/functions.php:188
+msgid "of March"
+msgstr "марта"
+
+#: inc/functions.php:189
+msgid "of April"
+msgstr "апреля"
+
+#: inc/functions.php:190
+msgid "of May"
+msgstr "мая"
+
+#: inc/functions.php:191
+msgid "of June"
+msgstr "июня"
+
+#: inc/functions.php:192
+msgid "of July"
+msgstr "июля"
+
+#: inc/functions.php:193
+msgid "of August"
+msgstr "августа"
+
+#: inc/functions.php:194
+msgid "of September"
+msgstr "сентября"
+
+#: inc/functions.php:195
+msgid "of October"
+msgstr "октября"
+
+#: inc/functions.php:196
+msgid "of November"
+msgstr "ноября"
+
+#: inc/functions.php:197
+msgid "of December"
+msgstr "декабря"
+
+#: inc/functions.php:214
+msgid "yesterday"
+msgstr "вчера"
+
+#: inc/functions.php:252
+msgid "B"
+msgstr "Б"
+
+#: inc/functions.php:253
+msgid "kB"
+msgstr "Кб"
+
+#: inc/functions.php:254
+msgid "MB"
+msgstr "Мб"
+
+#: inc/functions.php:255
+msgid "Gb"
+msgstr "Гб"
+
+#: inc/functions.php:256
+msgid "TB"
+msgstr "Тб"
+
+#: inc/functions.php:257
+msgid "PB"
+msgstr "Пб"
+
+#: inc/groups-widget.php:27
+msgid "Simple, smart and fast widget of social networks groups"
+msgstr "Простой, умный и быстрый виджет групп социальной сети"
+
+#: inc/groups-widget.php:30
+msgid "Groups"
+msgstr "Группы"
+
+#: inc/groups-widget.php:200 inc/members-widget.php:220
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: inc/groups-widget.php:202 inc/members-widget.php:222
+msgid "Number of avatars:"
+msgstr "Количество аватарок:"
+
+#: inc/groups-widget.php:204 inc/members-widget.php:226
+msgid "Selection options:"
+msgstr "Параметры выбора:"
+
+#: inc/groups-widget.php:206 inc/members-widget.php:228
+msgid "Active"
+msgstr "Активные"
+
+#: inc/groups-widget.php:207 inc/members-widget.php:229
+msgid "Popular"
+msgstr "Популярные"
+
+#: inc/groups-widget.php:208 inc/members-widget.php:230
+msgid "Random"
+msgstr "Случайные"
+
+#: inc/groups-widget.php:209 inc/members-widget.php:231
+msgid "Cache lifetime:"
+msgstr "Срок хранения в кэше:"
+
+#: inc/groups-widget.php:210 inc/members-widget.php:232
+msgid "sec"
+msgstr "сек."
+
+#: inc/members-widget.php:27
+msgid "Simple, smart and fast site members widget"
+msgstr "Простой, умный и быстрый виджет участников сайта"
+
+#: inc/members-widget.php:30
+msgid "Site members"
+msgstr "Участники сайта"
+
+#: inc/notifications.php:288 inc/settings-page-admin.php:103
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: inc/notifications.php:461 templates/notifications-loop.php:15
+msgid "Mark as read"
+msgstr "Отметить как прочитанное"
+
+#: inc/notifications.php:465
+msgid "Mark as unread"
+msgstr "Отметить как непрочитанное"
+
+#: inc/notifications.php:524
+msgid "Read more"
+msgstr "Читать далее"
+
+#: inc/notifications.php:551
+msgid "New notifications"
+msgstr "Новых уведомлений"
+
+#: inc/profile-privacy.php:354
+msgid "Only authorized users can access the page"
+msgstr "Страница доступна только авторизованным пользователям."
+
+#: inc/profile-privacy.php:354
+msgid "Access to the page is restricted."
+msgstr "Доступ к странице ограничен."
+
+#: inc/profile-privacy.php:426
+msgid "Privacy"
+msgstr "Приватность"
+
+#: inc/profile-privacy.php:451
+msgid "Profile access options"
+msgstr "Параметры доступа к профилю"
+
+#: inc/profile-privacy.php:459
+msgid "Specify who can view your profile page."
+msgstr "Укажите, кто может просматривать страницу вашего профиля."
+
+#: inc/profile-privacy.php:509
+msgid "All users"
+msgstr "Все пользователи"
+
+#: inc/profile-privacy.php:509
+msgid ""
+"The page will be available either to authorized or not authorized users. Your "
+"posts and documents will be publically available on the Internet"
+msgstr ""
+"Страница будет доступна как авторизованным, так и не авторизованным "
+"пользователям. Ваши записи и документы будут публично представлены в Интернете"
+
+#: inc/profile-privacy.php:510
+msgid "Authorized users"
+msgstr "Авторизованные пользователи"
+
+#: inc/profile-privacy.php:510
+msgid ""
+"Only users, who work on site, having specified their login and password can "
+"access the page"
+msgstr ""
+"Страница будет доступна только тем пользователям, кто работает на сайте, указав "
+"свой логин и пароль"
+
+#: inc/profile-privacy.php:511
+msgid "My subscribers"
+msgstr "Мои подписчики"
+
+#: inc/profile-privacy.php:511
+msgid "Users, who subscribed to me, who I read and my friends can access the page"
+msgstr ""
+"Страница будет доступна тем, кто подписался на меня, кого читаю я, а также моим "
+"друзьям"
+
+#: inc/profile-privacy.php:512
+msgid "Those, who I follow"
+msgstr "Те, кого читаю я"
+
+#: inc/profile-privacy.php:512
+msgid "Users, who I follow and my friends can access the page"
+msgstr "Страница будет доступна тем, кого читаю я, а также моим друзьям"
+
+#: inc/profile-privacy.php:513
+msgid "My friends"
+msgstr "Мои друзья"
+
+#: inc/profile-privacy.php:513
+msgid "Only my friends can access the page"
+msgstr "Страница будет доступна только моим друзьям"
+
+#: inc/profile-privacy.php:514
+msgid "Only me"
+msgstr "Только я"
+
+#: inc/profile-privacy.php:514
+msgid "No one can access the page. Only I can view my posts and documents"
+msgstr "Страница закрыта для всех. Только я могу смотреть свои записи и документы"
+
+#: inc/repost-button.php:173
+msgid "Post Update"
+msgstr "запись обновлена"
+
+#: inc/repost-button.php:309
+msgid "shared a post"
+msgstr "поделился записью"
+
+#: inc/settings-page-admin.php:21 inc/settings-page-admin.php:28
+msgid "BP Customizer plugin configuration"
+msgstr "Настройка плагина BP Customizer"
+
+#: inc/settings-page-admin.php:21
+msgid "BP Customizer"
+msgstr ""
+
+#: inc/settings-page-admin.php:29
+msgid ""
+"MIF BP Customizer plugin adds new features to BuddyPress. Here you can specify "
+"what exactly should be applied in your social network."
+msgstr ""
+"Плагин MIF BP Customizer добавляет новые возможности к BuddyPress. Здесь вы "
+"можете указать, что именно надо применить в вашей социальной сети."
+
+#: inc/settings-page-admin.php:63
+msgid "Special activity feed"
+msgstr "Особая лента активности"
+
+#: inc/settings-page-admin.php:65
+msgid ""
+"Changes the appearance and behavior of the activity feed on users’ pages (on "
+"personal page - \"Whole feed\", on other users’ pages – only their activity). "
+"Allows to use content blocking tools."
+msgstr ""
+"Меняет вид и поведение ленты активности на страницах пользователей (на личной "
+"старнице - \"Вся лента\", на страницах других пользователей - только их "
+"активность). Позволяет использовать инструменты блокировки контента."
+
+#: inc/settings-page-admin.php:69
+msgid "Post types of activity feed"
+msgstr "Типы записей ленты активности"
+
+#: inc/settings-page-admin.php:71
+msgid ""
+"Allows to specify activity types, which should be displayed in user’s feed "
+"(\"Special activity feed\" option is required)."
+msgstr ""
+"Позволяет указывать типы активности, которые должны отображаться в ленте "
+"пользователя (требуется установка опции \"Особая лента активности\")."
+
+#: inc/settings-page-admin.php:77
+msgid ""
+"Allows to maintain a list of users, whose information is blocked in your "
+"activity feed (\"Special activity feed\" option is required)."
+msgstr ""
+"Позволяет вести списки пользователей, информация которых блокируется в вашей "
+"ленте активности (требуется установка опции \"Особая лента активности\")."
+
+#: inc/settings-page-admin.php:81
+msgid "Site behavior"
+msgstr "Поведение сайта"
+
+#: inc/settings-page-admin.php:85
+msgid "Profile as a homepage"
+msgstr "Профиль как домашняя страница"
+
+#: inc/settings-page-admin.php:87
+msgid "Set user profile as his home page."
+msgstr "Назначить профиль пользователя его домашней страницей."
+
+#: inc/settings-page-admin.php:91
+msgid "Profile privacy"
+msgstr "Приватность профиля"
+
+#: inc/settings-page-admin.php:93
+msgid "Allow users to restrict access to their profiles."
+msgstr "Разрешить пользователям ограничивать доступ к своему профилю."
+
+#: inc/settings-page-admin.php:99
+msgid ""
+"Enable subscription option for user updates (subscription = one-way friendship)."
+msgstr ""
+"Включить возможность подписки на обновления пользователей (подписка = "
+"односторонняя дружба)."
+
+#: inc/settings-page-admin.php:105
+msgid "Enable advanced notification mode."
+msgstr "Включить продвинутый режим уведомлений."
+
+#: inc/settings-page-admin.php:111
+msgid ""
+"Enable simple and convenient dialogues instead of the standard system of "
+"private messages."
+msgstr ""
+"Включить простые и удобные диалоги вместо стандартной системы личных сообщений."
+
+#: inc/settings-page-admin.php:115
+msgid "Pop-up messages"
+msgstr "Всплывающие сообщения"
+
+#: inc/settings-page-admin.php:117
+msgid ""
+"Enable mechanism of pop-up messages. Echo-server configuration is required."
+msgstr "Включить механизм всплывающих сообщений. Требуется настройка эхо-сервера."
+
+#: inc/settings-page-admin.php:123
+msgid "Documents and files upload"
+msgstr "Загрузка файлов и документов"
+
+#: inc/settings-page-admin.php:129
+msgid "Allow to use custom image as a background for user profile or group."
+msgstr ""
+"Разрешить использовать пользовательское изображение в качестве фона для профиля "
+"пользователя или группы."
+
+#: inc/settings-page-admin.php:133
+msgid "Group address"
+msgstr "Адрес группы"
+
+#: inc/settings-page-admin.php:135
+msgid "Allow to change the group address in its settings and at creation."
+msgstr "Разрешить изменять адрес группы в её настройках и при создании."
+
+#: inc/settings-page-admin.php:139
+msgid "\"Like\" button"
+msgstr "Кнопка «Нравится»"
+
+#: inc/settings-page-admin.php:141
+msgid "Allow to use the \"Like\" button."
+msgstr "Разрешить использовать кнопку «Нравится»."
+
+#: inc/settings-page-admin.php:145
+msgid "\"Repost\" button"
+msgstr "Кнопка «Репост»"
+
+#: inc/settings-page-admin.php:147
+msgid "Allow to use the \"Repost\" button."
+msgstr "Разрешить использовать кнопку «Репост»."
+
+#: inc/settings-page-admin.php:151
+msgid "\"Favorite\", \"Delete\" buttons"
+msgstr "Кнопки «Избранное», «Удалить»"
+
+#: inc/settings-page-admin.php:153
+msgid "Use special buttons \"Favorite\", \"Remove\"."
+msgstr "Использовать особые кнопки  «Избранное», «Удалить»."
+
+#: inc/settings-page-admin.php:161
+msgid "Visual elements"
+msgstr "Визуальные элементы"
+
+#: inc/settings-page-admin.php:165
+msgid "Site members widget"
+msgstr "Виджет участников сайта"
+
+#: inc/settings-page-admin.php:167
+msgid ""
+"Allow to use site member widget. Displays member’s avatars in the widget area."
+msgstr ""
+"Разрешить использовать виджет участников сайта. Показывает аватары участников в "
+"области виджетов."
+
+#: inc/settings-page-admin.php:171
+msgid "Group widget"
+msgstr "Виджет групп"
+
+#: inc/settings-page-admin.php:173
+msgid "Allow to use group widget. Displays group avatars in the widget area."
+msgstr ""
+"Разрешить использовать виджет групп. Показывает аватры групп в области виджетов."
+
+#: inc/settings-page-admin.php:209
+msgid "Authorization error"
+msgstr "Ошибка авторизации"
+
+#: inc/settings-page-admin.php:223
+msgid "Changes saved"
+msgstr "Изменения сохранены"
+
+#: templates/dialogues-page.php:9
+msgid "Fix"
+msgstr "Зафиксировать"
+
+#: templates/dialogues-page.php:16
+msgid "Update"
+msgstr "Обновить"
+
+#: templates/dialogues-page.php:17
+msgid "Group dialogues"
+msgstr "Группировать диалоги"
+
+#: templates/dialogues-page.php:26
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/notifications-loop.php:12
+msgid "All notifications"
+msgstr "Все уведомления"

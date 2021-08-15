@@ -1,0 +1,165 @@
+::selection {
+    background: #91D5FF;
+    color: #002766;
+}
+
+::-moz-selection {
+    background: #91D5FF;
+    color: #002766;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128,128,128,.4);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #40A9FF;
+}
+
+::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: rgba(0,0,0,.05);
+}
+
+html,
+body {
+    font-family: Noto Sans CJK SC,Sourse Han Sans CN,'思源黑体 CN',Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    font-size: 16px;
+}
+
+body:hover>* {
+    opacity: .9;
+}
+
+body>*:hover,
+body>*:focus {
+    opacity: 1;
+}
+
+body>* {
+    transition: all 1s ease;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2.44rem;
+}
+
+h2 {
+    font-size: 1.95rem;
+}
+
+h3 {
+    font-size: 1.56rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: .8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #595959;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+    padding: 0 0 0 2rem;
+    border-left: 4px solid #1890FF;
+    color: #595959;
+}
+
+blockquote.d4pbbc-quote {
+    position: relative;
+    padding: 1rem;
+    border: 4px solid #91D5FF;
+    border-radius: .6rem;
+    user-select: none;
+}
+
+blockquote.d4pbbc-quote:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #91D5FF;
+    font-size: 4rem;
+    content: '”';
+    opacity: .5;
+}
+blockquote.d4pbbc-quote:before {
+    content:  "";
+    width: 0;
+    height: 0;
+    border: 0.4em solid transparent;
+    border-bottom-color: #91d5ff;
+    border-right-color: #91d5ff;
+    display:  block;
+    transform: rotate(45deg);
+    position:  absolute;
+    bottom: calc(4px + -0.8em);
+}
+ol { counter-reset: item; }
+ul li,ol li { display: block; }
+ol li:before {
+content: counter(item) ". ";
+counter-increment: item;
+color: #888;
+position:  absolute;
+left: 0.25em;
+transition:all 0.2s ease-in-out;
+}
+ol:hover li:before{
+color: #1890ff;
+}
+ul,ol {
+    padding-left:0
+}
+
+ul li, ol li {
+    padding-left: 2rem;
+    margin: 0;
+    position: relative
+}
+
+ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .5em;
+    left: .25rem;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition:all 0.2s ease-in-out;
+}
+ul li:before {
+    background-color: #888;
+}
+ul:hover li:before {
+    background-color: #1890ff;
+}

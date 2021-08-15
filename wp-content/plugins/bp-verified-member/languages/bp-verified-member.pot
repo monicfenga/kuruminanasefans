@@ -1,0 +1,282 @@
+# Copyright (C) 2021 bp-verified-member
+# This file is distributed under the same license as the bp-verified-member package.
+msgid ""
+msgstr ""
+"Project-Id-Version: bp-verified-member\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Themosaurus <support@themosaurus.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: placeholders are opening and closing <a> tag, linking to BuddyPress plugin
+#: bp-verified-member.php:37
+msgid "Verified Member for BuddyPress requires %1$sBuddyPress%2$s to be installed and activated."
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:80
+msgid "Click to unverify"
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:81
+msgid "User belongs to a verified role"
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:82
+msgid "Click to verify"
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:99, admin/settings/class-bp-verified-member-settings.php:60
+msgid "Verified"
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:163
+msgid "Verify"
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:164
+msgid "Unverify"
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:203
+msgid "Verified %s user."
+msgid_plural "Verified %s users."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bp-verified-member-admin.php:209
+msgid "Unverified %s user."
+msgid_plural "Unverified %s users."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bp-verified-member-admin.php:235
+msgid "%1$s user have recently requested to be verified."
+msgid_plural "%1$s users have recently requested to be verified."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bp-verified-member-admin.php:238
+msgid "View requests"
+msgstr ""
+
+#: admin/class-bp-verified-member-admin.php:311
+msgid "Verification Requests %s"
+msgstr ""
+
+#: inc/class-bp-verified-member.php:103
+msgid "Settings"
+msgstr ""
+
+#: inc/class-bp-verified-member.php:805
+msgid "Request Verification"
+msgstr ""
+
+#: inc/class-bp-verified-member.php:797
+msgid "Pending Verification..."
+msgstr ""
+
+#: inc/class-bp-verified-member.php:844
+msgid "Request Sent!"
+msgstr ""
+
+#: admin/meta-box/class-bp-verified-member-meta-box.php:46
+msgid "Verify Member"
+msgstr ""
+
+#: admin/meta-box/class-bp-verified-member-meta-box.php:73, admin/settings/class-bp-verified-member-settings.php:104, admin/settings/class-bp-verified-member-settings.php:455
+msgid "Verified Member"
+msgstr ""
+
+#: admin/meta-box/class-bp-verified-member-meta-box.php:80
+msgid "Mark this member as verified"
+msgstr ""
+
+#: admin/meta-box/class-bp-verified-member-meta-box.php:76
+msgid "This user belongs to a verified role. If you wish to unverify this user, please assign another role to them."
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:63
+msgid "Unverified"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:82, admin/settings/class-bp-verified-member-settings.php:101
+msgid "Verified Member Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:83
+msgid "Verified Member for BuddyPress"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:142
+msgid "Verification Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:145
+msgid "Verified Roles"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:146
+msgid "Automatically grant verified badge to the following roles:"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:151
+msgid "Enable Verification Requests"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:152
+msgid "Display a button on user profiles to allow users to send a verification request. The requests will then be displayed for admins in the \"Verification Requests\" view in the users table."
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:158
+msgid "Verified badge"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:161
+msgid "Verified Badge Color"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:165
+msgid "Verified Badge Tooltip Content"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:166
+msgid "Content of the tooltip displayed when hovering on a verified badge. Empty for no tooltip."
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:172
+msgid "Unverified Badge"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:175
+msgid "Display Unverified Badge"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:176
+msgid "Display an unverified badge for users who are not verified."
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:180
+msgid "Unverified Badge Color"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:184
+msgid "Unverified Badge Tooltip Content"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:185
+msgid "Content of the tooltip displayed when hovering on a unverified badge. Empty for no tooltip."
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:191
+msgid "Activities Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:194
+msgid "Display in Activities"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:195
+msgid "Display Verified Badge in Activity Stream"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:201
+msgid "Profiles Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:204
+msgid "Display in Username"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:205
+msgid "Display Verified Badge in Profile Username"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:209
+msgid "Display in Fullname"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:210
+msgid "Display Verified Badge in Profile Fullname"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:216
+msgid "Directories Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:219
+msgid "Display in Directories"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:220
+msgid "Display Verified Badge in Members Lists"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:226
+msgid "Widgets Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:229
+msgid "Display in BP Widgets"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:230
+msgid "Display Verified Badge in BuddyPress Widgets"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:236
+msgid "Messages Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:239
+msgid "Display in Messages"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:240
+msgid "Display Verified Badge in Private Messages"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:246
+msgid "bbPress Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:249
+msgid "Display in Topics"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:250
+msgid "Display Verified Badge in BBPress Topics"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:254
+msgid "Display in Replies"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:255
+msgid "Display Verified Badge in BBPress Replies"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:261
+msgid "WordPress Settings"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:264
+msgid "Display in Comments"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:265
+msgid "Display Verified Badge in WordPress Comments"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:269
+msgid "Display in Posts"
+msgstr ""
+
+#: admin/settings/class-bp-verified-member-settings.php:270
+msgid "Display Verified Badge in WordPress Posts"
+msgstr ""

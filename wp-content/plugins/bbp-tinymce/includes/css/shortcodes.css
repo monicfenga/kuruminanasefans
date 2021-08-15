@@ -1,0 +1,33 @@
+.tmc4bpp-spoiler-head {
+	cursor: pointer;
+	display: flex;
+    border: 1px solid black;
+    background: lightgrey;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0;
+	border-radius: 5px;
+	transition: border-radius .75s;
+}
+
+.tmc4bpp-spoiler-head.open {
+	border-radius: 5px 5px 0 0;
+}
+
+.tmc4bpp-spoiler-head svg {
+    margin: 2px 10px 0 5px;
+}
+
+.tmc4bpp-spoiler-body {
+	display: none;
+	padding: 20px 15px 15px 30px;
+    border: 1px solid black;
+	border-top: none;
+    border-radius: 0 0 5px 5px;
+	background: lightblue;
+	transition: display 2s;
+}
+
+.tmc4bpp-spoiler-body.active {
+	display: block;
+}
