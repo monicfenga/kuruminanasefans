@@ -1,3 +1,5 @@
+/* 七濑胡桃非官方粉丝站——静态页面CSS */
+
 ﻿:root {
     --blue: hsl(221, 90%, 80%);
     --indigo: hsl(246, 100%, 80%);
@@ -573,10 +575,15 @@ h6 {
 }
 
 .lyric-container header {
-    background: rgba(255, 255, 255, .95);
+    background-color: rgba(255, 255, 255, .95);
+    background-image: url(../img/music_header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 1em;
     color: var(--dark);
     letter-spacing: 1px;
+    text-shadow: 0 0 0.5em white;
 }
 
 .the-lyric {
@@ -638,7 +645,20 @@ h6 {
 }
 
 /* 表情包 */
+.what-is-this {
+    position: absolute;
+    bottom: 1em;
+    left: -0.25em;
+    z-index: -1;
+    transition: all .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
 
+.what-is-this img {width: 3em;}
+
+.what-is-this:hover,
+.what-is-this:focus {
+    left: -1em;
+}
 #myScrollspy .nav-tabs {
     width: max-content;
     transform: scaleY(-1);
@@ -1097,7 +1117,121 @@ aside.chapter-menu ul {
 }
 
 @keyframes cursor-type{
-    from{
+    to{
         border-color: transparent;
     }
+}
+
+/* 特殊 - 生日 */
+.birthday-container.card {
+    margin-bottom: 0;
+    padding: 0 1rem 1rem;
+    background: linear-gradient(90deg, #eb9ffe, #ffaae2);
+    backdrop-filter: none!important;
+}
+
+.birthday-content.card {
+    margin: 0;
+    padding: 1em;
+    border-color: #FFAAE2;
+    color: var(--dark);
+    z-index: 1;
+    max-height: calc(80vh - 10em);
+    overflow: auto;
+}
+
+.birthday-container h2 {
+    margin: 1rem 0;
+    line-height: 1.7;
+    color: var(--dark);
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 0.2em var(--light);
+    font-size: 1.65em;
+}
+
+.birthday-backdrop {
+    background-color: #F8F4E9;
+    background-image: repeating-linear-gradient(-45deg,transparent,transparent 35px,#F9E6E0 70px);
+}
+
+.birthday-backdrop:after {
+    display: none;
+}
+
+.birthday-backdrop img.balloons,
+.birthday-backdrop img.cake,
+.birthday-backdrop img.flags,
+.birthday-backdrop img.gifts {
+    position: absolute;
+    width: 20vmax;
+    height: auto;
+    object-fit: initial;
+}
+
+.birthday-backdrop img.cake {
+    width: 20vmax;
+}
+
+.birthday-backdrop img.flags {
+    left: 50%;
+    top: 0%;
+    width: 100vw;
+    transform: translateX(-50%);
+}
+
+.birthday-backdrop img.gifts {
+    left: 15%;
+    bottom: 0;
+    width: 13vmax;
+}
+
+.birthday-backdrop .balloons_1 {
+    left: -14%;
+    top: -20%;
+}
+
+.birthday-backdrop .balloons_2 {
+    top: -4%;
+    right: -14%;
+    transform: rotate(-24deg);
+}
+
+.birthday-backdrop .balloons_3 {
+    left: -2%;
+    bottom: -15%;
+}
+
+.birthday-backdrop .balloons_4 {
+    bottom: -31%;
+    right: 25%;
+}
+
+.birthday-backdrop .cake {
+    bottom: 0;
+    right: 2%;
+}
+
+.birthday-warp {
+    margin: 15vh auto 0;
+    border-radius: .5em;
+    box-shadow: 0 0 .5em -0.3em var(--dark),0 .5em 2em -0.8em var(--pink);
+    max-width: 36em;
+    position: relative;
+}
+
+.birthday-warp:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6.5rem;
+    left: -2rem;
+    width: 8em;
+    height: 8em;
+    background-image: url("../img/birthdayhat.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    pointer-events: none;
 }
