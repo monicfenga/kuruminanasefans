@@ -1,0 +1,623 @@
+:root {
+    --white: #FFF;
+    --black: #111;
+    --gray: #5C5B68;
+    --gray-dark: #504F5C;
+    --primary: #FE94A9;
+    --secondary: #AC72E8;
+    --success: #AAFE95;
+    --info: #58FDDC;
+    --warning: #FEE995;
+    --danger: #FD1C49;
+    --light: #FFF9EF;
+    --dark: #494555;
+    --font-family-sans-serif: '有爱魔兽黑体 CN',Noto Sans CJK SC,Sourse Han Sans CN,'思源黑体 CN','思源黑体',Sarasa UI SC,Sarasa Gothic SC,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,system-ui;
+    --font-family-serif: Noto Serif CJK SC,Sourse Han Serif CN,'思源宋体 CN',SimSun,serif,system-ui;
+    --font-family-monospace: Iosevka,Sarasa Mono SC,Sarasa Fixed SC,Sarasa Term SC,'等距更纱黑体 SC','等距更纱黑体 T SC','思源等宽',Source Han Mono,Source Code Pro,Inconsolata,Consolas,monospace;
+    --font-family-cursive: 'FZMiaoWu','851tegakizatsu','素材集市康康体',KaiTi,KaiTi_GB2312,cursive,system-ui;
+    --font-family-fantasy: fangsong,FangSong,FangSong_GB2312,fantasy,system-ui;
+}
+
+[hidden] {
+    display: none!important;
+}
+
+body {
+    font: 16px/1.6 var(--font-family-sans-serif,sans-serif);
+}
+
+body.page {
+    background-color: white;
+    background-image: linear-gradient(90deg,rgba(255,179,185,.25) 50%,transparent 50%),linear-gradient(rgba(255,179,185,.25) 50%,transparent 50%);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    background-size: 60px 60px;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+    background-color: var(--primary);
+    text-decoration: none;
+    border-radius: .5em;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover {
+    background-color: var(--primary);
+    filter: brightness(1.1);
+}
+
+input[type="button"].small,
+input[type="submit"].small,
+input[type="reset"].small,
+button.small,
+.button.small {
+    padding: .7em;
+}
+
+.pleasewait {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding: .5em;
+    border: 1px solid var(--primary);
+    background: var(--light);
+    text-align: center;
+    z-index: -1;
+    border-radius: .5em;
+    transform: translate(-50%,-50%);
+    transition: opacity 1s linear;
+    opacity: 0;
+}
+
+.is-preload .pleasewait {
+    opacity: 1;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+blockquote,
+form {
+    margin: 1em 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: .3em 0;
+    font-weight: lighter;
+    letter-spacing: normal;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    border: 1px solid var(--dark);
+}
+
+table td {
+    padding: .5em;
+}
+
+code,
+pre,
+tt,
+var,
+address {
+    font-family: var(--font-family-monospace);
+}
+
+main h1 {
+    font-size: 3em;
+    font-family: var(--font-family-cursive);
+}
+
+main h2 {
+    font-size: 2.4em;
+    font-family: var(--font-family-cursive);
+}
+
+main h3 {
+    font-size: 1.8em;
+}
+
+main h4 {
+    font-size: 1.4em;
+}
+
+main h5 {
+    font-size: 1.2em;
+}
+
+main h6 {
+    font-size: 1em;
+}
+
+main small,
+.small {
+    font-size: .8em;
+}
+
+@media only screen and (min-width:48em) and (max-width:64em) {
+    main h1 {
+        font-size: 2.5em;
+    }
+    
+    main h2 {
+        font-size: 2.2em;
+    }
+    
+    main h3 {
+        font-size: 1.7em;
+    }
+    
+    main h4 {
+        font-size: 1.3em;
+    }
+    
+    main h5 {
+        font-size: 1.1em;
+    }
+    
+    main h6 {
+        font-size: 1em;
+    }
+    
+    main small,
+    .small {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width:48em) {
+    main h1 {
+        font-size: 2em;
+    }
+    
+    main h2 {
+        font-size: 1.7em;
+    }
+    
+    main h3 {
+        font-size: 1.5em;
+    }
+    
+    main h4 {
+        font-size: 1.3em;
+    }
+    
+    main h5 {
+        font-size: 1.1em;
+    }
+    
+    main h6 {
+        font-size: 1em;
+    }
+    
+    main small,
+    .small {
+        font-size: .8em;
+    }
+}
+
+.heading-sticker {
+    display: inline;
+    width: 1em;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: text-bottom;
+}
+
+#main {
+    border-top: 1.25px solid var(--secondary);
+    border-radius: .5em;
+    box-shadow: 0 0 .05em rgba(0,0,0,.1),0 .1em .2em rgba(0,0,0,.08),0 .3em .4em rgba(0,0,0,.04),0 .5em .6em rgba(0,0,0,.06),0 .7em .8em rgba(0,0,0,.02);
+}
+
+#main > .panel.intro .pic img {
+    object-position: top center;
+}
+
+#main > .panel {
+    padding: 2em;
+}
+
+#main > .panel.intro .pic .arrow {
+    background: linear-gradient(60deg,rgba(89,97,249,.6),rgba(238,154,229,.7));
+}
+
+@media screen and (min-width:980px) {
+    #main > .panel.intro {
+        height: 64vmin;
+    }
+}
+
+#main > .panel.intro > section {
+    height: 100%;
+    margin: 0;
+    padding: 3.5em 2.5em;
+    overflow: auto;
+}
+
+#main > .panel.intro > section > header {
+    padding: 0 0 .5em;
+}
+
+@media screen and (min-width:1440px) {
+    #wrapper {
+        width: 64em;
+    }
+
+    div#wrapper:after {
+        z-index: -1;
+        content: "";
+        display: block;
+        /* background-image: url("https://beautiful-watercolor.themes.dtbaker.net/wp-content/themes/beautiful-watercolor/images/banner-plants.png"); */
+        width: 100%;
+        height: 16em;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    
+    #main > .panel.intro .pic {
+        width: 40%;
+    }
+    
+    #main > .panel.intro> section {
+        flex: 1;
+    }
+}
+
+#nav {
+    width: 100%;
+    height: 5.5em;
+    padding: 2em 0 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100vw;
+}
+
+#nav b {
+    display: none;
+    padding: .05em;
+    Background: var(--light);
+    border-radius: .2em;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+#nav.birthday b,
+#nav.birthday .hb {
+    display: inline-block;
+}
+
+#nav .hb,
+#nav.birthday img {
+    display: none;
+}
+
+#nav img,
+#nav.birthday b img {
+    display: inline-block;
+    border-radius: .2em;
+    width: 2.375rem;
+}
+
+#nav a {
+    border: 1px solid transparent;
+    line-height: 0.6;
+    border-radius: .2em;
+    transition: all .25s ease;
+    transform: translateY(0.4em);
+}
+
+#nav a:hover {
+    transform: translateY(0.1em);
+}
+
+#nav a.active {
+    transform: translateY(0);
+}
+
+#nav a.active {
+    border-color: var(--secondary);
+}
+
+#nav a:after {
+    border-bottom-color: var(--secondary);
+}
+
+#nav a span {
+    margin-top: .5em;
+    background-color: var(--secondary);
+    color: var(--dark);
+    transition: all .25s ease;
+    border: 1px solid var(--secondary);
+    background-color: var(--white);
+    color: var(--secondary);
+    border-radius: .6em;
+    box-sizing: border-box;
+}
+
+#nav a:hover span {
+    margin-top: 0;
+}
+
+#nav a span:after {
+    border-top-color: var(--secondary);
+    bottom: -0.67em;
+}
+
+@media screen and (max-width:736px) {
+    #wrapper {
+        max-width: 100%;
+    }
+}
+
+#nav a.active:not(:hover) span {
+    margin-top: 0;
+    opacity: .05;
+}
+
+@media screen and (max-width:980px) {
+    #nav a span {
+        display: block;
+        top: -2.75em;
+        opacity: 1;
+    }
+    #nav a:not(.active):not(:hover) span,
+    #nav a:not(.active):not(:hover) span:after {
+        border-color: transparent;
+    }
+    
+    #nav a.active:not(:hover) span {
+        opacity: 1;
+    }
+    
+    #main {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:980px) {
+    #main > .panel.intro .pic {
+        height: 100vmax;
+    }
+}
+
+@supports ( -webkit-background-clip: text ) {
+    #main > #home.panel.intro aside {
+        background-image: linear-gradient(90deg,#AC72E8,#FF69BB,#F5DE78,#1DC2A2);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    #main > #home.panel.intro aside h1,
+    #main > #home.panel.intro aside p {
+        color: inherit;
+        margin-top: 0;
+    }
+}
+
+blockquote {
+    position: relative;
+    padding: .5em 1em;
+    border-left: none;
+    background: var(--light);
+    font-style: initial;
+}
+
+blockquote:before {
+    position: absolute;
+    left: -1em;
+    top: -0.25em;
+    color: var(--secondary);
+    font-family: var(--font-family-monospace);
+    content: '66';
+}
+
+blockquote:after {
+    position: absolute;
+    bottom: -0.25em;
+    right: -1em;
+    color: var(--secondary);
+    font-family: var(--font-family-monospace);
+    content: '99';
+}
+
+#footer {
+    color: var(--dark);
+    opacity: .5;
+}
+
+#footer a {
+    color: var(--dark);
+}
+
+.backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.backdrop:before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(180deg,var(--white) 5%,transparent 15%);
+    content: '';
+    z-index: -1;
+}
+
+.backdrop:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-image: url('https://beautiful-watercolor.themes.dtbaker.net/wp-content/themes/beautiful-watercolor/images/pink/header-bg4-sml-flowers.png');
+    background-position: 65% -8%;
+    background-repeat: repeat-x;
+    content: '';
+    background-size: auto;
+}
+
+/* 表情包 */
+.sticker-set {
+    display: flex;
+    position: relative;
+    margin: 2em 0 0;
+    padding: 0 .5em;
+    min-height: 6em;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sticker-set .button {
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.sticker-set img {
+    position: absolute;
+    width: 5em;
+    height: auto;
+    border-radius: .2em;
+    box-shadow: 0 0 .5em rgba(0,0,0,.1);
+    transition: all .5s ease;
+}
+
+.sticker-set img:nth-child(1) {
+    left: 25%;
+    top: 1em;
+    z-index: 1;
+    transform: translateX(-50%) rotate(-6deg);
+}
+
+.sticker-set img:nth-child(2) {
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.sticker-set img:nth-child(3) {
+    left: 75%;
+    top: 1em;
+    z-index: 1;
+    transform: translateX(-50%) rotate(6deg);
+}
+
+.sticker-set:hover img:nth-child(1) {
+    left: 20%;
+    top: -0.3em;
+}
+
+.sticker-set:hover img:nth-child(2) {
+    left: 50%;
+    top: -1em;
+    width: 5.5em;
+}
+
+.sticker-set:hover img:nth-child(3) {
+    left: 80%;
+    top: -0.3em;
+}
+
+/* 漫画 */
+a.manga-set {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: .5em;
+}
+
+.manga-set .manga-cover {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    border: 1px solid var(--secondary);
+    border-radius: .5em;
+}
+
+.manga-set .title {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+    background: rgba(255,255,255,.8);
+    color: var(--danger);
+    text-align: center;
+    transform: translateY(-50%) rotateX(90deg);
+    transition: all .35s ease;
+}
+
+.manga-set:hover .title {
+    transform: translateY(-50%) rotateX(0);
+}
+
+/* 壁纸 */
+section.wallpapers-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 1em;
+    background: rgba(255,255,255,.8);
+    border-radius: .5em;
+    transform: translate(-50%,-50%);
+}
+
+.wallpapers-background {
+    position: relative;
+}
+
+.wallpapers-background .pure-g {
+    user-select: none;
+    pointer-events: none;
+}

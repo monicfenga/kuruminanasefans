@@ -1,0 +1,67 @@
+/* 小游戏 - 猜数字 */
+#guess-the-number-container .card {
+    display:block
+}
+#guess-the-number-container .no-display{
+    display: none !important;
+}
+
+#guess-the-number-container #menhera #text{
+    padding: 15px;
+    margin: 5px auto;
+    position: relative;
+    max-width: 25em;
+    background-color: var(--light);
+}
+#guess-the-number-container #menhera #text p {
+    margin:0
+}
+#guess-the-number-container #menhera #text:after{
+    content: '';
+    border-color: var(--light) transparent transparent transparent;
+    border-width: 1.5em;
+    border-style: solid;
+    position: absolute;
+    bottom: -3em;
+    left: 4em;
+    transform: skewX(60deg);
+}
+
+#guess-the-number-container #menhera div#image-menhera{
+    background: url("./m_stickers/en/Menhera-chan.3/6.png") no-repeat center center /contain;
+    width: auto;
+    height: 250px;
+    margin-bottom: 5px;
+}
+
+#guess-the-number-container #totalGuesses{
+    float: right;
+    font-size: 0.8em;
+    position: relative;
+    top: -0.5em;
+    opacity:0.8
+}
+
+#guess-the-number-container .user-choices {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5em;
+    text-align: center;
+}
+#guess-the-number-container footer {
+    text-align:center;
+    opacity:.5;
+    margin-top:1em
+}
+
+#guess-the-number-container .cursor{
+    border-right: #333 solid 1px;
+    padding-right: 2px;
+    animation: cursor-type 0.5s ease-out infinite;
+}
+
+@keyframes cursor-type{
+    from{
+        border-color: transparent;
+    }
+}
