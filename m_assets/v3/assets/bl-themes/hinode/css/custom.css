@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --white: #FFF;
     --black: #111;
     --gray: #5C5B68;
@@ -98,7 +98,7 @@ blockquote {
 
 @media only screen and (max-width: 640px) {
     body {
-        padding: 0.25em;
+        padding: 4.5em 0.25em 0.25em 0.25em;
     }
 .main-navigation > * {
     max-width: 100%;
@@ -176,6 +176,8 @@ top: 1.5rem;
     visibility: visible;
     opacity: 0.5;
     transition: all 0.5s ease-in-out;
+    background: linear-gradient(180deg, rgba(254, 148, 169, .2), rgba(255, 227, 146, .4));
+    text-shadow: 0 0 0.5em var(--light);
 }
 .main-navigation ul {
     max-height: 80vh;
@@ -184,3 +186,8 @@ top: 1.5rem;
 #menu:checked ~ .main-navigation {
     clip-path: circle(200% at 50% 0%);
 }
+#menu label .menu-button span:first-child {display:inline;}
+#menu label .menu-button span:last-child {display:none;}
+
+#menu:checked ~ label .menu-button span:first-child {display:none;}
+#menu:checked ~ label .menu-button span:last-child {display:inline;}
