@@ -186,8 +186,9 @@ top: 1.5rem;
 #menu:checked ~ .main-navigation {
     clip-path: circle(200% at 50% 0%);
 }
-#menu label .menu-button span:first-child {display:inline;}
-#menu label .menu-button span:last-child {display:none;}
+label[for="menu"] .menu-button span {font-weight: lighter;}
+label[for="menu"] .menu-button span:first-child {display:inline;}
+label[for="menu"] .menu-button span:last-child {display:none;font-size: 1em;line-height: 1.75;}
 
 #menu:checked ~ label .menu-button span:first-child {display:none;}
 #menu:checked ~ label .menu-button span:last-child {display:inline;}
