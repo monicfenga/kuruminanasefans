@@ -164,13 +164,11 @@ footer .footer-widgets>div {
     height: 2.5em;
     line-height: 2.5;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#menu:checked ~ label .menu-button {
-width: 3.5em;
-height: 3.5em;
-line-height: 3.5;
-top: 1.5rem;
-}
+#menu:checked ~ label .menu-button {width: 3.5em;height: 3.5em;line-height: 3.5;top: 1.5rem;}
 .main-navigation {
     clip-path: circle(0% at 50% 0%);
     visibility: visible;
@@ -194,9 +192,9 @@ top: 1.5rem;
 #menu:checked ~ .main-navigation {
     clip-path: circle(200% at 50% 0%);
 }
-label[for="menu"] .menu-button span {font-weight: lighter;}
-label[for="menu"] .menu-button span:first-child {display:inline;}
-label[for="menu"] .menu-button span:last-child {display:none;font-size: 1em;line-height: 1.75;}
+label[for="menu"] .menu-button span {font-weight: 100;font-family: var(--font-family-monospace);}
+label[for="menu"] .menu-button span:first-child {display:inline;font-size: 1.5em;}
+label[for="menu"] .menu-button span:last-child {display:none;font-size: 2em;}
 
 #menu:checked ~ label .menu-button span:first-child {display:none;}
 #menu:checked ~ label .menu-button span:last-child {display:inline;}
