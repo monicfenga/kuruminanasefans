@@ -480,7 +480,7 @@ blockquote:after {
     z-index: -1;
 }
 
-.backdrop:before {
+body:not(.is-preload) .backdrop:before {
     display: block;
     position: absolute;
     width: 100%;
@@ -490,7 +490,7 @@ blockquote:after {
     z-index: -1;
 }
 
-.backdrop:after {
+body:not(.is-preload) .backdrop:after {
     display: block;
     position: absolute;
     width: 100%;
