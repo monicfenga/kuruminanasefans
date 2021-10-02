@@ -137,7 +137,7 @@ footer {
 }
 .entry, footer .footer-widgets>div, .main-navigation {
     background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
     border-radius: 8px;
     margin-bottom: 30px;
     border: 1px solid #ffffff;
@@ -176,8 +176,16 @@ top: 1.5rem;
     visibility: visible;
     opacity: 0.5;
     transition: all 0.5s ease-in-out;
-    background: linear-gradient(180deg, rgba(254, 148, 169, .2), rgba(255, 227, 146, .4));
     text-shadow: 0 0 0.5em var(--light);
+}
+.main-navigation:before {
+    background: linear-gradient(180deg, rgba(254, 148, 169, .2), rgba(255, 227, 146, .4));
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .main-navigation ul {
     max-height: 80vh;
