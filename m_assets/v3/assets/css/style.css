@@ -657,3 +657,65 @@ section.wallpapers-content {
     user-select: none;
     pointer-events: none;
 }
+
+/* 音乐 */
+.banner-horizontal {
+    margin: -2em -2em 2em -2em;
+    position: relative;
+    min-height: 16em;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-horizontal header {
+    position: absolute;
+    bottom: 0;
+    padding: 2em;
+    width: 100%;
+    color: white;
+    text-shadow: 0 .1em .3em rgba(0,0,0,.5);
+}
+
+#music header {
+background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #aec1c5 95%, var(--white) 100%);
+}
+
+#music .button {
+    text-align: center;
+    display: block;
+    margin: 0 0.25em;
+}
+#music header > h2,
+#music header > p {
+    color:inherit
+}
+
+#music h3 {
+    font-size:1.4em
+}
+
+#music ol {counter-reset:music-counter 0;padding: 0;}
+#music ol li {counter-increment: test1;position: relative;}
+#music ol li:before {
+    content:counter(test1)".";
+    color: var(--primary);
+    position: absolute;
+    left: -2em;
+    top: .75em;
+    font-family: var(--font-family-cursive);
+    text-align: end;
+    letter-spacing: 0;
+    width: 2em;
+}
+
+#music ol li time {
+    font-size: .8em;
+    position: relative;
+    top: -.8em;
+}
+
+#music header .heading-sticker {
+    box-shadow: 0 0 .25em .25em white;
+    margin: 0 .25em 0 0;
+}
