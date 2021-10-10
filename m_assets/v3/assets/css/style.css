@@ -502,6 +502,42 @@ body:not(.is-preload) .backdrop:after {
     background-size: auto;
 }
 
+.cta-button {
+    font-size: 1.5em;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+    padding: .5em .25em;
+    background: linear-gradient(60deg,var(--light) 10%,var(--primary) 30%,var(--secondary) 100%);
+    color: var(--white);
+    border-radius: .5em;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transition: all .3s ease;
+
+}
+
+.cta-button>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: fit-content;
+    width: auto;
+    height: 100%;
+    mix-blend-mode: multiply;
+    transition: all .5s ease;
+}
+
+.cta-button:hover,.cta-button:focus {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:hover>img {
+    transform: scale(1.1);
+}
+
 /* 表情包 */
 .sticker-set {
     display: flex;
