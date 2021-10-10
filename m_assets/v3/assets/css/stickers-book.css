@@ -1,0 +1,435 @@
+:root {
+    --blue: hsl(218, 81%, 67%);
+    --indigo: hsl(240, 100%, 70%);
+    --purple: hsl(255, 100%, 70%);
+    --pink: hsl(341, 100%, 70%);
+    --red: hsl(0, 100%, 70%);
+    --orange: hsl(30, 100%, 60%);
+    --yellow: hsl(49, 75%, 55%);
+    --green: hsl(110, 50%, 60%);
+    --teal: hsl(159, 65%, 55%);
+    --cyan: hsl(175, 65%, 70%);
+    --blue-dimmed: hsl(218, 81%, 57%);
+    --indigo-dimmed: hsl(240, 100%, 60%);
+    --purple-dimmed: hsl(255, 100%, 60%);
+    --pink-dimmed: hsl(341, 100%, 60%);
+    --red-dimmed: hsl(0, 100%, 60%);
+    --orange-dimmed: hsl(30, 100%, 50%);
+    --yellow-dimmed: hsl(49, 75%, 45%);
+    --green-dimmed: hsl(110, 50%, 50%);
+    --teal-dimmed: hsl(159, 65%, 45%);
+    --cyan-dimmed: hsl(175, 65%, 60%);
+    --white: #fff;
+    --gray: #888;
+    --gray-dark: #343a40;
+    --primary: #F56692;
+    --secondary: #f3969a;
+    --success: #56cc9d;
+    --info: #0496FF;
+    --warning: #ffce67;
+    --danger: #ff7851;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --font-family-sans-serif: '有爱魔兽黑体 CN', Noto Sans CJK SC, Sourse Han Sans CN, '思源黑体 CN', '思源黑体', Sarasa UI SC, Sarasa Gothic SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif, system-ui;
+    --font-family-cursive: '851tegakizatsu', '素材集市康康体', 'FZMiaoWu', '方正喵呜体', KaiTi, KaiTi_GB2312, cursive, system-ui;
+}
+
+/* common */
+body {
+  background-color:#fff9ef;
+background-image: radial-gradient(#feebd9 15%, transparent 16%),radial-gradient(#feebd9 15%, transparent 16%);
+background-size: 60px 60px;
+background-position: 0 0, 30px 30px;
+font: 16px/1.6 var(--font-family-sans-serif, sans-serif);
+background-attachment: fixed;
+}
+
+h1,
+h3,
+h5 {
+    font-family: var(--font-family-cursive);
+}
+
+h2,
+h4,
+h6 {
+    font-family: var(--font-family-sans-serif);
+}
+header#intro{
+    padding: 1em 2em;
+    border: .15em solid;
+    border-image: linear-gradient(45deg, #ffd1fc,#fad0c6) 30 30;
+    background-color:#fff9ef;
+    border-radius: 1em;
+    margin: 1em;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.text-primary {
+    color: #F56692 !important;
+}
+
+.text-info {
+    color: var(--info)!important;
+}
+
+.text-warning {
+    color: var(--warning)!important;
+}
+
+.text-success {
+    color: var(--success)!important;
+}
+
+.btn-ja,.badge-ja,
+.btn-en,.badge-en {
+  color: var(--white);
+}
+.btn-ja,.badge-ja {
+    background-color: var(--primary);
+}
+.btn-en,.badge-en {
+    background-color: var(--purple);
+}
+.btn-cn,.badge-cn {
+    background-color: var(--warning);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus {
+    box-shadow: inset 0 -2px 0 var(--primary);
+    color: var(--primary);
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+/* Loading */
+aside.the-loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff9ef;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(100% at 50% 50%);
+    transition: all .5s ease-in-out;
+    user-select: none;
+    box-shadow: 0 0 10em inset #feebd9;
+    opacity:.98;
+}
+
+@keyframes scale_in {
+from {transform: scale(0);}
+to {transform: scale(1);}
+}
+@keyframes scale_in_alt {
+from {transform: scale(0);opacity:.5;}
+to {transform: scale(1.5);opacity:0;}
+}
+@keyframes wiggles {
+0%,100% {transform: rotate(3deg);}
+50% {transform: rotate(-3deg);}
+}
+
+body:not(.is-preload) aside.the-loading-screen {
+    clip-path: circle(0% at 50% 50%);
+    pointer-events: none;
+    background: transparent;
+    box-shadow: none;
+}
+aside.the-loading-screen .loading {
+    transition: all .5s ease-in;
+    animation: scale_in .3s cubic-bezier(0,0,.5,1.25) 1;
+    animation-fill-mode : forwards;
+}
+
+aside.the-loading-screen:before {
+  content: "";
+  background: var(--white);
+  width: 100vmax;
+  height: 100vmax;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  animation: scale_in_alt 1.5s ease-out infinite;
+  opacity: 0;
+}
+body:not(.is-preload) aside.the-loading-screen:before {
+  animation-play-state: paused;
+  visibility: hidden;
+}
+
+aside.the-loading-screen .loading-inner {
+    transform: scale(1);
+    transition: all .5s ease-in;
+}
+body:not(.is-preload) aside.the-loading-screen .loading-inner {
+    transform: scale(0);
+}
+aside.the-loading-screen .loading-inner .loading-image {
+    animation: wiggles 1s ease-in-out infinite;
+    box-shadow: 0 0 2em 2em white;
+    background-color: var(--white);
+}
+body:not(.is-preload) aside.the-loading-screen .loading-inner .loading-image {
+    animation-play-state:paused;
+}
+aside.the-loading-screen .loading .loading-hint {
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+}
+body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
+  display: none
+}
+
+.heading-sticker {
+    display: inline;
+    width: 1em;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    vertical-align: text-bottom;
+}
+
+/* APP */
+.sticker-item {
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    width: calc(100%/2);
+    margin: 0em -2px -3.5em -2px;
+    padding: 1.5em .5em .5em .5em;
+    text-align: center;
+    z-index: 0;
+    border-radius: .5em;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    overflow: auto;
+    box-shadow: 0 0 0px 0 rgba(0,0,0,0);
+    border: 1px solid transparent;
+}
+
+.sticker-item:hover, .sticker-item:focus-within {
+    background-color: var(--white);
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+    transition: all .05s ease-in-out;
+}
+
+.sticker-item .sticker-tags,
+.sticker-item .sticker-action {
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    padding:0 1px
+}
+
+.sticker-item:hover .sticker-tags, .sticker-item:focus-within .sticker-tags,
+.sticker-item:hover .sticker-action, .sticker-item:focus-within .sticker-action {
+    transform: translate(0,0);
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.sticker-item .sticker-tags {
+    white-space: nowrap;
+    transform: translate(0,.2em);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 .5em;
+    background-color: rgba(255,255,255,.8);
+}
+.sticker-item .sticker-tags:hover {
+  overflow: initial;
+  white-space: initial;
+}
+.sticker-item .sticker-action {
+    display: flex;
+    transform: translate(0,-0.2em);
+    justify-content: center;
+}
+
+.sticker-item .sticker-action .btn-sm {
+    font-size: 12px;
+    padding: 0.25em calc(0.5em - 4px);
+}
+
+.sticker-item .sticker-preview {
+    margin: .3em 0;
+    border: 1px solid var(--gray);
+    background-color: var(--white);
+    border-radius: .5em;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+.sticker-item:hover .sticker-preview, .sticker-item:focus-within .sticker-preview {
+    margin: .3em 0;
+    border-color: transparent;
+}
+
+.sticker-item .sticker-preview img {
+    height: auto;
+    user-select: none;
+    max-width: 100%;
+    pointer-events: none;
+}
+
+
+
+@media (min-width:576px) {
+    .sticker-item {
+        width: calc(100%/3);
+    }
+}
+
+@media (min-width:768px) {
+    .sticker-item {
+        width: calc(100%/4);
+    }
+}
+
+@media (min-width:992px) {
+    .sticker-item {
+        width: calc(100%/5);
+    }
+}
+
+@media (min-width:1200px) {
+    .sticker-item {
+        width: calc(100%/6);
+    }
+}
+
+@media (min-width:1300px) {
+    .sticker-item {
+        width: calc(100%/7);
+    }
+}
+
+@media (min-width:1400px) {
+    .sticker-item {
+        width: calc(100%/8);
+    }
+}
+
+@media (min-width:1600px) {
+    .sticker-item {
+        width: calc(100%/9);
+    }
+}
+
+@media (min-width:1800px) {
+    .sticker-item {
+        width: calc(100%/10);
+    }
+}
+
+.sticker-set .sticker-set-title {
+    position: sticky;
+    width: fit-content;
+    display: flex;
+    top: 4rem;
+    align-items: center;
+    z-index: 9;
+    margin: 0 0 1em 0;
+}
+.sticker-set .sticker-set-title .badge {
+    font-weight: normal;
+    line-height: 1;
+}
+.sticker-set:nth-child(8n) .sticker-set-title h3{
+  background: var(--red);
+  box-shadow: 0 0.2rem 0 var(--red-dimmed);
+}
+.sticker-set:nth-child(8n+1) .sticker-set-title h3{
+  background: var(--orange);
+  box-shadow: 0 0.2rem 0 var(--orange-dimmed);
+}
+.sticker-set:nth-child(8n+2) .sticker-set-title h3{
+  background: var(--yellow);
+  box-shadow: 0 0.2rem 0 var(--yellow-dimmed);
+}
+.sticker-set:nth-child(8n+3) .sticker-set-title h3{
+  background: var(--green);
+  box-shadow: 0 0.2rem 0 var(--green-dimmed);
+}
+.sticker-set:nth-child(8n+4) .sticker-set-title h3{
+  background: var(--teal);
+  box-shadow: 0 0.2rem 0 var(--teal-dimmed);
+
+}
+.sticker-set:nth-child(8n+5) .sticker-set-title h3{
+  background: var(--blue);
+  box-shadow: 0 0.2rem 0 var(--blue-dimmed);
+
+}
+.sticker-set:nth-child(8n+6) .sticker-set-title h3{
+  background: var(--purple);
+  box-shadow: 0 0.2rem 0 var(--purple-dimmed);
+}
+.sticker-set:nth-child(8n+7) .sticker-set-title h3{
+  background: var(--pink);
+  box-shadow: 0 0.2rem 0 var(--pink-dimmed);
+}
+.sticker-set .sticker-set-title h3 {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+    background: #57c4fd;
+    padding: .2em .5em;
+    border-radius: .5rem;
+    color: var(--white);
+    font-weight: normal;
+    box-shadow: 0 0.2rem 0 #41a5cd;
+    font-size: 1.3em;
+}
+
+.stickers-list .sticker-set {
+    padding: 2em 0;
+}
+
+#myScrollspy .nav-tabs {
+    width: max-content;
+    margin: 0;
+    background: var(--light);
+    transform: scaleY(-1);
+}
+
+nav#myScrollspy {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transform: scaleY(-1);
+    overflow: auto;
+    padding:0;
+    margin: 0;
+}
+
+nav#myScrollspy::-webkit-scrollbar {
+    height: .25rem;
+}
+
+nav#myScrollspy::-webkit-scrollbar-track {
+    Background: var(--light);
+}
+
+nav#myScrollspy::-webkit-scrollbar-thumb {
+    Background-color: var(--secondary);
+}
