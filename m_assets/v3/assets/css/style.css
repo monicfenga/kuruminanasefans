@@ -16,6 +16,10 @@
     --font-family-monospace: Iosevka,Sarasa Mono SC,Sarasa Fixed SC,Sarasa Term SC,'等距更纱黑体 SC','等距更纱黑体 T SC','思源等宽',Source Han Mono,Source Code Pro,Inconsolata,Consolas,monospace;
     --font-family-cursive: 'FZMiaoWu','851tegakizatsu','素材集市康康体',KaiTi,KaiTi_GB2312,cursive,system-ui;
     --font-family-fantasy: fangsong,FangSong,FangSong_GB2312,fantasy,system-ui;
+    --theme-spring-bg-color: rgba(255,179,185,.25);
+    --theme-summer-bg-color: rgba(142,222,230,.25);
+    --theme-autumn-bg-color: rgba(244,184,142,.25);
+    --theme-winter-bg-color: rgba(165,218,255,.25);
 }
 
 [hidden] {
@@ -28,20 +32,52 @@ body {
 
 body.page {
     background-color: white;
-    background-image: linear-gradient(90deg,rgba(255,179,185,.25) 50%,transparent 50%),linear-gradient(rgba(255,179,185,.25) 50%,transparent 50%);
+    background-image: linear-gradient(90deg,rgba(230,230,230,.25) 50%,transparent 50%),linear-gradient(rgba(230,230,230,.25) 50%,transparent 50%);
     background-repeat: repeat;
     background-size: 50px 50px;
     background-size: 60px 60px;
 }
+body.page.theme-spring {
+    background-image: linear-gradient(90deg,var(--theme-spring-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-spring-bg-color) 50%,transparent 50%);
+    --light: #fff5f5;
+}
+body.page.theme-summer {
+    background-image: linear-gradient(90deg,var(--theme-summer-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-summer-bg-color) 50%,transparent 50%);
+    --light: #effffb;
+    --secondary: #8BC34A;
+}
+body.page.theme-autumn {
+    background-image: linear-gradient(90deg,var(--theme-autumn-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-autumn-bg-color) 50%,transparent 50%);
+    --light: #FFF9EF;
+    --secondary: #e49653;
+}
+body.page.theme-winter {
+    background-image: linear-gradient(90deg,var(--theme-winter-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-winter-bg-color) 50%,transparent 50%);
+    --light: #eff8ff;
+    --secondary: #72a7e8;
+}
 
 ::selection {
     background-color: var(--primary);
-    color: white;
+    color: var(--white);
 }
 
 ::-moz-selection {
     background-color: var(--primary);
-    color: white;
+    color: var(--white);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.panel a:not(.button):hover {
+    box-shadow: 0 0.1em 0 var(--primary);
+}
+
+a:not(.button):visited {
+    color: var(--secondary);
 }
 
 input[type="button"],
@@ -52,6 +88,17 @@ button,
     background-color: var(--primary);
     text-decoration: none;
     border-radius: .5em;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button.alt {
+    background-color: var(--secondary);
+}
+
+.button:visited {
+    box-shadow: none;
 }
 
 input[type="button"]:hover,
@@ -61,6 +108,16 @@ button:hover,
 .button:hover {
     background-color: var(--primary);
     filter: brightness(1.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.button.alt:hover {
+    background-color: var(--secondary);
+}
+
+.button:focus,a:focus {
+    outline:none;
+    box-shadow: 0 0 0 0.1em var(--light),0 0 0 0.2em var(--primary);
 }
 
 input[type="button"].small,
@@ -234,6 +291,30 @@ main small,
     }
 }
 
+
+details {
+	padding: .6rem 1rem;
+	background: var(--white);
+	border: 2px solid var(--primary);
+	border-radius: 4px;
+}
+
+summary {
+	cursor: pointer;
+}
+
+details[open] {
+	padding-bottom: .75rem;
+}
+
+details[open] summary {
+	margin-bottom: 6px;
+}
+
+details[open]>*:last-child {
+	margin-bottom: 0;
+}
+
 .heading-sticker {
     display: inline;
     width: 1em;
@@ -241,6 +322,14 @@ main small,
     margin: 0;
     padding: 0;
     vertical-align: text-bottom;
+}
+
+header > p {
+    color: var(--gray-dark);
+}
+
+header > .small {
+    color: var(--gray);
 }
 
 #main {
@@ -480,7 +569,7 @@ blockquote:after {
     z-index: -1;
 }
 
-body:not(.is-preload) .backdrop:before {
+body.theme-spring:not(.is-preload) .backdrop:before {
     display: block;
     position: absolute;
     width: 100%;
@@ -490,7 +579,7 @@ body:not(.is-preload) .backdrop:before {
     z-index: -1;
 }
 
-body:not(.is-preload) .backdrop:after {
+body.theme-spring:not(.is-preload) .backdrop:after {
     display: block;
     position: absolute;
     width: 100%;
@@ -675,10 +764,11 @@ section.wallpapers-content {
     width: 100%;
     color: white;
     text-shadow: 0 .1em .3em rgba(0,0,0,.5);
+    box-shadow:0 .2em .2em rgba(0,0,0,.1),0 .4em .4em rgba(0,0,0,.05);
 }
 
 #music header {
-background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #aec1c5 95%, var(--white) 100%);
+background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #aec1c5 95%);
 }
 
 #music .button {
@@ -686,8 +776,8 @@ background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #a
     display: block;
     margin: 0 0.25em;
 }
-#music header > h2,
-#music header > p {
+.banner-horizontal header > h2,
+.banner-horizontal header > p {
     color:inherit
 }
 
@@ -715,7 +805,13 @@ background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #a
     top: -.8em;
 }
 
-#music header .heading-sticker {
-    box-shadow: 0 0 .25em .25em white;
+.banner-horizontal header .heading-sticker {
+    box-shadow: 0 0 0 4px white, 0 0 0 6px var(--secondary), 0 0 0.6em 0.1em white;
     margin: 0 .25em 0 0;
+    border-radius: 50%;
+}
+
+/* 游戏 */
+#game header {
+    background: linear-gradient(180deg, transparent, rgba(45, 135, 173, 0.9) 66%, #2d87ad 95%);
 }
