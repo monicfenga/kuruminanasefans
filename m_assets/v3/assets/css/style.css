@@ -67,6 +67,12 @@ body.page.theme-winter {
     color: var(--white);
 }
 
+mark {
+    background-color: var(--info);
+    color: var(--dark);
+    padding: 0.2em;
+}
+
 a {
     color: var(--primary);
     text-decoration: none;
