@@ -36,12 +36,12 @@
 
 /* common */
 body {
-  background-color:#fff9ef;
-background-image: radial-gradient(#feebd9 15%, transparent 16%),radial-gradient(#feebd9 15%, transparent 16%);
-background-size: 60px 60px;
-background-position: 0 0, 30px 30px;
-font: 16px/1.6 var(--font-family-sans-serif, sans-serif);
-background-attachment: fixed;
+    background-color: #fff9ef;
+    background-image: radial-gradient(#feebd9 15%, transparent 16%), radial-gradient(#feebd9 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    font: 16px/1.6 var(--font-family-sans-serif, sans-serif);
+    background-attachment: fixed;
 }
 
 h1,
@@ -55,11 +55,12 @@ h4,
 h6 {
     font-family: var(--font-family-sans-serif);
 }
-header#intro{
+
+header#intro {
     padding: 1em 2em;
     border: .15em solid;
-    border-image: linear-gradient(45deg, #ffd1fc,#fad0c6) 30 30;
-    background-color:#fff9ef;
+    border-image: linear-gradient(45deg, #ffd1fc, #fad0c6) 30 30;
+    background-color: #fff9ef;
     border-radius: 1em;
     margin: 1em;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
@@ -70,40 +71,49 @@ header#intro{
 }
 
 .text-info {
-    color: var(--info)!important;
+    color: var(--info) !important;
 }
 
 .text-warning {
-    color: var(--warning)!important;
+    color: var(--warning) !important;
 }
 
 .text-success {
-    color: var(--success)!important;
+    color: var(--success) !important;
 }
 
-.btn-ja,.badge-ja,
-.btn-en,.badge-en {
-  color: var(--white);
+.btn-ja,
+.badge-ja,
+.btn-en,
+.badge-en {
+    color: var(--white);
 }
-.btn-ja,.badge-ja {
+
+.btn-ja,
+.badge-ja {
     background-color: var(--primary);
 }
-.btn-en,.badge-en {
+
+.btn-en,
+.badge-en {
     background-color: var(--purple);
 }
-.btn-cn,.badge-cn {
+
+.btn-cn,
+.badge-cn {
     background-color: var(--warning);
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus {
     box-shadow: inset 0 -2px 0 var(--primary);
     color: var(--primary);
 }
 
 @media (max-width: 767px) {
-  .hidden-xs {
-    display: none !important;
-  }
+    .hidden-xs {
+        display: none !important;
+    }
 }
 
 /* Loading */
@@ -122,20 +132,41 @@ aside.the-loading-screen {
     transition: all .5s ease-in-out;
     user-select: none;
     box-shadow: 0 0 10em inset #feebd9;
-    opacity:.98;
+    opacity: .98;
 }
 
 @keyframes scale_in {
-from {transform: scale(0);}
-to {transform: scale(1);}
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
+
 @keyframes scale_in_alt {
-from {transform: scale(0);opacity:.5;}
-to {transform: scale(1.5);opacity:0;}
+    from {
+        transform: scale(0);
+        opacity: .5;
+    }
+
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
 }
+
 @keyframes wiggles {
-0%,100% {transform: rotate(3deg);}
-50% {transform: rotate(-3deg);}
+
+    0%,
+    100% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
 }
 
 body:not(.is-preload) aside.the-loading-screen {
@@ -144,43 +175,49 @@ body:not(.is-preload) aside.the-loading-screen {
     background: transparent;
     box-shadow: none;
 }
+
 aside.the-loading-screen .loading {
     transition: all .5s ease-in;
-    animation: scale_in .3s cubic-bezier(0,0,.5,1.25) 1;
-    animation-fill-mode : forwards;
+    animation: scale_in .3s cubic-bezier(0, 0, .5, 1.25) 1;
+    animation-fill-mode: forwards;
 }
 
 aside.the-loading-screen:before {
-  content: "";
-  background: var(--white);
-  width: 100vmax;
-  height: 100vmax;
-  display: block;
-  position: absolute;
-  border-radius: 50%;
-  animation: scale_in_alt 1.5s ease-out infinite;
-  opacity: 0;
+    content: "";
+    background: var(--white);
+    width: 100vmax;
+    height: 100vmax;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    animation: scale_in_alt 1.5s ease-out infinite;
+    opacity: 0;
 }
+
 body:not(.is-preload) aside.the-loading-screen:before {
-  animation-play-state: paused;
-  visibility: hidden;
+    animation-play-state: paused;
+    visibility: hidden;
 }
 
 aside.the-loading-screen .loading-inner {
     transform: scale(1);
     transition: all .5s ease-in;
 }
+
 body:not(.is-preload) aside.the-loading-screen .loading-inner {
     transform: scale(0);
 }
+
 aside.the-loading-screen .loading-inner .loading-image {
     animation: wiggles 1s ease-in-out infinite;
     box-shadow: 0 0 2em 2em white;
     background-color: var(--white);
 }
+
 body:not(.is-preload) aside.the-loading-screen .loading-inner .loading-image {
-    animation-play-state:paused;
+    animation-play-state: paused;
 }
+
 aside.the-loading-screen .loading .loading-hint {
     position: absolute;
     bottom: -80%;
@@ -188,8 +225,9 @@ aside.the-loading-screen .loading .loading-hint {
     width: max-content;
     transform: translateX(-50%);
 }
+
 body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
-  display: none
+    display: none
 }
 
 .heading-sticker {
@@ -215,11 +253,12 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
     box-sizing: border-box;
     transition: all .3s ease-in-out;
     overflow: auto;
-    box-shadow: 0 0 0px 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0);
     border: 1px solid transparent;
 }
 
-.sticker-item:hover, .sticker-item:focus-within {
+.sticker-item:hover,
+.sticker-item:focus-within {
     background-color: var(--white);
     z-index: 5;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -232,19 +271,21 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
     transition: all .3s ease-in-out;
     opacity: 0;
     pointer-events: none;
-    padding:0 1px
+    padding: 0 1px
 }
 
-.sticker-item:hover .sticker-tags, .sticker-item:focus-within .sticker-tags,
-.sticker-item:hover .sticker-action, .sticker-item:focus-within .sticker-action {
-    transform: translate(0,0);
+.sticker-item:hover .sticker-tags,
+.sticker-item:focus-within .sticker-tags,
+.sticker-item:hover .sticker-action,
+.sticker-item:focus-within .sticker-action {
+    transform: translate(0, 0);
     opacity: 1;
     pointer-events: initial;
 }
 
 .sticker-item .sticker-tags {
     white-space: nowrap;
-    transform: translate(0,.2em);
+    transform: translate(0, .2em);
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
@@ -253,15 +294,17 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
     left: 0;
     top: 0;
     padding: 0 .5em;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, .8);
 }
+
 .sticker-item .sticker-tags:hover {
-  overflow: initial;
-  white-space: initial;
+    overflow: initial;
+    white-space: initial;
 }
+
 .sticker-item .sticker-action {
     display: flex;
-    transform: translate(0,-0.2em);
+    transform: translate(0, -0.2em);
     justify-content: center;
 }
 
@@ -279,7 +322,12 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
     transition: all .3s ease-in-out;
 }
 
-.sticker-item:hover .sticker-preview, .sticker-item:focus-within .sticker-preview {
+.sticker-item.no-tags-yet .sticker-preview {
+    border-color: var(--danger);
+}
+
+.sticker-item:hover .sticker-preview,
+.sticker-item:focus-within .sticker-preview {
     margin: .3em 0;
     border-color: transparent;
 }
@@ -350,44 +398,54 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
     z-index: 9;
     margin: 0 0 1em 0;
 }
+
 .sticker-set .sticker-set-title .badge {
     font-weight: normal;
     line-height: 1;
 }
-.sticker-set:nth-child(8n) .sticker-set-title h3{
-  background: var(--red);
-  box-shadow: 0 0.2rem 0 var(--red-dimmed);
+
+.sticker-set:nth-child(8n) .sticker-set-title h3 {
+    background: var(--red);
+    box-shadow: 0 0.2rem 0 var(--red-dimmed);
 }
-.sticker-set:nth-child(8n+1) .sticker-set-title h3{
-  background: var(--orange);
-  box-shadow: 0 0.2rem 0 var(--orange-dimmed);
+
+.sticker-set:nth-child(8n+1) .sticker-set-title h3 {
+    background: var(--orange);
+    box-shadow: 0 0.2rem 0 var(--orange-dimmed);
 }
-.sticker-set:nth-child(8n+2) .sticker-set-title h3{
-  background: var(--yellow);
-  box-shadow: 0 0.2rem 0 var(--yellow-dimmed);
+
+.sticker-set:nth-child(8n+2) .sticker-set-title h3 {
+    background: var(--yellow);
+    box-shadow: 0 0.2rem 0 var(--yellow-dimmed);
 }
-.sticker-set:nth-child(8n+3) .sticker-set-title h3{
-  background: var(--green);
-  box-shadow: 0 0.2rem 0 var(--green-dimmed);
+
+.sticker-set:nth-child(8n+3) .sticker-set-title h3 {
+    background: var(--green);
+    box-shadow: 0 0.2rem 0 var(--green-dimmed);
 }
-.sticker-set:nth-child(8n+4) .sticker-set-title h3{
-  background: var(--teal);
-  box-shadow: 0 0.2rem 0 var(--teal-dimmed);
+
+.sticker-set:nth-child(8n+4) .sticker-set-title h3 {
+    background: var(--teal);
+    box-shadow: 0 0.2rem 0 var(--teal-dimmed);
 
 }
-.sticker-set:nth-child(8n+5) .sticker-set-title h3{
-  background: var(--blue);
-  box-shadow: 0 0.2rem 0 var(--blue-dimmed);
+
+.sticker-set:nth-child(8n+5) .sticker-set-title h3 {
+    background: var(--blue);
+    box-shadow: 0 0.2rem 0 var(--blue-dimmed);
 
 }
-.sticker-set:nth-child(8n+6) .sticker-set-title h3{
-  background: var(--purple);
-  box-shadow: 0 0.2rem 0 var(--purple-dimmed);
+
+.sticker-set:nth-child(8n+6) .sticker-set-title h3 {
+    background: var(--purple);
+    box-shadow: 0 0.2rem 0 var(--purple-dimmed);
 }
-.sticker-set:nth-child(8n+7) .sticker-set-title h3{
-  background: var(--pink);
-  box-shadow: 0 0.2rem 0 var(--pink-dimmed);
+
+.sticker-set:nth-child(8n+7) .sticker-set-title h3 {
+    background: var(--pink);
+    box-shadow: 0 0.2rem 0 var(--pink-dimmed);
 }
+
 .sticker-set .sticker-set-title h3 {
     display: inline-block;
     margin: 0 .5em 0 0;
@@ -414,16 +472,17 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
 nav#myScrollspy {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: calc(100% + 15px + 15px);
     z-index: 10;
     transform: scaleY(-1);
     overflow: auto;
-    padding:0;
-    margin: 0;
+    padding: 0;
+    margin: 0 -15px 0 -15px;
+    box-shadow: 0 -0.125em 0.55em rgba(0, 0, 0, .05), 0 -0.5em 1em rgba(0, 0, 0, .05);
 }
 
 nav#myScrollspy::-webkit-scrollbar {
-    height: .25rem;
+    height: .2rem;
 }
 
 nav#myScrollspy::-webkit-scrollbar-track {
