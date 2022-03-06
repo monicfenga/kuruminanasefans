@@ -5,4 +5,4 @@
 `m_assets/v3` 文件夹内为第三版的设计。
 
 ### 重建第二版的文章区的外观
-安装`wp-content/theme/menherachan`主题即可。
+安装`wp-content/theme/menherachan`主题即可。适时发布。
