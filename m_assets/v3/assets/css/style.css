@@ -11,48 +11,51 @@
     --danger: #FD1C49;
     --light: #FFF9EF;
     --dark: #494555;
-    --font-family-sans-serif: '有爱魔兽黑体 CN',Noto Sans CJK SC,Sourse Han Sans CN,'思源黑体 CN','思源黑体',Sarasa UI SC,Sarasa Gothic SC,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,system-ui;
-    --font-family-serif: Noto Serif CJK SC,Sourse Han Serif CN,'思源宋体 CN',SimSun,serif,system-ui;
-    --font-family-monospace: Iosevka,Sarasa Mono SC,Sarasa Fixed SC,Sarasa Term SC,'等距更纱黑体 SC','等距更纱黑体 T SC','思源等宽',Source Han Mono,Source Code Pro,Inconsolata,Consolas,monospace;
-    --font-family-cursive: 'FZMiaoWu','851tegakizatsu','素材集市康康体',KaiTi,KaiTi_GB2312,cursive,system-ui;
-    --font-family-fantasy: fangsong,FangSong,FangSong_GB2312,fantasy,system-ui;
-    --theme-spring-bg-color: rgba(255,179,185,.25);
-    --theme-summer-bg-color: rgba(142,222,230,.25);
-    --theme-autumn-bg-color: rgba(244,184,142,.25);
-    --theme-winter-bg-color: rgba(165,218,255,.25);
+    --font-family-sans-serif: '有爱魔兽黑体 CN', Noto Sans CJK SC, Sourse Han Sans CN, '思源黑体 CN', '思源黑体', Sarasa UI SC, Sarasa Gothic SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif, system-ui;
+    --font-family-serif: Noto Serif CJK SC, Sourse Han Serif CN, '思源宋体 CN', SimSun, serif, system-ui;
+    --font-family-monospace: Iosevka, Sarasa Mono SC, Sarasa Fixed SC, Sarasa Term SC, '等距更纱黑体 SC', '等距更纱黑体 T SC', '思源等宽', Source Han Mono, Source Code Pro, Inconsolata, Consolas, monospace;
+    --font-family-cursive: 'FZMiaoWu', '851tegakizatsu', '素材集市康康体', KaiTi, KaiTi_GB2312, cursive, system-ui;
+    --font-family-fantasy: fangsong, FangSong, FangSong_GB2312, fantasy, system-ui;
+    --theme-spring-bg-color: rgba(255, 179, 185, .25);
+    --theme-summer-bg-color: rgba(142, 222, 230, .25);
+    --theme-autumn-bg-color: rgba(244, 184, 142, .25);
+    --theme-winter-bg-color: rgba(165, 218, 255, .25);
 }
 
 [hidden] {
-    display: none!important;
+    display: none !important;
 }
 
 body {
-    font: 16px/1.6 var(--font-family-sans-serif,sans-serif);
+    font: 16px/1.6 var(--font-family-sans-serif, sans-serif);
 }
 
 body.page {
     background-color: white;
-    background-image: linear-gradient(90deg,rgba(230,230,230,.25) 50%,transparent 50%),linear-gradient(rgba(230,230,230,.25) 50%,transparent 50%);
+    background-image: linear-gradient(90deg, rgba(230, 230, 230, .25) 50%, transparent 50%), linear-gradient(rgba(230, 230, 230, .25) 50%, transparent 50%);
     background-repeat: repeat;
-    background-size: 50px 50px;
     background-size: 60px 60px;
 }
+
 body.page.theme-spring {
-    background-image: linear-gradient(90deg,var(--theme-spring-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-spring-bg-color) 50%,transparent 50%);
+    background-image: linear-gradient(90deg, var(--theme-spring-bg-color) 50%, transparent 50%), linear-gradient(var(--theme-spring-bg-color) 50%, transparent 50%);
     --light: #fff5f5;
 }
+
 body.page.theme-summer {
-    background-image: linear-gradient(90deg,var(--theme-summer-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-summer-bg-color) 50%,transparent 50%);
+    background-image: linear-gradient(90deg, var(--theme-summer-bg-color) 50%, transparent 50%), linear-gradient(var(--theme-summer-bg-color) 50%, transparent 50%);
     --light: #effffb;
     --secondary: #8BC34A;
 }
+
 body.page.theme-autumn {
-    background-image: linear-gradient(90deg,var(--theme-autumn-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-autumn-bg-color) 50%,transparent 50%);
+    background-image: linear-gradient(90deg, var(--theme-autumn-bg-color) 50%, transparent 50%), linear-gradient(var(--theme-autumn-bg-color) 50%, transparent 50%);
     --light: #FFF9EF;
     --secondary: #e49653;
 }
+
 body.page.theme-winter {
-    background-image: linear-gradient(90deg,var(--theme-winter-bg-color) 50%,transparent 50%),linear-gradient(var(--theme-winter-bg-color) 50%,transparent 50%);
+    background-image: linear-gradient(90deg, var(--theme-winter-bg-color) 50%, transparent 50%), linear-gradient(var(--theme-winter-bg-color) 50%, transparent 50%);
     --light: #eff8ff;
     --secondary: #72a7e8;
 }
@@ -121,9 +124,10 @@ button:hover,
     background-color: var(--secondary);
 }
 
-.button:focus,a:focus {
-    outline:none;
-    box-shadow: 0 0 0 0.1em var(--light),0 0 0 0.2em var(--primary);
+.button:focus,
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1em var(--light), 0 0 0 0.2em var(--primary);
 }
 
 input[type="button"].small,
@@ -134,6 +138,7 @@ button.small,
     padding: .7em;
 }
 
+/*
 .pleasewait {
     position: fixed;
     left: 50%;
@@ -152,6 +157,123 @@ button.small,
 .is-preload .pleasewait {
     opacity: 1;
 }
+*/
+
+/* Loading BEGIN */
+aside.the-loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff9ef;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(100% at 50% 50%);
+    transition: all .5s ease-in-out;
+    user-select: none;
+    box-shadow: 0 0 10em inset #feebd9;
+    opacity: .98;
+}
+
+@keyframes scale_in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale_in_alt {
+    from {
+        transform: scale(0);
+        opacity: .5;
+    }
+
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes wiggles {
+
+    0%,
+    100% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+
+body:not(.is-preload) aside.the-loading-screen {
+    clip-path: circle(0% at 50% 50%);
+    pointer-events: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+body.is-preload aside.the-loading-screen .loading {
+    transition: all .5s ease-in;
+    animation: scale_in .3s cubic-bezier(0, 0, .5, 1.25) 1;
+    animation-fill-mode: forwards;
+}
+
+aside.the-loading-screen:before {
+    content: "";
+    background: var(--white);
+    width: 100vmax;
+    height: 100vmax;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    animation: scale_in_alt 1.5s ease-out infinite;
+    opacity: 0;
+}
+
+body:not(.is-preload) aside.the-loading-screen:before {
+    animation-play-state: paused;
+    visibility: hidden;
+}
+
+aside.the-loading-screen .loading-inner {
+    transform: scale(1);
+    transition: all .5s ease-in;
+}
+
+body:not(.is-preload) aside.the-loading-screen .loading-inner {
+    transform: scale(0);
+}
+
+aside.the-loading-screen .loading-inner .loading-image {
+    animation: wiggles 1s ease-in-out infinite;
+    box-shadow: 0 0 2em 2em var(--white);
+    background-color: var(--white);
+}
+
+body:not(.is-preload) aside.the-loading-screen .loading-inner .loading-image {
+    animation-play-state: paused;
+}
+
+aside.the-loading-screen .loading .loading-hint {
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+}
+
+body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
+    display: none
+}
+
+/* Loading END */
 
 img {
     height: auto;
@@ -239,27 +361,27 @@ main small,
     main h1 {
         font-size: 2.5em;
     }
-    
+
     main h2 {
         font-size: 2.2em;
     }
-    
+
     main h3 {
         font-size: 1.7em;
     }
-    
+
     main h4 {
         font-size: 1.3em;
     }
-    
+
     main h5 {
         font-size: 1.1em;
     }
-    
+
     main h6 {
         font-size: 1em;
     }
-    
+
     main small,
     .small {
         font-size: .8em;
@@ -270,27 +392,27 @@ main small,
     main h1 {
         font-size: 2em;
     }
-    
+
     main h2 {
         font-size: 1.7em;
     }
-    
+
     main h3 {
         font-size: 1.5em;
     }
-    
+
     main h4 {
         font-size: 1.3em;
     }
-    
+
     main h5 {
         font-size: 1.1em;
     }
-    
+
     main h6 {
         font-size: 1em;
     }
-    
+
     main small,
     .small {
         font-size: .8em;
@@ -299,26 +421,26 @@ main small,
 
 
 details {
-	padding: .6rem 1rem;
-	background: var(--white);
-	border: 2px solid var(--primary);
-	border-radius: 4px;
+    padding: .6rem 1rem;
+    background: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 4px;
 }
 
 summary {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 details[open] {
-	padding-bottom: .75rem;
+    padding-bottom: .75rem;
 }
 
 details[open] summary {
-	margin-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 details[open]>*:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .heading-sticker {
@@ -330,46 +452,46 @@ details[open]>*:last-child {
     vertical-align: text-bottom;
 }
 
-header > p {
+header>p {
     color: var(--gray-dark);
 }
 
-header > .small {
+header>.small {
     color: var(--gray);
 }
 
 #main {
     border-top: 1.25px solid var(--secondary);
     border-radius: .5em;
-    box-shadow: 0 0 .05em rgba(0,0,0,.1),0 .1em .2em rgba(0,0,0,.08),0 .3em .4em rgba(0,0,0,.04),0 .5em .6em rgba(0,0,0,.06),0 .7em .8em rgba(0,0,0,.02);
+    box-shadow: 0 0 .05em rgba(0, 0, 0, .1), 0 .1em .2em rgba(0, 0, 0, .08), 0 .3em .4em rgba(0, 0, 0, .04), 0 .5em .6em rgba(0, 0, 0, .06), 0 .7em .8em rgba(0, 0, 0, .02);
 }
 
-#main > .panel.intro .pic img {
+#main>.panel.intro .pic img {
     object-position: top center;
 }
 
-#main > .panel {
+#main>.panel {
     padding: 2em;
 }
 
-#main > .panel.intro .pic .arrow {
-    background: linear-gradient(60deg,rgba(89,97,249,.6),rgba(238,154,229,.7));
+#main>.panel.intro .pic .arrow {
+    background: linear-gradient(60deg, rgba(89, 97, 249, .6), rgba(238, 154, 229, .7));
 }
 
 @media screen and (min-width:980px) {
-    #main > .panel.intro {
+    #main>.panel.intro {
         height: 64vmin;
     }
 }
 
-#main > .panel.intro > section {
+#main>.panel.intro>section {
     height: 100%;
     margin: 0;
     padding: 3.5em 2.5em;
     overflow: auto;
 }
 
-#main > .panel.intro > section > header {
+#main>.panel.intro>section>header {
     padding: 0 0 .5em;
 }
 
@@ -390,12 +512,12 @@ header > .small {
         background-repeat: no-repeat;
         position: absolute;
     }
-    
-    #main > .panel.intro .pic {
+
+    #main>.panel.intro .pic {
         width: 40%;
     }
-    
-    #main > .panel.intro> section {
+
+    #main>.panel.intro>section {
         flex: 1;
     }
 }
@@ -498,34 +620,36 @@ header > .small {
         top: -2.75em;
         opacity: 1;
     }
+
     #nav a:not(.active):not(:hover) span,
     #nav a:not(.active):not(:hover) span:after {
         border-color: transparent;
     }
-    
+
     #nav a.active:not(:hover) span {
         opacity: 1;
     }
-    
+
     #main {
         border-radius: 0;
     }
 }
 
 @media screen and (max-width:980px) {
-    #main > .panel.intro .pic {
+    #main>.panel.intro .pic {
         height: 100vmax;
     }
 }
 
-@supports ( -webkit-background-clip: text ) {
-    #main > #home.panel.intro aside {
-        background-image: linear-gradient(90deg,#AC72E8,#FF69BB,#F5DE78,#1DC2A2);
+@supports (-webkit-background-clip: text) {
+    #main>#home.panel.intro aside {
+        background-image: linear-gradient(90deg, #AC72E8, #FF69BB, #F5DE78, #1DC2A2);
         -webkit-background-clip: text;
         color: transparent;
     }
-    #main > #home.panel.intro aside h1,
-    #main > #home.panel.intro aside p {
+
+    #main>#home.panel.intro aside h1,
+    #main>#home.panel.intro aside p {
         color: inherit;
         margin-top: 0;
     }
@@ -580,7 +704,7 @@ body.theme-spring:not(.is-preload) .backdrop:before {
     position: absolute;
     width: 100%;
     height: 500px;
-    background-image: linear-gradient(180deg,var(--white) 5%,transparent 15%);
+    background-image: linear-gradient(180deg, var(--white) 5%, transparent 15%);
     content: '';
     z-index: -1;
 }
@@ -603,7 +727,7 @@ body.theme-spring:not(.is-preload) .backdrop:after {
     display: block;
     text-align: center;
     padding: .5em .25em;
-    background: linear-gradient(60deg,var(--light) 10%,var(--primary) 30%,var(--secondary) 100%);
+    background: linear-gradient(60deg, var(--light) 10%, var(--primary) 30%, var(--secondary) 100%);
     color: var(--white);
     border-radius: .5em;
     text-decoration: none;
@@ -625,7 +749,8 @@ body.theme-spring:not(.is-preload) .backdrop:after {
     transition: all .5s ease;
 }
 
-.cta-button:hover,.cta-button:focus {
+.cta-button:hover,
+.cta-button:focus {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -655,7 +780,7 @@ body.theme-spring:not(.is-preload) .backdrop:after {
     width: 5em;
     height: auto;
     border-radius: .2em;
-    box-shadow: 0 0 .5em rgba(0,0,0,.1);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .1);
     transition: all .5s ease;
 }
 
@@ -722,7 +847,7 @@ a.manga-set {
     height: auto;
     border-top: 1px solid var(--secondary);
     border-bottom: 1px solid var(--secondary);
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, .8);
     color: var(--danger);
     text-align: center;
     transform: translateY(-50%) rotateX(90deg);
@@ -739,9 +864,9 @@ section.wallpapers-content {
     left: 50%;
     top: 50%;
     padding: 1em;
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, .8);
     border-radius: .5em;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .wallpapers-background {
@@ -769,12 +894,12 @@ section.wallpapers-content {
     padding: 2em;
     width: 100%;
     color: white;
-    text-shadow: 0 .1em .3em rgba(0,0,0,.5);
-    box-shadow:0 .2em .2em rgba(0,0,0,.1),0 .4em .4em rgba(0,0,0,.05);
+    text-shadow: 0 .1em .3em rgba(0, 0, 0, .5);
+    box-shadow: 0 .2em .2em rgba(0, 0, 0, .1), 0 .4em .4em rgba(0, 0, 0, .05);
 }
 
 #music header {
-background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #aec1c5 95%);
+    background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #aec1c5 95%);
 }
 
 #music .button {
@@ -782,19 +907,28 @@ background: linear-gradient(180deg, transparent, rgba(174, 193, 197, .9) 66%, #a
     display: block;
     margin: 0 0.25em;
 }
-.banner-horizontal header > h2,
-.banner-horizontal header > p {
-    color:inherit
+
+.banner-horizontal header>h2,
+.banner-horizontal header>p {
+    color: inherit
 }
 
 #music h3 {
-    font-size:1.4em
+    font-size: 1.4em
 }
 
-#music ol {counter-reset:music-counter 0;padding: 0;}
-#music ol li {counter-increment: test1;position: relative;}
+#music ol {
+    counter-reset: music-counter 0;
+    padding: 0;
+}
+
+#music ol li {
+    counter-increment: test1;
+    position: relative;
+}
+
 #music ol li:before {
-    content:counter(test1)".";
+    content: counter(test1)".";
     color: var(--primary);
     position: absolute;
     left: -2em;
