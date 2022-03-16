@@ -462,6 +462,30 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
     padding: 2em 0;
 }
 
+.stickers-list aside {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: calc(100% + 15px + 15px);
+    z-index: 10;
+    padding: 0;
+    margin: 0 -15px 0 -15px;
+    box-shadow: 0 -0.125em 0.55em rgba(0, 0, 0, .05), 0 -0.5em 1em rgba(0, 0, 0, .05);
+}
+
+input#search_stickers {
+    height: auto;
+    padding: .5em;
+    font-size: 1rem;
+    width: 2.5em;
+    background: var(--light);
+    transition: all .15s ease-in-out;
+}
+
+input#search_stickers:focus {
+    width: 10em;
+}
+
 #myScrollspy .nav-tabs {
     width: max-content;
     margin: 0;
@@ -470,15 +494,10 @@ body:not(.is-preload) aside.the-loading-screen .loading .loading-hint {
 }
 
 nav#myScrollspy {
-    position: sticky;
-    top: 0;
-    width: calc(100% + 15px + 15px);
     z-index: 10;
     transform: scaleY(-1);
     overflow: auto;
     padding: 0;
-    margin: 0 -15px 0 -15px;
-    box-shadow: 0 -0.125em 0.55em rgba(0, 0, 0, .05), 0 -0.5em 1em rgba(0, 0, 0, .05);
 }
 
 nav#myScrollspy::-webkit-scrollbar {
