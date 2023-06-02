@@ -16,10 +16,8 @@
   - © 胡桃日记
 - PureCSS
   - © 2014 - Present Yahoo Inc. All rights reserved.
-- 一些来自Pico CSS的元素（弹窗对话框）
+- 一些来自Pico CSS的元素
   - © 2019 - 2022 Lucas Larroche
-- 一些来自Kico框架的元素（漂浮提示）
-  - © 2021 - 2022 Dreamer-Paul
 - 表情包
   - © JOYNET LLC. 
 - 插图
