@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*!
+ * Pico.css v1.5.6 (https://picocss.com)
+ * Copyright 2019-2022 - Licensed under MIT
+ */
+ 
+/**
+ * Modal (<dialog>)
+ */
+:root {
+  --scrollbar-width: 0px;
+}
+
+dialog {
+--spacing:1em;
+  display: flex;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  /*min-width: 100%;*/
+  height: inherit;
+  /*min-height: 100%;*/
+  padding: var(--spacing);
+  border: 0;
+  /*backdrop-filter: blur(0.25rem) brightness(0.85) sepia(0.5);*/
+  /*background-color: var(--light);*/
+  background-color: transparent;
+  /*background-color: rgba(251, 240, 223, 0.5);*/
+  color: var(--color);
+}
+dialog article {
+  max-height: calc(100vh - var(--spacing) * 2);
+  overflow: auto;
+  background-color: var(--white);
+  border-radius: 0.5em;
+  box-shadow: var(--z5);
+  padding: var(--spacing);
+}
+@media (min-width: 576px) {
+  dialog article {
+    max-width: 510px;
+  }
+}
+@media (min-width: 768px) {
+  dialog article {
+    max-width: 700px;
+  }
+}
+dialog article > header,
+dialog article > footer {
+    /*
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+    */
+padding: calc(var(--spacing) * 0.5) var(--spacing);
+margin: calc(var(--spacing) * -0.5) calc(var(--spacing) * -1);
+}
+dialog article > header .close {
+  margin: 0;
+  margin-left: var(--spacing);
+  float: right;
+}
+dialog article > footer {
+  text-align: right;
+}
+dialog article > footer [role=button] {
+  margin-bottom: 0;
+}
+dialog article > footer [role=button]:not(:first-of-type) {
+  margin-left: calc(var(--spacing) * 0.5);
+}
+dialog article p:last-of-type {
+  margin: 0;
+}
+dialog article .close {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin-top: calc(var(--spacing) * -0.5);
+  margin-bottom: var(--spacing);
+  margin-left: auto;
+  color: var(--danger);
+  background-position: center;
+  background-size: auto 1rem;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+  text-decoration: none;
+}
+dialog article .close:is([aria-current], :hover, :active, :focus) {
+  opacity: 1;
+}
+dialog:not([open]), dialog[open=false] {
+  display: none;
+}
+
+.modal-is-open {
+  padding-right: var(--scrollbar-width, 0px);
+  overflow: hidden;
+  pointer-events: none;
+}
+.modal-is-open dialog {
+  pointer-events: auto;
+}
+@supports(color: hwb(200 100% 80%)) {
+:where(.modal-is-opening, .modal-is-closing) dialog,
+:where(.modal-is-opening, .modal-is-closing) dialog > article {
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+:where(.modal-is-opening, .modal-is-closing) dialog {
+  animation-duration: 0.8s;
+  animation-name: modal-overlay;
+}
+:where(.modal-is-opening, .modal-is-closing) dialog > article {
+  animation-delay: 0.2s;
+  animation-name: modal;
+}
+}
+
+.modal-is-closing dialog,
+.modal-is-closing dialog > article {
+  animation-delay: 0s;
+  animation-direction: reverse;
+}
+
+@keyframes modal-overlay {
+  from {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: transparent;
+  }
+}
+@keyframes modal {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+
+@supports not (color: hwb(200 100% 80%)) {
+  html:not(.modal-is-open):not(.modal-is-opening):not(.modal-is-closing) dialog article,
+html:not(.modal-is-open):not(.modal-is-opening):not(.modal-is-closing) dialog {
+    opacity: 0;
+}
+
+dialog:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    display: block;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+html:not(.modal-is-open):not(.modal-is-opening):not(.modal-is-closing) dialog article {
+    transform: scale(0.9) translateY(-10rem);
+}
+
+dialog,
+dialog article {
+    transition: all .4s ease-in-out;
+}
+
+.modal-is-open dialog article {
+    transform: scale(1) translateY(0);
+    transition: all .2s ease-in-out;
+}
+
+.modal-is-open dialog:before{
+    opacity: 0.5;
+}
+
+.modal-is-open.modal-is-opening dialog {
+    opacity: 1 !important;
+
+}
+
+.modal-is-open.modal-is-closing dialog:before,
+.modal-is-open.modal-is-closing dialog article {
+    opacity: 0;
+}
+
+.modal-is-closing dialog article {
+    transform: scale(0.9) translateY(10rem);
+    opacity: 0;
+}
+
+
+  
+}

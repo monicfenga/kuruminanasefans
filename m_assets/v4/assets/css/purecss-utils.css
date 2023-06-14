@@ -1,0 +1,128 @@
+/* Responsive Utilities */
+.pure-hidden,
+[hidden] {
+    display: none !important
+}
+
+@media screen and (max-width:35.5em) {
+    .pure-hidden-xs {
+        display: none !important
+    }
+}
+
+@media screen and (min-width:35.5em) and (max-width:47.999em) {
+    .pure-hidden-sm {
+        display: none !important
+    }
+}
+
+@media screen and (min-width:48em) and (max-width:63.999em) {
+    .pure-hidden-md {
+        display: none !important
+    }
+}
+
+@media screen and (min-width:64em) and (max-width:79.999em) {
+    .pure-hidden-lg {
+        display: none !important
+    }
+}
+
+@media screen and (min-width:80em) {
+    .pure-hidden-xl {
+        display: none !important
+    }
+}
+
+/* Glass button */
+.glass-button {
+    position: relative;
+    display: inline-block;
+    padding: .5em 1em;
+    background-color: var(--gray);
+    background-image: linear-gradient(to bottom, var(--gray-dark), var(--gray));
+    text-decoration: none;
+    color: var(--white);
+    border-radius: .5em;
+    box-shadow: var(--z1);
+    text-shadow: 0px -1px rgba(0, 0, 0, .5);
+    border: 0.04em solid var(--gray-dark);
+    transition: all .2s ease-in-out;
+}
+
+.glass-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.15));
+    border-radius: calc(.5em - 2px) calc(.5em - 2px) .25em .25em;
+    pointer-events: none;
+    z-index: 0;
+
+}
+
+.glass-button:hover {
+    transform: translateY(-.05em);
+    filter: brightness(1.05);
+    box-shadow: var(--z2);
+}
+
+.glass-button:focus {
+    box-shadow: var(--z2), 0 0 0 .15em var(--primary);
+    outline: none;
+}
+
+.glass-button:active {
+    transform: translateY(.05em);
+    filter: brightness(0.95);
+}
+
+.glass-button>* {
+    z-index: 1;
+}
+
+.glass-button.glass-button-primary {
+    background-color: #ffca5e;
+    background-image: linear-gradient(to top, #ffd878, #ffba49 33%);
+    border-color: #ffe9de;
+    font-weight: 800;
+    color: #faeee0;
+    -webkit-text-stroke: 0.03em #d06834;
+    text-shadow: 0 0.08em 0.05em #ffa45b;
+    box-shadow: var(--z2), 0 0 .5em 0.15em #febb84 inset;
+}
+
+.glass-button.watermelon {
+    background-color: #fe3355;
+    background-image: linear-gradient(to top, #fe3355, #FF3D5E 33%);
+}
+
+.glass-button.bili {
+    background-color: #fb7299;
+    background-image: linear-gradient(to top, #fb7299, #fa5281 33%);
+}
+
+.glass-button.acfun {
+    background-color: #fd4c5d;
+    background-image: linear-gradient(to top, #fd4c5d, #ec4556 33%);
+    border-color: #fd4c5d;
+}
+
+.glass-button.douyin {
+    background-color: #363741;
+    background-image: linear-gradient(to top, #363741, #060716 33%);
+    border-color: #fff #fe2c55 #fff #00faf0;
+}
+
+.glass-button.zhihu {
+    background-color: #06f;
+    background-image: linear-gradient(to top, #06f, #005ce6 33%);
+}
+
+.glass-button.weibo {
+    background-color: #ff8200;
+    background-image: linear-gradient(to top, #ff8200, #ff5900 33%);
+}

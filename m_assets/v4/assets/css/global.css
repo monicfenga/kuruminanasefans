@@ -1,0 +1,403 @@
+﻿/* 全局样式 */
+
+/*变量*/
+:root {
+    /*光谱*/
+    --red: #dd698c;
+    --orange: #d3a656;
+    --yellow: #e7d59a;
+    --green: #20c997;
+    --teal: #87b6b6;
+    --cyan: #25b7b8;
+    --blue: #32abde;
+    --indigo: #958ac5;
+    --purple: #ce9ae8;
+    --pink: #ffb4b8;
+    --white: #fff;
+    --gray: #666d7d;
+    --gray-dark: #343a40;
+    --black: #4a4543;
+    /*主色调*/
+    --primary: #f06e81;
+    --secondary: #b4addf;
+    --tertiary: #e7d59a;
+    --quaternary: #25b7b8;
+    /*关键色*/
+    --success: #56cc9d;
+    --info: #25b7b8;
+    --warning: #f1e48f;
+    --danger: #fe506e;
+    --light: #fbf0df;
+    --dark: #66525b;
+
+    --s-primary-color-h: 351deg;
+    --s-primary-color-s: 81%;
+    --s-primary-color-l: 69%;
+    /* 字体 */
+    /*! 其中一些字体是有版权的，但我只是引用了它们，如果用户安装了对应字体，才会显示。你可能会发现一些字体的名称不是很标准，那是因为她们真的叫这个名字。Go to font.chinaz.com for more details */
+    /* 正文专用黑体 */
+    --font-family-sans-serif-paragraph: '有爱魔兽圆体 CN', 'Nowar Warcraft Rounded CN', '有爱魔兽黑体 CN', 'Nowar Warcraft Sans CN', var(--font-family-sans-serif);
+    /* 黑体 */
+    --font-family-sans-serif: "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", '思源黑体 CN', '思源黑体', 'Sarasa UI SC', 'Sarasa Gothic SC', 'HarmonyOS Sans', 'MiSans', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Inter', sans-serif, system-ui;
+    /* 宋体 */
+    --font-family-serif: 'Noto Serif CJK SC', 'Sourse Han Serif CN', '思源宋体 CN', '新宋体', 'SimSun', serif, system-ui;
+    /* 等宽字体 */
+    --font-family-monospace: 'Iosevka SS11 Web', 'Iosevka', 'Sarasa Mono SC', 'Sarasa Fixed SC', 'Sarasa Term SC', '等距更纱黑体 SC', '等距更纱黑体 T SC', '思源等宽', 'Source Han Mono', 'Source Code Pro', 'Inconsolata', 'Victor Mono', 'Consolas', monospace;
+    /* 手写字体 */
+    --font-family-cursive: '也字工厂漫画体', '也字工厂快乐星球体', 'YEFONTKuaiLeXingQiuTi', '字体管家天真', '偶然的相逢', '四季予你', '字体管家夕禾', '描绘着那场美梦', '北极星的幻想', '花瓣游行记', '清新少囡贩卖机', '大可爱的小可爱', '平方时光体', '神韵蝴蝶少女', '我的一生只有你', '十八亿少女的梦', '贩卖夏日的美好', '忘记种过的花', '三极幽兰体', '奋斗青春是花季', '晴空暖阳奶酪体', '人间奶酪便利店', '偷偷看你一秒', '851tegakizatsu', '萌神 手写体 CN', 'mengshen', 'JasonHandwriting4', '清松手寫體', '素材集市康康体', 'SetoFont', 'Aa最美的诗是你', '杨任东竹石体', 'FZMiaoWu', '方正喵呜体', '方正有猫在简体', '方正喵呜_GBK', '华康少女文字W5', '手书体', 'nanxiangbangbang', '字体视界法棍体', '我的少女时代', '资源圆体', 'Resource Han Rounded', '有爱魔兽圆体 CN', 'Nowar Warcraft Rounded CN', 'KaiTi', 'KaiTi_GB2312', cursive, system-ui;
+    /* 正文专用手写字体 */
+    --font-family-cursive-paragraph: '也字工厂甜品菜单体', '也字工厂快乐星球体', 'YEFONTKuaiLeXingQiuTi', '也字工厂幼稚园体', 'YEFONTYouZhiYuanTi', '余生只为博君一笑', '日系可爱情书', '灵动的人鱼', var(--font-family-sans-serif-paragraph);
+    /* 标题专用手写字体 */
+    --font-family-cursive-heading: '字体管家元气满满体 (非商业使用)', '星夜浪漫宇宙温柔', 'Aa日式标题', 'Aa字体管家纸胶带', 'Aa颜文字', '今日份的浪漫晚风', '小王子の玫瑰花', '也字工厂花卷体', '默陌卷恋手写体', '蜜桃甜心体', '奶酪奶酪一口吃掉', '小熊软糖微微甜', '冰露星星糖', var(--font-family-sans-serif);
+    /* 装饰字体 */
+    --font-family-fantasy: '千图小兔体', 'QTxiaotu', '仓耳本喵在此体', '字心坊猫小镇体', '三极童画', 'Aa油画棒', '锐字温帅小可爱', '奶酪奶酪一口吃掉', var(--font-family-cursive-heading), var(--font-family-cursive), fangsong, '仿宋', 'FangSong', 'FangSong_GB2312', fantasy, system-ui;
+    /*阴影*/
+    --z1: 0 1px 3px rgba(0, 0, 0, .1), 0 1px 2px rgba(0, 0, 0, .18);
+    --z2: 0 3px 6px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .16);
+    --z3: 0 10px 20px rgba(0, 0, 0, .06), 0 6px 6px rgba(0, 0, 0, .14);
+    --z4: 0 14px 28px rgba(0, 0, 0, .04), 0 10px 10px rgba(0, 0, 0, .12);
+    --z5: 0 19px 38px rgba(0, 0, 0, .02), 0 15px 18px rgba(0, 0, 0, .1);
+
+}
+
+/*全局*/
+
+::selection {
+    background-color: var(--primary);
+    color: var(--white);
+    -webkit-text-stroke: 0 !important;
+    filter: unset !important;
+}
+
+::-moz-selection {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+    border-radius: 20px;
+}
+
+
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *="pure-u"] {
+    font-family: var(--font-family-sans-serif);
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (min-width:1600px) {
+
+    html,
+    button,
+    input,
+    select,
+    textarea,
+    .pure-g [class *="pure-u"] {
+        font-size: 18px;
+    }
+}
+
+p,
+input,
+select,
+textarea,
+.pure-g [class *="pure-u"] {
+    font-family: var(--font-family-cursive-paragraph);
+}
+
+.pure-g [class *="pure-u"] {
+    outline: 1px solid rgba(0, 0, 0, .02);
+}
+
+body {
+    background-color: #fafafa;
+    background-image: linear-gradient(rgba(0, 0, 0, .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, .05) 1px, transparent 1px);
+    background-size: 1rem 1rem, 1rem 1rem;
+    background-position: -1px -1px, -1px -1px;
+    color: var(--dark);
+}
+
+ul:not([class]):not([id]) {
+  list-style: initial;
+}1
+ol:not([class])ol:not([id]) {
+    list-style:decimal;
+  }
+
+
+a {
+    color: var(--primary);
+}
+
+mark {
+    color: var(--black);
+    background-color: var(--yellow);
+    padding: 0 .25em;
+    border-radius: .15em;
+}
+
+header,
+section,
+footer {
+    position: relative;
+}
+
+h1,
+h2,
+.font-family-cursive {
+    font-family: var(--font-family-cursive);
+}
+
+.font-family-sans-serif {
+    font-family: var(--font-family-sans-serif);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+mark.needcite,
+abbr.needcite {
+    background-color: transparent;
+    background-image: linear-gradient(-0.5deg, transparent 0% 14%, var(--warning) 15% 85%, transparent 86% 100%);
+
+    padding: 0;
+}
+
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected {
+    background-color: var(--primary);
+}
+
+.list-inline {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.list-inline li {
+    display: inline-block;
+    margin: 0 .5em;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.list-unstyled>li {
+    padding: 0;
+}
+
+.small {
+    font-size: .8em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}
+
+/* section:target:before {
+  content: "";
+    display: block;
+    height: 6rem;
+    margin: -6rem 0 0;
+    pointer-events: none;
+    user-select: none;
+} */
+
+.container {
+    max-width: 1200px;
+    padding: 0 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 1em;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.lead {
+    font-size: 1.25em;
+    font-weight: 300;
+    font-family: var(--font-family-cursive);
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay .overlay-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .25);
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.overlay:focus-within .overlay-layer,
+.overlay:hover .overlay-layer {
+    opacity: 1;
+}
+
+.doodle-border {
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-image: url(./DoodleCSS/border.svg) 10 10 10 10 stretch stretch;
+}
+
+.doodle-border-2,
+blockquote.doodle-border {
+    border-left-style: solid;
+    border-width: 0px 6px 3px 6px;
+    border-image: url(./DoodleCSS/bq.svg) 0 6 3 6 stretch stretch;
+    padding-left: 0.5em;
+    border-right-width: 0px;
+}
+
+hr.doodle-border {
+    border-style: solid;
+    border-width: 0px 3px 6px 3px;
+    border-image: url(./DoodleCSS/hr.svg) 0 3 6 3 stretch stretch;
+}
+
+img.doodle-border {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-image: url(./DoodleCSS/button.svg) 3 3 3 3 stretch stretch;
+}
+.inner-page-wrapper {
+    background-color: #fffaf0;
+    background-image: url(../img/xtanp.gif);
+    background-repeat: repeat-y;
+    background-size: auto;
+    border-radius: var(--border-radius,0.5em);
+    box-shadow: var(--z4);
+    padding-left: 4em;
+    box-sizing: border;
+}
+
+.order-first {
+    order: -1 !important;
+}
+
+.order-0 {
+    order: 0 !important;
+}
+
+.order-1 {
+    order: 1 !important;
+}
+
+.order-2 {
+    order: 2 !important;
+}
+
+.order-3 {
+    order: 3 !important;
+}
+
+.order-4 {
+    order: 4 !important;
+}
+
+.order-5 {
+    order: 5 !important;
+}
+
+.order-last {
+    order: 6 !important;
+}
+
+dl.dl-table {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) minmax(auto, 2fr);
+}
+
+@media (min-width:48em) {
+    dl.dl-table {
+        grid-template-columns: minmax(min-content, 1fr) minmax(auto, 3fr);
+    }
+}
+
+@media (min-width:80em) {
+    dl.dl-table {
+        grid-template-columns: minmax(min-content, 1fr) minmax(auto, 4fr);
+    }
+}
+
+/*
+dl.dl-table>dd>dl.dl-table {
+    grid-template-columns: minmax(min-content, 1fr) minmax(auto, 2fr);
+}
+*/
+dl.dl-table dt {
+    grid-column-start: 1;
+}
+
+dl.dl-table dd {
+    grid-column-start: 2;
+    margin: 0;
+}
+
+dl.dl-table>.header {
+    grid-column: 1 / span 2;
+    font-weight: bold;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .25em .5em;
+}
+
+dl.dl-table>.header>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+dl.dl-table dd,
+dl.dl-table dt {
+    padding: .25em .5em;
+    border: 1px solid var(--gray);
+}

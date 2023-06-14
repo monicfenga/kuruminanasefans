@@ -1,0 +1,95 @@
+/* 用于小游戏的全局样式 */
+/* General Style */
+:root {
+    --gray: hsl(333, 5%, 80%);
+    --gray-dark: hsl(340, 5%, 55%);
+    --primary: #f76e9c;
+    --secondary: #ce80ff;
+    --success: #75bf40;
+    --info: #36c6e2;
+    --warning: #f5993d;
+    --danger: #eb6347;
+    --light: #fbf9fa;
+    --dark: #46393e;
+    --muted: var(--gray);
+    --page-background: #fbf9fa;
+    --card-background: #ffffff;
+    --primary-hover: #f25a8c;
+    --secondary-hover: #b855f6;
+    --success-hover: #72ab49;
+    --info-hover: #28a4bd;
+    --warning-hover: #e67f19;
+    --danger-hover: #d94426;
+    --primary-light: #f76e9c10;
+    --secondary-light: #ce80ff10;
+    --success-light: #75bf4010;
+    --info-light: #36c6e210;
+    --warning-light: #f5993d10;
+    --danger-light: #eb634710;
+    --main-color: #faeee0;
+    --text-color: #956c5d;
+    --font-family-sans-serif: '有爱魔兽黑体 CN', Noto Sans CJK SC, Sourse Han Sans CN, '思源黑体 CN', '思源黑体', Sarasa UI SC, Sarasa Gothic SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif, system-ui;
+    --font-family-serif: Noto Serif CJK SC, Sourse Han Serif CN, '思源宋体 CN', SimSun, serif, system-ui;
+    --font-family-monospace: Iosevka, Sarasa Mono SC, Sarasa Fixed SC, Sarasa Term SC, '等距更纱黑体 SC', '等距更纱黑体 T SC', '思源等宽', Source Han Mono, Source Code Pro, Inconsolata, Consolas, monospace;
+    --font-family-cursive: '素材集市康康体', '851tegakizatsu', KaiTi, KaiTi_GB2312, cursive, system-ui;
+    --font-family-fantasy: fangsong, FangSong, FangSong_GB2312, fantasy, system-ui;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/bg.png) cover no-repeat;
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Quick CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+pre,code,data,kbd {
+    font-family: var(--font-family-monospace);
+
+}
+
+/* Simple Button Style on Hover */
+/*
+.btn {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn:focus,
+.btn:hover {
+    background-color: var(--primary-hover);
+    color: var(--light);
+}
+*/
+.btn-normal {
+    border: none;
+    margin: .25em;
+    padding: .5em;
+    border-radius: .5em;
+    width: auto;
+    height: auto;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 -0.15em 0 #e5d2c5 inset, 0 0 0 0.1em var(--text-color), 0 0 0 0.2em rgba(255, 255, 255, .25);
+    transition: all .1s ease-in-out;
+    font-size: clamp(14px, 1.75vmax, 18px);
+}
+
+.btn-normal:hover,
+.btn-normal:focus {
+    box-shadow: 0 -0.1em 0 #e5d2c5 inset, 0 0 0 0.1em var(--text-color), 0 0 .5em 0.2em rgba(255, 255, 255, .75);
+}
+
+.btn-normal:active {
+    box-shadow: 0 0 0 #e5d2c5 inset, 0 0 0 0.1em var(--primary), 0 0 .5em 0.2em rgba(255, 255, 255, 75);
+}
