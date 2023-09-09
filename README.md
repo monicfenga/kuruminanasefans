@@ -22,5 +22,6 @@
   - © JOYNET LLC. 
 - 插图
   - © ぽむ 或对应作者（见作者签名）
+  - FreePik
 
 详见[站内“关于本站”](http://menherachanfans.eu.org/#about)部分。
