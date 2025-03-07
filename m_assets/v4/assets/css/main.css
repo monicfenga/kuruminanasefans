@@ -33,6 +33,55 @@ figure>img {
     -webkit-text-stroke: 0px;
 }
 
+a[href]:not([class]):not([data-tooltip]) {
+    position: relative;
+    display: inline-block;
+    color: var(--primary);
+    transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 2.28);
+}
+
+a[href]:not([class]):not([data-tooltip])after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 50%;
+    left: 0%;
+    bottom: 0;
+    background: rgba(240, 110, 129, 0.15);
+    transition: width 0.2s ease-in-out;
+    transform: skewY(-1deg) translateY(-0.3em);
+}
+
+a[href]:not([class]):not([data-tooltip]):hover:after {
+    width: 100%;
+}
+
+.pure-button {
+    transition: all .2s ease-out;
+}
+
+.pure-button:hover,
+.pure-button:focus,
+.pure-button:focus-within {
+    transform: scale(1.04);
+    transition: all .2s cubic-bezier(0.18, 0.89, 0.32, 2.28);
+}
+
+.pure-button:active {
+    transform: scale(0.98);
+}
+
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    user-select: none;
+    z-index: 5000;
+}
+
 /* ========== 加载 ========== */
 .preloader-done {
     text-align: center;
@@ -55,7 +104,7 @@ figure>img {
 
 #preload_question .inner:before {
     content: "";
-    background-image: url(https://a-srv-img-cdn.jizhiku.net/?cache=https://cdn.jsdelivr.net/gh/monicfenga/kuruminanasefans/m_stickers/ja/kurumi-chan.17/432759397.png);
+    /* background-image: url(https://a-srv-img-cdn.jizhiku.net/?cache=https://cdn.jsdelivr.net/gh/monicfenga/kuruminanasefans/m_stickers/ja/kurumi-chan.17/432759397.png); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -67,7 +116,6 @@ figure>img {
     height: 10em;
     pointer-events: none;
 }
-
 /* ========== 头图 ========== */
 @keyframes topimg-fadein {
     0% {
@@ -94,7 +142,7 @@ figure>img {
     }
 }
 
-#topimg {
+.banner.style-1 #topimg {
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -152,7 +200,7 @@ html.has-parallax-effect {
     margin: 1em;
 }
 
-html:not(.has-parallax-effect) #topimg::before {
+html:not(.has-parallax-effect) .banner.style-1 #topimg::before {
     content: "";
     position: absolute;
     width: calc(100% - 2em);
@@ -169,15 +217,15 @@ html:not(.has-parallax-effect) #topimg::before {
     pointer-events: none;
 }
 
-body.is-preload #topimg img,
-body.is-preload #top section div {
-    animation-play-state: paused;
+body.is-preload #top * {
+    animation-play-state: paused !important;
 }
 
-#topimg img {
+.banner.style-1 #topimg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: var(--pos-x, 50%) var(--pos-y, 50%);
     pointer-events: none;
     user-select: none;
     animation: topimg-fadein 30s ease-out 0s 1;
@@ -186,7 +234,7 @@ body.is-preload #top section div {
     animation-delay: 1s;
 }
 
-#topimg aside {
+.banner.style-1 aside {
     position: absolute;
     top: 0;
     right: 0;
@@ -199,11 +247,11 @@ body.is-preload #top section div {
     z-index: 1;
 }
 
-body.is-preload #topimg aside {
+body.is-preload .banner.style-1 aside {
     opacity: 0;
 }
 
-#top section {
+.banner.style-1 section {
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -212,35 +260,43 @@ body.is-preload #topimg aside {
 }
 
 @supports (height: clamp(0px, 100vh, 1920px)) {
-    #top section {
+    .banner.style-1 section {
         height: clamp(0px, 100vh, 1920px);
     }
 }
 
-.has-parallax-effect #top section {
+.has-parallax-effect .banner.style-1 section {
     transform: translateZ(-0.5px) scale(1.5);
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#top section div {
-    padding: 0 2em 4em 2em;
-    text-align: center;
+.banner.style-1 section div {
+
     position: absolute;
-    top: 80%;
-    left: 0;
-    right: 0;
+    top: 75%;
+    left: 0em;
     transform: translateY(-50%);
-    filter: drop-shadow(0 .05em .1em var(--gray));
-    letter-spacing: 0.05em;
+    backdrop-filter: blur(15px);
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 2vmin 2vmin 0;
+    padding: 1em;
+    box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.8) inset, -1px -1px 1px 0 rgba(255, 255, 255, 0.2) inset, var(--z3);
+    transition: all .2s ease-in-out;
 }
 
-.has-parallax-effect #top section div {
+.banner.style-1 section div:hover,#top section div:focus-within {
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+.has-parallax-effect .banner.style-1 section div {
     z-index: 1;
 }
 
-#top section div {
+.banner.style-1 section div {
     width: fit-content;
     margin: 0 auto;
     opacity: 0;
@@ -251,36 +307,38 @@ body.is-preload #topimg aside {
     animation-delay: 1.25s;
 }
 
-#top section .greeting {
+.banner section .greeting {
     margin: 0;
     font-size: calc(2.5rem + 2vmax);
-    font-weight: bolder;
+    /* font-weight: bolder; */
     font-family: var(--font-family-fantasy), var(--font-family-cursive);
     line-height: 1;
 }
 
 @supports (font-size: clamp(2rem, calc(2.5rem + 2vmax), 3rem)) {
-    #top section .greeting {
+    .banner section .greeting {
         font-size: clamp(2rem, calc(2.5rem + 2vmax), 3rem);
     }
 }
 
 
 #top section .greeting b {
-    background-image: linear-gradient(90deg, #AC72E8, #FF69BB, #F5DE78, #1DC2A2);
-    /*background-image: linear-gradient(90deg, var(--purple), var(--red), var(--yellow), var(--cyan));*/
+    color: var(--primary);
+    background-image: linear-gradient(90deg, var(--primary), #9370DB, #4F94CD);
+    /* background-image: linear-gradient(90deg, var(--primary), var(--purple), var(--blue)); */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    -webkit-text-stroke: 0.8px var(--light);
+    /* -webkit-text-stroke: 0.8px var(--light); */
 }
 
 #top section .hello {
     font-family: var(--font-family-sans-serif-paragraph);
-    font-size: calc(1rem + 1vmax);
-    font-weight: 600;
-    color: var(--light);
-    -webkit-text-stroke: 0.4px var(--gray-dark);
+    font-size: calc(0.6rem + 1vmax);
+    font-weight: 400;
+    color: var(--gray-dark);
+    margin: 0.8em 0 0 0;
+    /* -webkit-text-stroke: 0.4px var(--gray-dark); */
 }
 
 #top section .hello small {
@@ -289,9 +347,14 @@ body.is-preload #topimg aside {
 }
 
 @media (min-width:35.5em) {
-    #top section div {
+
+    .banner.style-1 section div {
         top: 50%;
+        left: 1.5em;
+        padding: 2em 4em;
+        border-radius: 2vmin;
     }
+
 
     #top section .greeting {
         font-size: calc(3rem + 1.5vmax);
@@ -303,17 +366,17 @@ body.is-preload #topimg aside {
         }
     }
 
-    #top section .greeting b {
+    /* #top section .greeting b {
         -webkit-text-stroke: 2px var(--light);
-    }
+    } */
 
-    #top section .hello {
+    /*     #top section .hello {
         -webkit-text-stroke: 1px var(--gray-dark);
-    }
+    } */
 
-    #top section div {
+    /* #top section div {
         padding-bottom: 0;
-    }
+    } */
 }
 
 /* ========== 头图-滚动图标 ========== */
@@ -333,7 +396,7 @@ body.is-preload #topimg aside {
     }
 }
 
-.mouse-link {
+.banner.style-1 .mouse-link {
     position: absolute !important;
     right: 0;
     left: 0;
@@ -343,7 +406,7 @@ body.is-preload #topimg aside {
 
 .mouse-icon {
     background: transparent;
-    border: 2px solid var(--light);
+    border: 2px solid var(--gray-dark);
     border-radius: 15px;
     bottom: 0px;
     height: 44px;
@@ -354,6 +417,11 @@ body.is-preload #topimg aside {
     z-index: 2;
 }
 
+
+.banner.style-1 .mouse-icon {
+    border-color: var(--light)
+}
+
 .mouse-icon:hover {
     opacity: 0.8 !important;
 }
@@ -361,7 +429,7 @@ body.is-preload #topimg aside {
 .mouse-icon .wheel {
     animation: 1.7s ease-in-out 0s normal none infinite mouse-scroll;
     border-radius: 30%;
-    background: var(--light);
+    background: var(--gray-dark);
     height: 12px;
     left: 0;
     margin-left: auto;
@@ -369,6 +437,10 @@ body.is-preload #topimg aside {
     margin-top: 6px;
     right: 0;
     width: 6px;
+}
+
+.banner.style-1 .mouse-icon .wheel {
+    background-color: var(--light)
 }
 
 /* ========== 导航菜单 ========== */
@@ -383,12 +455,12 @@ body.is-preload #topimg aside {
 
 .navigation-nav li {
     color: var(--dark);
-    padding: 0.75em 0;
+    padding: 0.66em 0;
 }
 
 .navigation-nav li a {
-    font-size: 1.66em;
-    transition: all .2s ease-in-out;
+    font-size: 1.5em;
+    transition: all .2s cubic-bezier(0.18, 0.89, 0.32, 2.28);
 }
 
 #main_nav .sticker-nav {
@@ -397,7 +469,7 @@ body.is-preload #topimg aside {
     height: 2em;
     top: -0.5em;
     opacity: 0;
-    transition: all .2s ease-in-out;
+    transition: all .2s cubic-bezier(0.18, 0.89, 0.32, 2.28);
 }
 
 .navigation-list ul:not(#main_nav) .sticker-nav {
@@ -406,7 +478,7 @@ body.is-preload #topimg aside {
     top: -0.5em;
     opacity: 1;
     left: -2.5em;
-    transition: all .2s ease-in-out;
+    transition: all .2s cubic-bezier(0.18, 0.89, 0.32, 2.28);
 }
 
 .navigation-nav a.active {
@@ -420,10 +492,34 @@ body.is-preload #topimg aside {
     left: -2.5em;
 }
 
+.navigation-nav a:after {
+    content: "";
+    background: url(./DoodleCSS/hr.svg);
+    background-size: cover;
+    background-position: 15% center;
+    background-repeat: no-repeat;
+    width: 0%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-radius: var(--border-radius);
+    transition: all .25s ease-in-out;
+    filter: contrast(0) sepia(1) saturate(2) brightness(1.15) hue-rotate(321deg) contrast(1.5);
+}
+
+.navigation-nav a:hover:after,
+.navigation-nav a:focus:after,
+.navigation-nav a.active:after {
+    width: 100%;
+
+}
+
 .navigation-list ul {
     list-style: none;
     padding: 0;
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
 
 .navigation-list a {
@@ -447,14 +543,17 @@ body.is-preload #topimg aside {
 }
 
 #aside_nav {
+    /*
     columns: 3;
     column-gap: 6em;
+    */
 }
 
 @media (max-width:48em) {
     .navigation-list {
         justify-content: unset !important;
     }
+
     #aside_nav {
         columns: 1;
     }
@@ -465,7 +564,7 @@ body.is-preload #topimg aside {
 }
 
 .nav-button {
-    position: fixed;
+    position: absolute;
     z-index: 7;
     user-select: none;
     background-color: var(--primary);
@@ -473,7 +572,6 @@ body.is-preload #topimg aside {
     box-shadow: var(--z2);
     height: var(--navigation-button-size);
     width: var(--navigation-button-size);
-    position: fixed;
     border-radius: 50%;
     border-width: 0;
 }
@@ -502,7 +600,7 @@ body.is-preload #topimg aside {
 /*  ========== 每个部分 ==========  */
 section[id] {}
 
-section .section-heading+.lead {
+section .section-subheading {
     padding: 2em 3.5em 1.25em 2.5em;
     color: var(--light);
     border-image: url(../img/标题卡1.png);
@@ -515,7 +613,7 @@ section .section-heading+.lead {
     margin: -0.5em 0 -0.5em 0;
 }
 
-section .section-heading+.lead.text-center {
+section .section-subheading.text-center {
     margin-left: auto;
     margin-right: auto;
     display: table;
@@ -529,11 +627,13 @@ section .section-heading {
     color: var(--primary);
     font-family: var(--font-family-cursive-heading, var(--font-family-sans-serif));
     border-radius: calc(var(--border-radius) * 2);
+    background-color: var(--white);
     width: fit-content;
     padding: 0.25em 1em 0.25em 1.5em;
     line-height: 1;
     font-size: 1.75em;
-    margin-left: 1em;
+    margin: 0.5em 0 0 2em;
+    box-shadow: var(--z2);
 }
 
 section .section-heading.is-center {
@@ -576,6 +676,46 @@ section .section-heading .heading-count {
     line-height: 0;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: column;
+    /* 默认纵向排列 */
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-header,
+.section-aside,
+.section-content {
+    padding: 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+/* 当屏幕宽度大于768px时，使用横向排列 */
+@media (min-width: 768px) {
+    .section-container {
+        flex-direction: row;
+    }
+
+    .section-header,
+    .section-aside {
+        flex: 0 0 20%;
+    }
+
+    .section-content {
+        flex: 1;
+        overflow-x: hidden;
+    }
+}
+
+
 
 /* ========== 问候 ========== */
 
@@ -607,6 +747,70 @@ section .section-heading .heading-count {
     transform: rotate(-3deg);
 }
 
+.recommend-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 1em 0 4em 0;
+}
+
+.recommend-section .recommend-item {
+    margin: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.recommend-section .recommend-item .card {
+    position: relative;
+}
+.recommend-section .recommend-item .card:before {
+    content: '';
+    background: url(../img/胶带3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 6em;
+    height: 2em;
+    transform: rotate(6deg);
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: -1em;
+}
+
+.recommend-section .pure-u-1:nth-child(1) .recommend-item .card:before {
+    background-image: url(../img/胶带3.png);
+    left: 38%;
+    transform: rotate(6deg);
+}
+
+.recommend-section .pure-u-1:nth-child(2) .recommend-item .card:before {
+    background-image: url(../img/胶带4.png);
+    left: 46%;
+    transform: rotate(0deg);
+}
+
+.recommend-section .pure-u-1:nth-child(3) .recommend-item .card:before {
+    background-image: url(../img/胶带5.png);
+    left: 52%;
+    transform: rotate(-3deg);
+}
+
+.recommend-section .pure-u-1:nth-child(4) .recommend-item .card:before {
+    background-image: url(../img/胶带6.png);
+    left: 41%;
+    transform: rotate(-6deg);
+}
+
+.recommend-section .pure-u-1:nth-child(5) .recommend-item .card:before {
+    background-image: url(../img/胶带7.png);
+    left: 37%;
+    transform: rotate(4deg);
+}
+
 /* ========== 谁是胡桃 ========== */
 
 #whois {
@@ -635,6 +839,8 @@ section .section-heading .heading-count {
     margin: 1em;
     padding: 1.5em;
     box-shadow: var(--z2);
+    position: relative;
+    border-radius: 2em;
 }
 
 #whois .charimg {
@@ -642,6 +848,36 @@ section .section-heading .heading-count {
     position: sticky;
     top: 0;
     overflow-x: hidden;
+}
+
+@media (min-width:64em) {
+    .introduction {
+        margin-bottom: 10em;
+    }
+
+    #whois .charimg {
+        position: absolute;
+        right: -17em;
+        top: -3.5em;
+        width: 22em;
+        pointer-events: none;
+        transition: all .5s ease-in-out;
+    }
+
+    #whois .introduction:hover .charimg {
+        right: -20em;
+    }
+}
+
+@media (min-width:80em) {
+
+    #whois .charimg {
+        position: absolute;
+        right: -13em;
+        top: -3.5em;
+        width: 22em;
+        pointer-events: none;
+    }
 }
 
 #whois .charimg img {
@@ -655,10 +891,25 @@ section .section-heading .heading-count {
     filter: drop-shadow(0 var(--stroke-width) 0 var(--stroke-color)) drop-shadow(0 calc(var(--stroke-width) * -1) 0 var(--stroke-color)) drop-shadow(var(--stroke-width) 0 0 var(--stroke-color)) drop-shadow(calc(var(--stroke-width) * -1) 0 0 var(--stroke-color)) drop-shadow(2px 4px 6px rgba(0, 0, 0, .25));
 }
 
+.introduction h3 {
+    font-size: 1.25em;
+    color: var(--primary);
+}
+
+.introduction mark:not([class]) {
+    background-color: var(--pink);
+}
+
 .important-notice {
     position: sticky;
     top: 0;
     margin: 1em;
+}
+
+@media(min-width:60em) {
+    .important-notice {
+        margin-top: -8em;
+    }
 }
 
 .important-notice>h3 {
@@ -683,6 +934,22 @@ section .section-heading .heading-count {
     padding: 0;
 }
 
+.kurumi-friends>.pure-u-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width:60em) {
+    .kurumi-friends>.pure-u-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kurumi-friends hr.doodle-border {
+        display: none;
+    }
+}
+
 .kurumi-friends-title {
     background-image: url(../img/标题卡2.png);
     background-position: center;
@@ -691,6 +958,7 @@ section .section-heading .heading-count {
     text-align: center;
     padding: 2em 0 1.6em 0;
     text-indent: 1em;
+    margin-top: 0;
 }
 
 .kurumi-friends li {
@@ -781,14 +1049,20 @@ section .section-heading .heading-count {
 #follow {}
 
 @media (min-width:35.5em) {
+    /*
     #follow {
-        background-image: url(https://a-srv-img-cdn.jizhiku.net/?cache=https://cdn.jsdelivr.net/gh/monicfenga/kuruminanasefans/m_stickers/ja/kurumi-chan.BIG/351491058.png);
+        background-image: url(https://fastly.jsdelivr.net/gh/monicfenga/kuruminanasefans/m_stickers/ja/kurumi-chan.BIG/351491058.png);
         background-position: 105% 100%;
         background-size: 17em;
         background-repeat: no-repeat;
     }
+    */
 }
 
+.button-follow-goto {
+    width: calc(100% - 5em);
+    margin: 0.5em;
+}
 
 .bili_fans_count {
     background: var(--light);
@@ -812,6 +1086,40 @@ section .section-heading .heading-count {
     position: absolute;
     left: -2em;
     top: -2em;
+}
+.card.follow-goto {
+    position: relative;
+    margin: .5em;
+}
+.card.follow-goto:before {
+    content: "";
+    width: 6em;
+    height: 2em;
+    transform: rotate(36deg);
+    display: block;
+    position: absolute;
+    right: -1em;
+    top: 0em;
+    background: url(../img/胶带5.png) center center / contain no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.card.follow-goto-others {
+    position: relative;
+    margin: .5em;
+}
+.card.follow-goto-others:before {
+    content: "";
+    width: 6em;
+    height: 2em;
+    transform: rotate(23deg);
+    display: block;
+    position: absolute;
+    right: 0em;
+    top: -1em;
+    background: url(../img/胶带3.png) center center / contain no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .bili_fans_count .small {
@@ -846,13 +1154,13 @@ section .section-heading .heading-count {
     overflow: hidden;
 }
 
-
+/*
 .fans-community {
     position: sticky;
     top: 0;
     margin: 1em;
 }
-
+*/
 .fans-community>h3 {
     background-image: url(../img/标题卡3.png);
     background-position: center;
@@ -862,12 +1170,13 @@ section .section-heading .heading-count {
     padding: 2em 0 1.8em 0;
     text-indent: -1em;
     color: var(--light);
+    position: relative;
 }
 
 .fans-community>.card {
     padding-top: 2em;
     margin-top: -4em;
-    z-index: -5;
+   /*  z-index: -5; */
     position: relative;
 }
 
@@ -918,12 +1227,14 @@ section .section-heading .heading-count {
 }
 
 @media screen and (min-width:116em) {
+    /*
     #follow .other-places {
         position: absolute;
         top: 25em;
         left: -2em;
         transform: scale(0.85);
     }
+    */
 }
 
 /* ========== 表情包 ==========*/
@@ -997,7 +1308,20 @@ section .section-heading .heading-count {
 }
 
 #wallpapers #wallpapers-flters {
-    padding: 0;
+    position: sticky;
+    top: 7rem;
+    background: var(--white);
+    box-shadow: var(--z2);
+    border-radius: var(--border-radius);
+    z-index: 1;
+    padding: 0.5em;
+    width: fit-content;
+}
+
+@media (min-width:80em) {
+    #wallpapers #wallpapers-flters {
+        top: 2rem;
+    }
 }
 
 #wallpapers #wallpapers-flters li {
@@ -1047,6 +1371,7 @@ section .section-heading .heading-count {
     width: 100%;
     object-fit: cover;
     object-position: top center;
+    max-height: 10.15em;
 }
 
 #wallpapers figure figcaption {
@@ -1072,9 +1397,13 @@ section .section-heading .heading-count {
     background-size: 20em;
 }
 
+.manga-item {
+    margin: 1em;
+}
+
 /*  ========== 故事 ==========  */
 #stories {
-    background-image: url(https://a-srv-img-cdn.jizhiku.net/?cache=https://cdn.jsdelivr.net/gh/monicfenga/kuruminanasefans/m_stickers/ja/kurumi-chan.BIG/351491030.png);
+    /* background-image: url(https://a-srv-img-cdn.jizhiku.net/?cache=https://cdn.jsdelivr.net/gh/monicfenga/kuruminanasefans/m_stickers/ja/kurumi-chan.BIG/351491030.png); */
     background-position: 5% 100%;
     background-size: 15em;
     background-repeat: no-repeat;
@@ -1190,15 +1519,15 @@ section .section-heading .heading-count {
 }
 
 #music .music-list {
-    background: var(--white);
+    /*     background: var(--white);
     padding: .1em;
     border-radius: .5rem;
-    box-shadow: var(--z2);
+    box-shadow: var(--z2); */
 }
 
 #music .music-list ol {
     margin: 0;
-    border: 2px dotted var(--tertiary);
+    /* border: 2px dotted var(--tertiary); */
     padding: .5em;
     border-radius: .5rem;
 }
@@ -1292,6 +1621,18 @@ section .section-heading .heading-count {
 
 /* ========== 关于本站 ========== */
 
+#about blockquote {
+    margin: 1em 0;
+    padding: 1em 0;
+    border-top: 4px double var(--secondary);
+    border-bottom: 4px double var(--secondary);
+}
+
+#about ul,#about ol {
+    padding: 0 0 0 1em;
+    margin: 0;
+}
+
 .thankyou {
     border-image: url(../img/边框2.png);
     border-style: solid;
@@ -1324,4 +1665,5 @@ section .section-heading .heading-count {
 
 footer .list-inline {
     font-size: 0.8rem;
+    text-align: center;
 }
